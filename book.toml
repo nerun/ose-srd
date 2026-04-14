@@ -1,0 +1,13 @@
+[book]
+title = "Old School Essentials SRD"
+authors = ["Gavin Norman", "Franciolli Araújo", "Pedro Leone", "Daniel \"Nerun\" Rodrigues"]
+language = "pt-BR"
+src = "content"
+
+[output.html]
+default-theme = "rust"
+preferred-dark-theme = "rust"
+mathjax-support = true
+
+[build]
+build-dir = "docs"
