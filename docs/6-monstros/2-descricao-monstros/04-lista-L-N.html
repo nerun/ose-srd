@@ -1,0 +1,867 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Lista Monstros L-N - Old School Essentials SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../custom-efc8afdc.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../../searchindex-117446f6.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc-950846f6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Old School Essentials SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="lista-monstros-l-n"><a class="header" href="#lista-monstros-l-n">Lista Monstros L-N</a></h1>
+<h2 id="lagarto-gigante"><a class="header" href="#lagarto-gigante">Lagarto Gigante</a></h2>
+<h3 id="draco"><a class="header" href="#draco">Draco</a></h3>
+<p><em>Lagartos carnívoros de 1,80m de comprimento com membranas de pele entre as pernas que permitem planar no ar. Geralmente habitam acima do solo, mas às vezes se abrigam em cavernas. Às vezes atacam humanos.</em>
+<strong>Classe de Armadura</strong>: 5 [14]
+<strong>Dados de Vida</strong>: 4+2 (20pv)
+<strong>Ataques</strong>: 1 × mordida (1d10)
+<strong>TAC0</strong>: 15 [+4]
+<strong>Movimento</strong>: 36m (12m) / 63m (21m) planando
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 125
+<strong>Número Encontrado</strong>: 1d4 (1d8)
+<strong>Tesouro</strong>: U</p>
+<ul>
+<li>** Aderência:**: Podem andar pelas paredes, arvores, etc. e saltar sobre suas vítimas.</li>
+</ul>
+<h3 id="lagartixa"><a class="header" href="#lagartixa">Lagartixa</a></h3>
+<p><em>Lagartos noturnos, carnívoros, com 1,5m de comprimento. Possuem escamas azuis claras com manchas laranja.</em>
+<strong>Classe de Armadura</strong>: 5 [14]
+<strong>Dados de Vida</strong>: 3+1 (14pv)
+<strong>Ataques</strong>: 1 × mordida (1d8)
+<strong>TAC0</strong>: 16 [+3]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 50
+<strong>Número Encontrado</strong>: 1d6 (1d10)
+<strong>Tesouro</strong>: U</p>
+<ul>
+<li>** Aderência:**: Podem andar pelas paredes, arvores, etc. e saltar sobre suas vítimas.</li>
+</ul>
+<h3 id="camaleão-com-chifres"><a class="header" href="#camaleão-com-chifres">Camaleão com Chifres</a></h3>
+<p><em>Lagartos de 2,1m de comprimento cujas escamas mudam de cor fornecendo camuflagem.</em>
+<strong>Classe de Armadura</strong>: 2 [17]
+<strong>Dados de Vida</strong>: 5* (22pv)
+<strong>Ataques</strong>: 1 × língua/mordida (2d4), 1 × chifre (1d6), 1 × cauda (derruba vítima no chão)
+<strong>TAC0</strong>: 15 [+4]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 300
+<strong>Número Encontrado</strong>: 1d3 (1d6)
+<strong>Tesouro</strong>: U</p>
+<ul>
+<li>** Surpresa**: 1-5, devido à camuflagem.</li>
+<li>** Língua pegajosa**: pode atacar alvos a até 1,5 metros de distância. Se o ataque for bem sucedido, a vítima é arrastada até a boca e mordida (2d4 de dano).</li>
+<li>** Cauda **: Não causa danos, mas derruba o oponente: não pode atacar nessa rodada.</li>
+</ul>
+<h3 id="tuatara"><a class="header" href="#tuatara">Tuatara</a></h3>
+<p>Lagartos carnívoros de 2,4 m de comprimento, semelhantes a iguanas, com escamas cor de oliva e uma crista de espinhos brancos ao longo das costas. São conhecidos por atacar humanos._
+<strong>Classe de Armadura</strong>: 4 [15]
+<strong>Dados de Vida</strong>: 6 (27pv)
+<strong>Ataques</strong>: 2 × garras (1d4)
+<strong>TAC0</strong>: 14 [+5]
+<strong>Movimento</strong>: 27m (9m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (4)
+<strong>Moral</strong>:  6
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 275
+<strong>Número Encontrado</strong>: 1d2 (1d4)
+<strong>Tesouro</strong>: V</p>
+<ul>
+<li>** Infravisão **: 27m. Concedido por membranas oculares retráteis.</li>
+</ul>
+<h2 id="licantropo"><a class="header" href="#licantropo">Licantropo</a></h2>
+<p>_ Metamorfos com forma humana e animal. _</p>
+<ul>
+<li>** Forma humana**: Possui características físicas que lembram o tipo animal associado.</li>
+<li>** Imunidade a dano mundano **: Na forma animal, só pode ser ferido por armas de prata ou magia.</li>
+<li>** Idiomas **: Na forma humana, pode falar normalmente. Na forma animal, só pode falar com animais do tipo associado.</li>
+<li><strong>Armaduras</strong>: Não são usadas porque dificulta a mudança de forma.</li>
+<li>** Invocar animais **: Pode invocar 1–2 animais do tipo associado da área circundante (os homens-rato invocam ratos gigantes). Estes chegam em 1d4 rodadas.</li>
+<li>** acônito **: Se atingido, deve salvar contra veneno ou fugir aterrorizado.</li>
+<li>** Reversão:**: Se morto, um licantropo volta à sua forma humana.</li>
+<li>** Olfato**: Cavalos e alguns outros animais podem sentir o cheiro de licantropos e ficarão com medo.</li>
+<li>** Infecção**: Um personagem que perde mais da metade de seus pontos de vida por ataques naturais de licantropos (ou seja, mordidas e garras) contrai licantropia. Os humanos tornam-se criaturas do mesmo tipo (conduzido pelo árbitro, de agora em diante); não-humanos morrem. A doença tem efeito total em 2d12 dias, mostrando sinais de infecção após metade do tempo.</li>
+</ul>
+<h3 id="porco-diabólico"><a class="header" href="#porco-diabólico">Porco Diabólico</a></h3>
+<p>_ Humanos corpulentos que podem se transformar em enormes suínos. Adoram comer carne humana. Espreitam em assentamentos humanos isolados perto de florestas ou pântanos._
+<strong>Classe de Armadura</strong>: 3 [16] (9 [10] na forma humana)
+<strong>Dados de Vida</strong>: 9* (40pv)
+<strong>Ataques</strong>: 1 × ataque em fúria (2d6) ou 1 × arma (1d6 ou por arma) ou 1 × magia (Enfeitiçar)
+<strong>TAC0</strong>: 12 [+7]
+<strong>Movimento</strong>: 54m (18m) / 36m (12m) na forma humana
+<strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (9)
+<strong>Moral</strong>:  10
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 1,600
+<strong>Número Encontrado</strong>: 1d3 (1d4)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li>** Mudança de forma**: Apenas à noite.</li>
+<li><strong>Emboscada</strong>: Prefere atacar de surpresa.</li>
+<li><strong>Enfeitiçar Pessoa</strong>: 3 vezes ao dia. Salve contra feitiços a -2 ou fique enfeitiçado: vá em direção ao Porco Diabólico (resistindo àqueles que tentam impedi-lo); obedecer aos comandos do Porco Diabólico (se entendido); deve defender o Porco Diabólico; incapaz de lançar feitiços ou usar itens mágicos; incapaz de prejudicar o Porco Diabólico. Matar o Porco Diabólico quebra o encanto.</li>
+<li>** Vítimas enfeitiçadas**: 1d4–1 acompanham um Porco Diabólico.</li>
+</ul>
+<h3 id="homem-urso"><a class="header" href="#homem-urso">Homem-urso</a></h3>
+<p>_ Altamente inteligente, também em forma de urso. Vive sozinho ou entre ursos normais._
+<strong>Classe de Armadura</strong>: 2 [17] (8 [11] na forma humana)
+<strong>Dados de Vida</strong>: 6* (27pv)
+<strong>Ataques</strong>: 2 × garras (2d4), 1 × mordida (2d8)
+<strong>TAC0</strong>: 14 [+5]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (6)
+<strong>Moral</strong>:  10
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 500
+<strong>Número Encontrado</strong>: 1d4 (1d4)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li>** Amável**: Pode ser amigável, se abordado pacificamente.</li>
+<li>** Abraço de urso**: Se uma vítima for atingida por ambas as garras na mesma rodada, o homem-urso pode abraçar com 2d8 de dano automático extra.</li>
+</ul>
+<h3 id="homem-javali"><a class="header" href="#homem-javali">Homem-javali</a></h3>
+<p>_ Semi-inteligente e irritadiço. Na forma humana, muitas vezes aparecem como Furiosos._
+<strong>Classe de Armadura</strong>: 4 [15] (9 [10] na forma humana)
+<strong>Dados de Vida</strong>: 4+1* (19pv)
+<strong>Ataques</strong>: 1 × presas/mordida (2d6)
+<strong>TAC0</strong>: 15 [+4]
+<strong>Movimento</strong>: 45m (15m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (4)
+<strong>Moral</strong>:  9
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 200
+<strong>Número Encontrado</strong>: 1d4 (2d4)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Fúria de batalha</strong>: Na forma humana, pode entrar em fúria frenética: +2 para acertar; luta até a morte. A raiva às vezes faz com que eles ataquem seus aliados.</li>
+</ul>
+<h3 id="homem-rato"><a class="header" href="#homem-rato">Homem-rato</a></h3>
+<p>_ Ratos humanoides inteligentes que podem se transformar em humanos normais._
+<strong>Classe de Armadura</strong>: 7 [12] (9 [10] na forma humana)
+<strong>Dados de Vida</strong>: 3* (13pv)
+<strong>Ataques</strong>: 1 × mordida (1d4) ou 1 × arma (1d6 ou por arma)
+<strong>TAC0</strong>: 17 [+2]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 50
+<strong>Número Encontrado</strong>: 1d8 (2d8)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Surpresa</strong>: Em 1-4; arma emboscadas.</li>
+<li><strong>Idiomas</strong>: Pode falar Comum em ambas as formas.</li>
+<li><strong>Armas</strong>: Também pode usar armas em forma animal.</li>
+</ul>
+<h3 id="homem-tigre"><a class="header" href="#homem-tigre">Homem-tigre</a></h3>
+<p>_ Exibe comportamento felino: curioso, mas perigoso quando encurralado. Nadadores talentosos e rastreadores._
+<strong>Classe de Armadura</strong>: 3 [16] (9 [10] na forma humana)
+<strong>Dados de Vida</strong>: 5* (22pv)
+<strong>Ataques</strong>: 2 × garras (1d6), 1 × mordida (2d6)
+<strong>TAC0</strong>: 15 [+4]
+<strong>Movimento</strong>: 45m (15m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (5)
+<strong>Moral</strong>:  9
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 300
+<strong>Número Encontrado</strong>: 1d4 (1d4)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Surpresa</strong>: Em 1-4, devido a furtividade.</li>
+</ul>
+<h3 id="lobisomem"><a class="header" href="#lobisomem">Lobisomem</a></h3>
+<p>_ Caçadores de matilha semi-inteligentes._
+<strong>Classe de Armadura</strong>: 5 [14] (9 [10] na forma humana)
+<strong>Dados de Vida</strong>: 4* (18pv)
+<strong>Ataques</strong>: 1 × mordida (2d4)
+<strong>TAC0</strong>: 16 [+3]
+<strong>Movimento</strong>: 54m (18m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (4)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 125 (líder: 300)
+<strong>Número Encontrado</strong>: 1d6 (2d6)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Líder</strong>: Grupos de 5 ou + são liderados por um lobisomem com 5 dados de vida (30pv). O líder ganha um bônus de +2 nas jogadas de dano.</li>
+</ul>
+<h2 id="limo-cinzento"><a class="header" href="#limo-cinzento">Limo Cinzento</a></h2>
+<p>_ Horrores viscosos que espreitam em superfícies de pedra ou entre pedregulhos. _
+<strong>Classe de Armadura</strong>: 8 [11]
+<strong>Dados de Vida</strong>: 3* (13pv)
+<strong>Ataques</strong>: 1 × toque (2d8)
+<strong>TAC0</strong>: 17 [+2]
+<strong>Movimento</strong>: 3m (1m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)
+<strong>Moral</strong>:  12
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 50
+<strong>Número Encontrado</strong>: 1 (1)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li>** Misturar-se com a pedra**: Difícil de distinguir da pedra molhada.</li>
+<li><strong>Ácido</strong>: Após um ataque bem sucedido, gruda na vítima e exala ácido. O ácido destrói a armadura normal imediatamente e causa 2d8 de dano por rodada. (A armadura mágica é dissolvida em um turno.)
+<em><strong>Imunidade a energia</strong></em>: Não é afetado por frio ou fogo.</li>
+</ul>
+<h2 id="lobo"><a class="header" href="#lobo">Lobo</a></h2>
+<p><em>Carnívoros parecidos com cães que caçam em matilhas.</em></p>
+<h3 id="lobo-atroz"><a class="header" href="#lobo-atroz">Lobo Atroz</a></h3>
+<p><em>Lobos grandes, selvagens e semi-inteligentes. Habita em cavernas, montanhas e florestas.</em>
+<strong>Classe de Armadura</strong>: 6 [13]
+<strong>Dados de Vida</strong>: 4+1 (19pv)
+<strong>Ataques</strong>: 1 × mordida (2d4)
+<strong>TAC0</strong>: 15 [+4]
+<strong>Movimento</strong>: 45m (15m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 125
+<strong>Número Encontrado</strong>: 1d4 (2d4)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Treinamento</strong>: A critério do árbitro, os filhotes capturados podem ser treinados como cães. Os lobos atrozes são ferozes e extremamente difíceis de treinar.</li>
+<li><strong>Montarias</strong>: Às vezes treinadas como montarias por goblins.</li>
+</ul>
+<h3 id="lobo-normal"><a class="header" href="#lobo-normal">Lobo Normal</a></h3>
+<p><em>Habita principalmente em terras selvagens, mas ocasionalmente em cavernas.</em>
+<strong>Classe de Armadura</strong>: 7 [12]
+<strong>Dados de Vida</strong>: 2+2 (11pv)
+<strong>Ataques</strong>: 1 × mordida (1d6)
+<strong>TAC0</strong>: 17 [+2]
+<strong>Movimento</strong>: 54m (18m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  6 (8 em matilhas maiores)
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 25
+<strong>Número Encontrado</strong>: 2d6 (3d6)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Treinamento</strong>: A critério do árbitro, os filhotes capturados podem ser treinados como cães. Os lobos são difíceis de treinar.</li>
+<li><strong>Força em números</strong>: Matilhas de 4 ou mais lobos têm moral 8. Se a matilha for reduzida a menos de 50% de seu tamanho original, esse bônus de moral é perdido.</li>
+</ul>
+<h2 id="lula-gigante"><a class="header" href="#lula-gigante">Lula Gigante</a></h2>
+<p><em>Cefalópodes gigantes de dez braços. Dois dos dez braços são maiores e podem ser usados para atacar navios. Habita nas profundezas do mar, sobe a superfície apenas para encontrar presas.</em>
+<strong>Classe de Armadura</strong>: 7 [12]
+<strong>Dados de Vida</strong>: 6 (27pv)
+<strong>Ataques</strong>: 8 × pequenos tentáculos (1d4 + constrição), 2 × tentáculos grandes (1d4 + constrição ou 1d10 danos no casco), 1 × bico (1d10 ou 2 danos no casco)
+<strong>TAC0</strong>: 14 [+5]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 275
+<strong>Número Encontrado</strong>: 0 (1d4)
+<strong>Tesouro</strong>: V</p>
+<ul>
+<li><strong>Esmagar barcos</strong>: 25% de probabilidade de envolver os 2 tentáculos grandes ao redor de um barco, causando 1d10 de dano no casco por tentáculo. Quando os grandes tentáculos estão agarrando um barco, nas rodadas subsequentes, o bico inflige 2 pontos de dano ao casco automaticamente.</li>
+<li><strong>Agarrar tripulação</strong>: 75% de probabilidade de pegar a tripulação do convés e arrastá-los para debaixo d’água para serem comidos.</li>
+<li><strong>Constrição</strong>: Os tentáculos agarram e se contraem após um golpe. 1d4 de dano automático por rodada.</li>
+<li><strong>Separar tentáculos</strong>: Requer um golpe que cause 6 ou mais danos (8 tentáculos pequenos) ou 10 ou mais danos (2 tentáculos grandes).</li>
+<li><strong>Nuvem de tinta</strong>: Ao escapar, pode emitir uma nuvem de tinta preta (18m de diâmetro) e fugir para longe 3 vezes mais rápido que a velocidade normal. Máximo duas vezes por dia.</li>
+<li><strong>Exemplares gigantescos:</strong>: Exemplares duas ou três vezes maiores podem ser encontrados.</li>
+</ul>
+<h2 id="mantícora"><a class="header" href="#mantícora">Mantícora</a></h2>
+<p>_ Monstruosidades com rosto de homem, corpo de leão, asas de morcego e cauda coberta de espinhos. Adora comer humanos. Vive em regiões selvagens e montanhosas._
+<strong>Classe de Armadura</strong>: 4 [15]
+<strong>Dados de Vida</strong>: 6+1 (28pv)
+<strong>Ataques</strong>: [2 × garras (1d4), 1 × mordida (2d4)] ou 6 × cauda de espinhos (1d6)
+<strong>TAC0</strong>: 13 [+6]
+<strong>Movimento</strong>: 36m (12m) / 54m (18m) voando
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (6)
+<strong>Moral</strong>:  9
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 350
+<strong>Número Encontrado</strong>: 1d2 (1d4)
+<strong>Tesouro</strong>: D</p>
+<ul>
+<li>** Cauda de espinhos **: 54m de alcance. 24 espinhos no total;  Regenera 2 espinhos por dia.</li>
+<li>** Rastrear e emboscar **: Segue humanos e ataca com a ponta da cauda quando eles pararem para descansar.</li>
+</ul>
+<h2 id="mastodonte"><a class="header" href="#mastodonte">Mastodonte</a></h2>
+<p>_ Elefantes peludos com grandes presas. Viva em regiões geladas ou do Mundo Perdido._
+<strong>Classe de Armadura</strong>: 3 [16]
+<strong>Dados de Vida</strong>: 15 (67pv)
+<strong>Ataques</strong>: 2 × presas (2d6) ou 1 × pisotear (4d8)
+<strong>TAC0</strong>: 9 [+10]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (8)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 1,350
+<strong>Número Encontrado</strong>: 0 (2d8)
+<strong>Tesouro</strong>: Presas</p>
+<ul>
+<li><strong>Investida</strong>: Na primeira rodada de combate, quando não estiver em combate corpo a corpo. Requer uma corrida clara de pelo menos 18m. As presas infligem o dobro de dano.</li>
+<li><strong>Pisotear</strong>: chance de 3 em 4 de atropelar a cada rodada. +4 para acertar criaturas de tamanho humano ou menores.</li>
+<li>** Marfim **: 2d4 × 100gp por presa.</li>
+</ul>
+<h2 id="médium"><a class="header" href="#médium">Médium</a></h2>
+<p><em>Usuários de magia NPC de 1º nível.</em>
+<strong>Classe de Armadura</strong>: 9 [10]
+<strong>Dados de Vida</strong>: 1** (4pv)
+<strong>Ataques</strong>: 1 × adaga (1d4) ou 1 × magia
+<strong>TAC0</strong>: 19 [0]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M13 V14 P13 S16 F15 (MU1)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Qualquer
+<strong>XP</strong>: 16
+<strong>Número Encontrado</strong>: 1d4 (1d12)
+<strong>Tesouro</strong>: V</p>
+<ul>
+<li><strong>Magias</strong>: Cada indivíduo tem uma magia arcana de 1º nível memorizada. (Escolha ou selecione aleatoriamente.)</li>
+<li><strong>Mestre</strong>: 50% dos grupos são liderados por um mago de 3º nível. O mestre tem duas magias de 1º nível e uma magia de 2º nível. (Escolha ou selecione aleatoriamente.)</li>
+</ul>
+<h2 id="medusa"><a class="header" href="#medusa">Medusa</a></h2>
+<p>_ Criaturas mortais de natureza mágica que se parecem com mulheres com cobras se contorcendo no lugar de cabelos._
+<strong>Classe de Armadura</strong>: 8 [11]
+<strong>Dados de Vida</strong>: 4** (18pv)
+<strong>Ataques</strong>: 1 × mordida de cobra(1d6 + veneno)
+<strong>TAC0</strong>: 16 [+3]
+<strong>Movimento</strong>: 27m (9m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (4)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 175
+<strong>Número Encontrado</strong>: 1d3 (1d4)
+<strong>Tesouro</strong>: F</p>
+<ul>
+<li><strong>Disfarce</strong>: Usa capas com capuz para atrair as vítimas para perto antes de revelar sua verdadeira forma.</li>
+<li><strong>Petrificação</strong>: Qualquer um que olhar para uma medusa sem disfarce será transformado em pedra (salvar contra petrificar).</li>
+<li><strong>Desviando os olhos</strong>: -4 de penalidade para acertar; a medusa ganha um bônus de +2 para atacar.</li>
+<li><strong>Espelhos</strong>: O reflexo de uma medusa é inofensivo. Se uma medusa vê seu próprio reflexo, ela deve salvar ou ficar petrificada.</li>
+<li><strong>Veneno</strong>: As mordidas das cobras são venenosas: salve contra veneno ou morra em 1 turno.</li>
+<li><strong>Resistência mágica</strong>: +2 de bônus em testes de resistência contra feitiços.</li>
+</ul>
+<h2 id="mercador"><a class="header" href="#mercador">Mercador</a></h2>
+<p>_ Comerciantes organizados que viajam entre assentamentos em caravanas bem armadas, comprando e vendendo mercadorias comerciais (por exemplo, ouro, joias, seda, especiarias, vinho, etc.)._
+<strong>Classe de Armadura</strong>: 5 [14]
+<strong>Dados de Vida</strong>: 1 (4pv)
+<strong>Ataques</strong>: 1 × arma (1d6 ou por arma)
+<strong>TAC0</strong>: 19 [0]
+<strong>Movimento</strong>: 27m (9m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>: Varia
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 10
+<strong>Número Encontrado</strong>: 0 (1d20)
+<strong>Tesouro</strong>: A</p>
+<ul>
+<li><strong>Armas</strong>: Espadas e adagas.</li>
+<li><strong>Montaria</strong>: A cavalo, camelo ou mula (por terreno).</li>
+<li><strong>Vagões</strong>: 2 por comerciante. Puxado por cavalos, mulas ou camelos (por terreno).</li>
+<li><strong>Guardas de caravana</strong>: Para cada comerciante, 4 guardas estão presentes (guerreiros de 1º nível). AC 4 [15], com bestas, espadas, adagas.</li>
+<li>** Tenentes da Guarda: **: Para cada 5 comerciantes, 2 tenentes estão presentes (guerreiros de 2º a 3º níveis). CA 4 [15]. Equipados como guardas.</li>
+<li>** Capitão da Guarda: **: Os guardas são liderados por um lutador de 5º nível. CA 4 [15]. Equipado como guardas.</li>
+<li><strong>Animais de carga</strong>: 1d12 cavalos, mulas ou camelos extras.</li>
+<li><strong>Tesouro</strong>: Deve ser reduzido, se menos de 10 comerciantes estiverem no grupo.</li>
+</ul>
+<h2 id="minotauro"><a class="header" href="#minotauro">Minotauro</a></h2>
+<p>_ Homens grandes, brutais e com cabeça de touro com desejo por carne humana. Habitam em calabouços e labirintos._
+<strong>Classe de Armadura</strong>: 6 [13]
+<strong>Dados de Vida</strong>: 6 (27pv)
+<strong>Ataques</strong>: [1 × ataque em fúria (1d6), 1 × mordida] ou 1 × arma (1d6 + 2 ou por arma + 2)
+<strong>TAC0</strong>: 14 [+5]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (6)
+<strong>Moral</strong>:  12
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 275
+<strong>Número Encontrado</strong>: 1d6 (1d8)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Armas</strong>: Prefere machados, clavas ou lanças.</li>
+<li><strong>Agressivo</strong>: Ataca criaturas do mesmo tamanho ou menores à vista. Persegue até que as vítimas estejam fora de vista.</li>
+</ul>
+<h2 id="monstro-da-ferrugem"><a class="header" href="#monstro-da-ferrugem">Monstro da Ferrugem</a></h2>
+<p>_ Criaturas mágicas semelhantes a tatus com caudas longas e duas antenas longas parecidas com tentáculos. Alimenta-se de metal enferrujado._
+<strong>Classe de Armadura</strong>: 2 [17]
+<strong>Dados de Vida</strong>: 5 (22pv)
+<strong>Ataques</strong>: 1 × antena (ferrugem)
+<strong>TAC0</strong>: 15 [+4]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 175
+<strong>Número Encontrado</strong>: 1d4 (1d4)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Ferrugem</strong>: O metal que toca um monstro de ferrugem (por exemplo, armas que o atingem ou armaduras atingidas por uma antena) se desintegra instantaneamente em ferrugem. Itens mágicos têm 10% de chance por “mais”, de não serem afetados em cada acerto bem-sucedido. Cada vez que um item mágico é afetado, ele perde um “mais”.</li>
+<li><strong>Cheiro de metal</strong>: É atraído pelo odor do metal.</li>
+</ul>
+<h2 id="morcego"><a class="header" href="#morcego">Morcego</a></h2>
+<h3 id="morcego-gigante"><a class="header" href="#morcego-gigante">Morcego Gigante</a></h3>
+<p>_ Morcegos carnívoros que podem atacar aventureiros, se estiverem com fome. 1 em cada 20 grupos de morcegos gigantes são vampíricos (veja Morcego Vampiro Gigante). _
+<strong>Classe de Armadura</strong>: 6 [13]
+<strong>Dados de Vida</strong>: 2 (9pv)
+<strong>Ataques</strong>: 1 × mordida(1d4)
+<strong>TAC0</strong>: 18 [+1]
+<strong>Movimento</strong>: 9m (3m) /54m (18m) voando
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 20
+<strong>Número Encontrado</strong>: 1d10 (1d10)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li>** Ecolocalização **: Não é afetado por efeitos que prejudiquem, modifiquem ou dependam da visão. Cego pelo silêncio mágico.</li>
+</ul>
+<h3 id="morcego-vampiro-gigante"><a class="header" href="#morcego-vampiro-gigante">Morcego Vampiro Gigante</a></h3>
+<p><strong>Classe de Armadura</strong>: 6 [13]
+<strong>Dados de Vida</strong>: 2 (9pv)
+<strong>Ataques</strong>: 1 × mordida(1d4 + inconsciência)
+<strong>TAC0</strong>: 18 [+1]
+<strong>Movimento</strong>: 9m (3m) /54m (18m) voando
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 20
+<strong>Número Encontrado</strong>: 1d10 (1d10)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li>** Ecolocalização **: Não é afetado por efeitos que prejudiquem, modifiquem ou dependam da visão. Cego pelo silêncio mágico.</li>
+<li>** Inconsciência **: Por 1d10 rodadas (resistência contra paralisia).</li>
+<li>** Drenagem de Sangue **: Um morcego vampiro pode drenar sangue de uma vítima inconsciente: 1d4 pontos de vida de dano automático por rodada. Uma vítima morta por drenagem de sangue torna-se um morto-vivo (possivelmente um vampiro) após 24 horas (resistência contra feitiços).</li>
+</ul>
+<h3 id="morcego-normal"><a class="header" href="#morcego-normal">Morcego Normal</a></h3>
+<p><strong>Classe de Armadura</strong>: 6 [13]
+<strong>Dados de Vida</strong>: 1 v
+<strong>Ataques</strong>: 1 × enxame (confusão)
+<strong>TAC0</strong>: 20 [-1]
+<strong>Movimento</strong>: 2,7m (0,9m) /36m (12m) voando
+<strong>Testes de Resistência</strong>: M14 V15 P16 S17 F18 (HN)
+<strong>Moral</strong>:  6
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 5
+<strong>Número Encontrado</strong>: 1d100 (1d100)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li>** Ecolocalização **: Não é afetado por efeitos que prejudiquem, modifiquem ou dependam da visão. Cego pelo silêncio mágico.</li>
+<li>** Enxame **: 10 morcegos podem enxamear ao redor da cabeça de um alvo, causando confusão: -2 para jogadas de ataque e salvamentos; incapaz de lançar feitiços.</li>
+<li>** Ataques **: Como humano normal.</li>
+<li>** Voador **: A menos que seja magicamente invocado ou controlado, os morcegos normais verificam o moral a cada rodada.</li>
+</ul>
+<h2 id="mosca-salteadora"><a class="header" href="#mosca-salteadora">Mosca Salteadora</a></h2>
+<p><em>Moscas carnívoras de 1m de comprimento com listras amarelas e pretas. Parecem-se com as abelhas assassinas, que caçam. Pode atacar humanos.</em>
+<strong>Classe de Armadura</strong>: 6 [13]
+<strong>Dados de Vida</strong>: 2 (9pv)
+<strong>Ataques</strong>: 1 × mordida (1d8)
+<strong>TAC0</strong>: 18 [+1]
+<strong>Movimento</strong>: 27m (9m) / 54m (18m) voando
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 20
+<strong>Número Encontrado</strong>: 1d6 (2d6)
+<strong>Tesouro</strong>: U</p>
+<ul>
+<li><strong>Surpresa</strong>: Caça pacientemente. Surpreenda com 1-4, ao esperar nas sombras por uma presa.</li>
+<li><strong>Imunidade ao veneno</strong>: Imune pelo veneno das abelhas assassinas.</li>
+<li><strong>Salto</strong>: Pode saltar até 9m e atacar.</li>
+</ul>
+<h2 id="muco-esverdeado"><a class="header" href="#muco-esverdeado">Muco Esverdeado</a></h2>
+<p><em>Lodo verde gotejante que se agarra às paredes e tetos.</em>
+<strong>Classe de Armadura</strong>: Nenhuma jogada de acerto necessária
+<strong>Dados de Vida</strong>: 2* (9pv)
+<strong>Ataques</strong>: 1 × toque (consome carne)
+<strong>TAC0</strong>: 18 [+1]
+<strong>Movimento</strong>: 1m (30cm)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  12
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 25
+<strong>Número Encontrado</strong>: 1 (0)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li>** Surpresa **: Cai em personagens surpresos de cima.</li>
+<li><strong>Ácido</strong>: Quando em contato com a vítima, gruda e exala ácido. O ácido destrói madeira ou metal (incluindo armaduras) em 6 rodadas, mas não pode afetar pedra.</li>
+<li><strong>Consumir carne</strong>: Uma vez em contato com a carne por 6 rodadas, a vítima é transformada em gosma verde em mais 1d4 rodadas.</li>
+<li><strong>Remoção</strong>: Uma vez preso em uma vítima, só pode ser removido pelo fogo. Isso inflige metade do dano à vítima e metade ao muco.</li>
+<li>** Imunidade**: Imune por todos os ataques exceto frio ou fogo.</li>
+</ul>
+<h2 id="mula"><a class="header" href="#mula">Mula</a></h2>
+<p>_ Mestiços teimosos de cavalos/jumentos usados como animais de carga._
+<strong>Classe de Armadura</strong>: 7 [12]
+<strong>Dados de Vida</strong>: 2 (9pv)
+<strong>Ataques</strong>: 1 × coice (1d4) ou 1 × mordida (1d3)
+<strong>TAC0</strong>: 18 [+1]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M14 V15 P16 S17 F18 (HN)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 20
+<strong>Número Encontrado</strong>: 1d8 (2d6)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Persistente</strong>: Pode ser levado para o subsolo, se o árbitro permitir.</li>
+<li><strong>Defensivo</strong>: Pode atacar se ameaçado, mas não pode ser treinado para atacar sob comando.</li>
+<li><strong>Besta de carga</strong>: Carregue até 2.000 moedas sem ônus; até 4.000 a meia velocidade.</li>
+</ul>
+<h2 id="múmia"><a class="header" href="#múmia">Múmia</a></h2>
+<p>_ Humanoides mortos-vivos envoltos em bandagens funerárias. Assombram ruínas e túmulos._
+<strong>Classe de Armadura</strong>: 3 [16]
+<strong>Dados de Vida</strong>: 5+1* (23pv)
+<strong>Ataques</strong>: 1 × toque (1d12 + doença)
+<strong>TAC0</strong>: 14 [+5]
+<strong>Movimento</strong>: 18m (6m)
+<strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (5)
+<strong>Moral</strong>:  12
+<strong>Tendência</strong>: Caótico
+<strong>XP</strong>: 400
+<strong>Número Encontrado</strong>: 1d4 (1d12)
+<strong>Tesouro</strong>: D</p>
+<ul>
+<li>**Paralisar de terror **: Qualquer um que veja uma múmia deve salvar contra paralisia ou ficar paralisado de terror. A paralisia é quebrada se a múmia atacar ou desaparecer.</li>
+<li>**Doença **: Qualquer pessoa atingida contrai uma terrível doença de podridão. A cura mágica é ineficaz; a cura natural é dez vezes mais lenta. A doença só pode ser removida por magia.</li>
+<li>** Imunidade a danos **: Apenas ferido por fogo ou magia. Todo o dano é reduzido pela metade.</li>
+<li>** Mortos-vivos **: Não fazem barulho, até que eles ataquem. Imune a efeitos que afetam criaturas vivas (por exemplo, veneno). Imune a feitiços que afetam a mente ou que leem a mente (por exemplo, enfeitiçar, imobilizar, sono).</li>
+</ul>
+<h2 id="musaranho-gigante"><a class="header" href="#musaranho-gigante">Musaranho Gigante</a></h2>
+<p><em>Insetívoros de pelagem marrom, semelhantes a toupeiras, com focinhos longos. Habitam no subsolo; escavadores habilidosos.</em>
+<strong>Classe de Armadura</strong>: 4 [15]
+<strong>Dados de Vida</strong>: 1 (4pv)
+<strong>Ataques</strong>: 2 × mordidas (1d6)
+<strong>TAC0</strong>: 19 [0]
+<strong>Movimento</strong>: 54m (18m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  10
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 10
+<strong>Número Encontrado</strong>: 1d4 (1d8)
+<strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li>** Iniciativa **: Sempre ganha a iniciativa na rodada de seu primeiro ataque. +1 na iniciativa na rodada de seu segundo ataque.</li>
+<li>** Ferocidade **: Atacam a cabeça dos alvos. Alvos com 3 DV ou menos devem salvar contra a morte ou fugir.</li>
+<li>** Escalada **: Alpinistas habilidosos; pode saltar até 1,5m.</li>
+<li>** Territorial **: Defenda ferozmente sua área de caça de todos os intrusos.</li>
+<li>** Ecolocalização **: Perceba seus arredores até 18m. Não afetado pela falta de luz. Se incapaz de ouvir (por exemplo, silêncio): CA reduzida para 8 [11], penalidade de -4 nos ataques.</li>
+</ul>
+<h2 id="neandertal-homem-das-cavernas"><a class="header" href="#neandertal-homem-das-cavernas">Neandertal (Homem das Cavernas)</a></h2>
+<p><em>Demi-humanos atarracados, poderosos e primitivos com rostos de macaco. Vivem em cavernas e caçam ursos das cavernas. Tímidos ao contato com humanos (com quem se relacionam), mas amigável com anões e gnomos.</em>
+<strong>Classe de Armadura</strong>: 8 [11]
+<strong>Dados de Vida</strong>: 2 (9pv)
+<strong>Ataques</strong>: 1 × arma (2d4 ou por arma + 1)
+<strong>TAC0</strong>: 18 [+1]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)
+<strong>Moral</strong>:  7
+<strong>Tendência</strong>: Leal
+<strong>XP</strong>: 20
+<strong>Número Encontrado</strong>: 1d10 (1d4 × 10)
+<strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Armas</strong>: Preferem machados de pedra, martelos de pedra, porretes ou lanças.</li>
+<li><strong>Líderes</strong>: Dois líderes 6HD (um homem e uma mulher) vivem no covil neandertal. Eles têm 3m de altura e são de uma raça relacionada, mas distinta.</li>
+<li><strong>Animosidade racial</strong>: Ataque ogros à vista. Odeia goblins e kobolds.</li>
+<li>** Animais de estimação **: Às vezes, gorilas brancos são encontrados como animais de estimação (veja Gorila Branco).</li>
+</ul>
+<h2 id="nixie"><a class="header" href="#nixie">Nixie</a></h2>
+<p>_ Duendes de 1m de altura que aparecem como mulheres atraentes com pele azulada, esverdeada ou acinzentada. Seu covil fica nas partes mais profundas de rios e lagos._
+<strong>Classe de Armadura</strong>: 7 [12]
+<strong>Dados de Vida</strong>: 1 (4pv)
+<strong>Ataques</strong>: 1 × arma (1d4) ou 1 × feitiço de grupo (enfeitiçar)
+<strong>TAC0</strong>: 19 [0]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P13 S15 F15 (E1)
+<strong>Moral</strong>:  6
+<strong>Tendência</strong>: Neutro
+<strong>XP</strong>: 10
+<strong>Número Encontrado</strong>: 0 (2d20)
+<strong>Tesouro</strong>: B</p>
+<ul>
+<li><strong>Reservado</strong>: Tentará encantar intrusos, em vez de entrar em combate.</li>
+<li><strong>Armas</strong>: Adagas e pequenos tridentes (como lanças).</li>
+<li><strong>Enfeitiçar</strong>: 10 nixies juntos podem lançar um feitiço para encantar uma vítima para servi-los por um ano. Salve contra feitiços ou seja enfeitiçado: mova-se em direção aos nixies (resistindo àqueles que tentam impedi-lo); deve defender os nixies; obedecer aos comandos dos nixies (se compreendidos); incapaz de lançar feitiços ou usar itens mágicos; incapaz de prejudicar os nixies. Matar os nixies quebra o charme.</li>
+<li><strong>Convocar robalo gigante</strong>: Cada Nixie pode convocar um peixe para ajudar no combate (Robalo Gigante).</li>
+<li>** Concede respiração aquática**: Pode ser lançado em escravos enfeitiçados. Dura um dia, depois deve ser atualizado.</li>
+</ul>
+<h2 id="nobre"><a class="header" href="#nobre">Nobre</a></h2>
+<p>_ Humanos poderosos com títulos nobres (por exemplo, Conde, Duque, Cavaleiro, etc.). Vivem em castelos._
+<strong>Classe de Armadura</strong>: 2 [17]
+<strong>Dados de Vida</strong>: 3 (13pv)
+<strong>Ataques</strong>: 1 × arma (1d8 ou por arma)
+<strong>TAC0</strong>: 17 [+2]
+<strong>Movimento</strong>: 18m (6m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Qualquer
+<strong>XP</strong>: 35
+<strong>Número Encontrado</strong>: 2d6 (2d6)
+<strong>Tesouro</strong>: V × 3</p>
+<ul>
+<li><strong>Classe</strong>: Geralmente tratados como guerreiros de 3º nível, mas podem ser de qualquer classe e nível.</li>
+<li>** Escudeiro e lacaios **: Acompanhados por um guerreiro de 2º nível (um escudeiro) e até dez guerreiros de 1º nível (lacaios).</li>
+</ul>
+<h2 id="nômade"><a class="header" href="#nômade">Nômade</a></h2>
+<p>_ Tribos supersticiosas que vagam pelas estepes e regiões desérticas, vivendo em tendas ou cabanas temporárias. O comportamento depende da tribo: alguns são guerreiros, outros pacíficos._
+<strong>Classe de Armadura</strong>: 7 [12] até 4 [15]
+<strong>Dados de Vida</strong>: 1 (4pv)
+<strong>Ataques</strong>: 1 × arma (1d6 ou por arma)
+<strong>TAC0</strong>: 19 [0]
+<strong>Movimento</strong>: 36m (12m)
+<strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)
+<strong>Moral</strong>:  8
+<strong>Tendência</strong>: Qualquer
+<strong>XP</strong>: 10
+<strong>Número Encontrado</strong>: 0 (1d4 × 10)
+<strong>Tesouro</strong>: A</p>
+<ul>
+<li>** Montado **: Em cavalos ou (no deserto) em camelos.</li>
+<li>** Armas (deserto) **: 50% do grupo possui: armadura de couro, escudo, lança; 30% possuem: cota de malha, escudo, lança; 20% têm: armadura de couro, arco curto.</li>
+<li>** Armas (estepes) **: 50% do grupo possui: armadura de couro, arco curto; 20% possuem: armadura de couro, escudo, lança; 20% possuem: cota de malha, arco curto; 10% têm: cota de malha, escudo, lança e pode estar montado em um cavalo de guerra.</li>
+<li>** Líderes **: Para cada 25 nômades, há um guerreiro de 2º nível. Para cada 40 nômades, há um guerreiro de 4º nível.</li>
+<li>** Acampamentos **: Grupos de caça / forrageamento geralmente se combinam e vivem em uma tribo de até 300 guerreiros nômades.</li>
+<li>** Líderes do acampamento **: chefe tribal (guerreiro de 8º nível), mais um guerreiro de 5º nível para cada 100 nômades. 50% de chance de um clérigo (9º nível); 25% de chance de um usuário de magia (8º nível).</li>
+<li>** Tesouro **: Só tenha tesouro tipo A no acampamento.</li>
+<li>**Comerciantes **: Muitas vezes carregam histórias de rotas comerciais de terras distantes.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../6-monstros/2-descricao-monstros/03-lista-G-K.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../6-monstros/2-descricao-monstros/05-lista-O-S.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../6-monstros/2-descricao-monstros/03-lista-G-K.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../6-monstros/2-descricao-monstros/05-lista-O-S.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../mark-09e88c2c.min.js"></script>
+        <script src="../../searcher-c2a407aa.js"></script>
+
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,132 @@
+# Dicionário de Termos ❌
+
+**Ability Scores**: Atributos
+
+**Adventurers, Basic**: Aventureiros Iniciantes
+
+**Adventurers, Experts**: Aventureiros Experientes
+
+**Alignment**: Alinhamento
+
+**Armour Class**: Classe de Armadura
+
+**Ascending AC**: CA Ascendente
+
+**Caster**: Conjurador
+
+**Characters**: Personagens
+
+**Checks, Damage and Saves**: Testes, Dano e Resistência
+
+**City**: Cidade
+
+**Class Abilities**: Habilidades de Classe
+
+**Class(es)**: Classe(s)
+
+- **Cleric**: Clérigo
+
+- **Dwarf**: Anão
+
+- **Elf**: Elfo
+
+- **Figther**: Guerreiro
+
+- **Halfling**: Halfling
+
+- **Magic-User**: Mago
+
+- **Thief**: Ladrão
+
+**Demihuman**: Semi-humano
+
+**Dungeon Adventuring**: Aventuras em Masmorras
+
+**Hamlet**: Aldeia
+
+**Hirelings**: Empregados
+
+**Hit Dice**: Dado de Vida
+
+**Level**: Nível
+
+**Movement Rate**: Taxa de Movimentação
+
+**PC / NPC**: PJ / PNJ
+
+**Prime Requisite**: Requisito Primário
+
+**Race**: Raça
+
+**Referee**: Árbitro
+
+**Retainer**: Seguidor
+
+**Saving Throw**: Teste de Resistência
+
+**Spell Caster**: Conjurador
+
+**Spells / Rods / Staves**: Magias / Bastões / Cajados
+
+**Sub-Table**: Subtabela
+
+**Terrain Type**: Tipo de Terreno
+
+* **Barren, Hills, Mountains**: Semiárido, Colinas, Montanhas
+* **Clear, Grasslands**: Campo, Prados
+* **City, Desert**: Cidade, Deserto
+* **Forest, Jungle**: Floresta, Selva
+* **Lake, River, Ocean, Sea**: Lago, Rio, Oceano, Mar
+* **Settled, Swamp**: Povoado, Pântano
+
+**Town**: Vila
+
+**Undead**: Morto-vivo
+
+**Village**: Vilarejo
+
+**Wilderness Adventuring**: Aventuras nos Ermos
+
+### Monstros
+* **Driver Ant**: Formiga Gigante
+
+> **Driver Ant** em inglês também é sinônimo para *army ant*, traduzido literalmente como [formiga-correição](https://pt.wikipedia.org/wiki/Formiga-correi%C3%A7%C3%A3o), mas gigante fica melhor, é o que ela é de fato)
+
+* **Berserker**: Furioso
+* **Blink Dog**: Cão Teleportador
+* **Crab**: Caranguejo
+* **Dervish**: Fanático
+* **Devil Swine**: Porco Diabólico
+* **Ghoul**: Carniçal
+* **Giant Bass**: Perca Gigante
+* **Giant Catfish**: Peixe-gato Gigante
+* **Giant Piranha**: Piranha Gigante
+* **Giant Rockfish**: Peixe-pedra Gigante
+* **Giant Sturgeon**: Esturjão Gigante
+* **Lizard, Gecko**: Lagarto, Lagartixa
+* **Merchant**: Mercador
+* **Mountain Lion**: Onça-parda
+> Sinônimos em inglês: *cougar, puma, catamount, panther*; em português: puma e suçuarana.
+* **Shrew, Giant**: Musaranho Gigante
+* **Snake, Giant Rattler**: Cobra, Cascavel Gigante
+* **Snake, Pit Viper**: Cobra, Víbora
+* **Snake, Rock Python**: Cobra, Píton
+* **Snake, Spitting Cobra**: Cobra, Naja
+* **Spider, Black Widow**: Aranha, Viúva Negra
+* **Spider, Crab**: Aranha-caranguejo
+> Especificamente a aranha-caranguejo-das-flores (*misumena vatia*), porque é a única aranha do tipo caranguejo que muda de cor, e a descrição do monstro diz que ela tem essa habilidade.
+* **Spider, Tarantella**: Aranha, Tarantela
+> Não existe aranha Tarantella, que é uma dança folclórica italiana. A "dança da aranha" é da cidade de Taranto, cidade esta que dá nome à aranha tarântula. Tarântula e Caranguejeira são sinônimos, a primeira grafia é usada em Portugal, a segunda no Brasil.
+* **Termite, Water**: Cupim Aquático
+* **Titanothere**: Brontotério
+* **Trader**: Comerciante
+* **Treant**: Ente
+* **Warp Beast**: Pantera Deslocadora
+* **Werebear**: Homem-urso
+* **Wereboar**: Homem-javali
+* **Wererat**: Homem-rato
+* **Weretiger**: Homem-tigre
+* **Werewolf**: Lobisomem
+* **Wight**: Vulto
+* **Wolf, Dire**: Lobo Atroz
+* **Wraith**: Aparição

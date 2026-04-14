@@ -8,6 +8,8 @@ src = "content"
 default-theme = "rust"
 preferred-dark-theme = "rust"
 mathjax-support = true
+fold = { enable = true, level = 0 }
+additional-css = ["custom.css"]
 
 [build]
 build-dir = "docs"

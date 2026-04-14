@@ -1,0 +1,940 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Lista Monstros D-F - Old School Essentials SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../custom-efc8afdc.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../../searchindex-117446f6.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc-950846f6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Old School Essentials SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="lista-monstros-d-f"><a class="header" href="#lista-monstros-d-f">Lista Monstros D-F</a></h1>
+<h2 id="doninha-gigante"><a class="header" href="#doninha-gigante">Doninha Gigante</a></h2>
+<p><em>Mamíferos predadores e astuciosos, com 2,4 m a 2,7 m de comprimento e pele marrom, dourada ou branca. Habitam túneis subterrâneos e caçam em pequenos grupos.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 4+4 (22 pv)</p>
+<p><strong>Ataques</strong>: 1 × mordida (2d4 + sugar sangue)</p>
+<p><strong>TAC0</strong>: 15 [+4]</p>
+<p><strong>Movimento</strong>: 150’ (50’)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 125</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d6)</p>
+<p><strong>Tesouro</strong>: V</p>
+<ul>
+<li><strong>Infravisão</strong>: 9 m.</li>
+<li><strong>Sugador de sangue</strong>: depois de um ataque bem sucedido, se prende a vítima e drena seu sangue: 2d4 de dano automático por rodada.</li>
+<li><strong>Desprender</strong>: Se a doninha ou a vítima morrerem.</li>
+<li><strong>Rastrear</strong>: Por faro, favorecendo presas feridas.</li>
+<li><strong>Tesouro</strong>: Encontrado no covil nos corpos das vítimas.</li>
+</ul>
+<hr>
+<h2 id="duplo"><a class="header" href="#duplo">Duplo</a></h2>
+<p><em>Transmorfo de tamanho humano e inteligente, de caráter fraco e natureza altamente mágica.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 4* (18 pv)</p>
+<p><strong>Ataques</strong>: 1 × mordida (1d12)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 90’ (30’)</p>
+<p><strong>Testes de Resistência</strong>: M6 V7 P8 S8 F10 (10)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 125</p>
+<p><strong>Número Encontrado</strong>: 1d6 (1d6)</p>
+<p><strong>Tesouro</strong>: E</p>
+<ul>
+<li><strong>Ladrão de formas</strong>: Pode adotar a forma de uma criatura humanoide (2,1 m ou menos) observada. Então ataca a pessoa copiada.</li>
+<li><strong>Traiçoeiro</strong>: Tentará matar o PJ, tomar sua posição, e atacar o grupo surpreendendo (exemplo, durante uma batalha).</li>
+<li><strong>Reversão</strong>: Se morto, reverterá a sua forma original.</li>
+<li><strong>Imunidade a magia</strong>: Não afetado por magias de sono e de encantamento.</li>
+</ul>
+<hr>
+<h2 id="dragão"><a class="header" href="#dragão">Dragão</a></h2>
+<p><em>Uma raça antiga de répteis alados gigantes e carnívoros. Existem muitas subespécies de dragões, muitas das quais são distinguidas pela cor de suas escamas. Todos os dragões são ovíparos e acumulam tesouros em seus covis, longe das áreas de civilização humana.</em></p>
+<ul>
+<li><strong>Comportamento</strong>: Dragões caóticos normalmente tentar comer humanos, mas algumas vezes podem capturá-los. Dragões neutros podem atacá-los ou ignorá-los. Dragões leais podem ajudar grupos dignos de honra.</li>
+<li><strong>Orgulho</strong>: Dragões são criaturas imensamente orgulhosas e sempre ouvirão lisonjas.</li>
+<li><strong>Padrão de ataque</strong>: Um dragão sempre ataca primeiro com a sua baforada, então soprará novamente ou fará ataques corpo a corpo (chances iguais para cada).</li>
+<li><strong>Baforada</strong>: Pode ser usada até três vezes por dia. Todos pegos na área sofrem dano igual aos pontos de vida atuais do dragão (resistência contra ataque se sopro para metade do dano).
+Formatos do ataque de sopro:
+<ul>
+<li><strong>Nuvem</strong>: 15 m comprimento, 12 m de largura, 6 m de altura.</li>
+<li><strong>Cone</strong>: 60 cm de largura na boca, 9 m de comprimento no final.</li>
+<li><strong>Linha</strong>: 1,5 m de largura por todo o comprimento.</li>
+</ul>
+</li>
+<li><strong>Imunidade a energia</strong>: Não são afetados por sua própria baforada ou versões menos potentes dela. Passam automaticamente em resistências contra formas de ataques similares. (Por exemplo, um dragão vermelho é imune ao fogo por óleo e sofrem metade do dano de magias de bola de fogo.)</li>
+<li><strong>Idiomas e magias</strong>: Alguns dragões são capazes de falar (seu próprio idioma e Comum). A chance é listada por subespécie. Aqueles que podem falar também podem conjurar magias de usuários de magia selecionadas aleatoriamente (o número listado e o nível das magias)</li>
+<li><strong>Adormecido</strong>: A chance de que um dragão esteja adormecido quando encontrado no solo é listado pela subespécie. Um dragão adormecido por ser atacado por uma rodada com um bônus de +2 para acertar. Dragões podem fingir que estão adormecidos!</li>
+<li><strong>Subjugado</strong>: Se renderão se reduzidos a 0 pontos de vida por ataques não letais (veja Subjugando, em Outros Problemas de Combate), admitindo que foram derrotados. (dano não letal não reduz o dano provocado pela baforada). Um dragão subjugado tentará escapar ou atacar seus captores, se a oportunidade surgir ou se lhes for dado um comando suicida. Um dragão subjugado pode ser vendido por até 1.000 po por ponto de vida.</li>
+<li><strong>Idade</strong>: As estatísticas seguintes descrevem dragões de tamanho normal. Dragões mais jovens podem ter até 3 DV a menos e 1/4 ou 1/2 do tesouro. Dragões mais velhos podem ter até 3 DV a mais e duas vezes mais tesouros.</li>
+<li><strong>Covis</strong>: O tesouro de um dragão é sempre mantido em um covil escondido e raramente desprotegido.</li>
+</ul>
+<h3 id="dragão-negro"><a class="header" href="#dragão-negro">Dragão Negro</a></h3>
+<p><em>Habitam pântanos e charcos.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 7** (31 pv)</p>
+<p><strong>Ataques</strong>: [2 × garras (1d4 + 1), 1 × mordida (2d10)] ou baforada</p>
+<p><strong>TAC0</strong>: 13 [+6]</p>
+<p><strong>Movimento</strong>: 90’ (30’) / 240’ (80’) voando</p>
+<p><strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (7)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Chaotic</p>
+<p><strong>XP</strong>: 1.250</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><strong>Baforada</strong>: Linha de ácido de 18 m de comprimento.</li>
+<li><strong>Idiomas e magias</strong>: 20%; 4 × 1° nível.</li>
+<li><strong>Adormecido</strong>: 40%.</li>
+</ul>
+<h3 id="dragão-azul"><a class="header" href="#dragão-azul">Dragão Azul</a></h3>
+<p><em>Preferem planícies abertas e desertos.</em></p>
+<p><strong>Classe de Armadura</strong>: 0 [19]</p>
+<p><strong>Dados de Vida</strong>: 9** (40 pv)</p>
+<p><strong>Ataques</strong>: [2 × garras (1d6 + 1), 1 × mordida (3d10)] ou baforada</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 90’ (30’) / 240’ (80’) voando</p>
+<p><strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (9)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutral</p>
+<p><strong>XP</strong>: 2.300</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><strong>Baforada</strong>: Linha de relâmpago com 30 m de comprimento.</li>
+<li><strong>Idiomas e Magias</strong>: 40%; 4 × 1° nível, 4 × 2° nível.</li>
+<li><strong>Adormecido</strong>: 20%.</li>
+</ul>
+<h3 id="dragão-dourado"><a class="header" href="#dragão-dourado">Dragão Dourado</a></h3>
+<p><em>Pode ser encontrado em qualquer terreno, frequentemente disfarçado como uma pessoa ou animal.</em></p>
+<p><strong>Classe de Armadura</strong>: –2 [21]</p>
+<p><strong>Dados de Vida</strong>: 11** (49 pv)</p>
+<p><strong>Ataques</strong>: [2 × garras (2d4), 1 × mordida (6d6)] ou baforada</p>
+<p><strong>TAC0</strong>: 11 [+8]</p>
+<p><strong>Movimento</strong>: 90’ (30’) / 240’ (80’) voando</p>
+<p><strong>Testes de Resistência</strong>: M6 V7 P8 S8 F10 (11)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Leal</p>
+<p><strong>XP</strong>: 2.700</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><strong>Baforada</strong>: Cone de fogo de 27 m de comprimento ou nuvem de gás cloro.</li>
+<li><strong>Idiomas e Magias</strong>: 100%; 4 × 1° nível, 4 × 2° nível, 4 × 3° nível.</li>
+<li><strong>Adormecido</strong>: 5%.</li>
+<li><strong>Mudança de forma</strong>: Pode tomar a forma de uma pessoa ou animal.</li>
+</ul>
+<h3 id="dragão-verde"><a class="header" href="#dragão-verde">Dragão Verde</a></h3>
+<p><em>Faz seus covis em selvas e florestas.</em></p>
+<p><strong>Classe de Armadura</strong>: 1 [18]</p>
+<p><strong>Dados de Vida</strong>: 8** (36 pv)</p>
+<p><strong>Ataques</strong>: [2 × garras (1d6), 1 × mordida (3d8)] ou baforada</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 90’ (30’) / 240’ (80’) voando</p>
+<p><strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (8)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 1.750</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><em>Baforada</em>: Nuvem de gás cloro.</li>
+<li><em>Idiomas e Magias</em>: 30%; 3 × 1° nível, 3 × 2° nível.</li>
+<li><em>Adormecido</em>: 30%.</li>
+</ul>
+<h3 id="dragão-vermelho"><a class="header" href="#dragão-vermelho">Dragão Vermelho</a></h3>
+<p><em>Habitam colinas e montanhas.</em></p>
+<p><strong>Classe de Armadura</strong>: –1 [20]</p>
+<p><strong>Dados de Vida</strong>: 10** (45 pv)</p>
+<p><strong>Ataques</strong>: [2 × garras (1d8), 1 × mordida (4d8)] ou baforada</p>
+<p><strong>TAC0</strong>: 11 [+8]</p>
+<p><strong>Movimento</strong>: 90’ (30’) / 240’ (80’) voando</p>
+<p><strong>Testes de Resistência</strong>: M6 V7 P8 S8 F10 (10)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 2.300</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><strong>Baforada</strong>: Cone de fogo de 27 m de comprimento.</li>
+<li><strong>Idiomas e Magias</strong>: 50%; 3 × 1° nível, 3 × 2° nível, 3 × 3° nível.</li>
+<li><strong>Sleeping</strong>: 10%.</li>
+</ul>
+<h3 id="dragão-marinho"><a class="header" href="#dragão-marinho">Dragão Marinho</a></h3>
+<p><em>Dragões aquáticos e inteligentes com escamas verdes, asas similares a nadadeiras e uma crista amarelada. Habitam as profundezas dos oceanos, vivendo em cavernas ou navios naufragados. Algumas vezes atacam embarcações para roubar seus tesouros e comer a tripulação.</em></p>
+<p><strong>Classe de Armadura</strong>: 1 [18]</p>
+<p><strong>Dados de Vida</strong>: 8** (36 pv)</p>
+<p><strong>Ataques</strong>: 1 × mordida (3d8) ou baforada</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 54 (18) nadando / 54 (18) planando</p>
+<p><strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (8)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutral</p>
+<p><strong>XP</strong>: 1.750</p>
+<p><strong>Número Encontrado</strong>: 0 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><strong>Baforada</strong>: Saliva venenosa, 30 m de alcance e 6 m de diâmetro. Resistência contra Ataque de sopro ou morte. (o veneno é inofensivo após 1 rodada)</li>
+<li><strong>Idiomas e Magias</strong>: 20%; 3 × 1° nível, 3 × 2° nível.</li>
+<li><strong>Adormecido</strong>: 30%.</li>
+<li><strong>Planar</strong>: Salta da água e plana por até 6 rodadas.</li>
+</ul>
+<h3 id="dragão-branco"><a class="header" href="#dragão-branco">Dragão Branco</a></h3>
+<p><em>Encontrado em regiões frias.</em></p>
+<p><strong>Classe de Armadura</strong>: 3 [16]</p>
+<p><strong>Dados de Vida</strong>: 6** (27 pv)</p>
+<p><strong>Ataques</strong>: [2 × garras (1d4), 1 × mordida (2d8)] ou baforada</p>
+<p><strong>TAC0</strong>: 14 [+5]</p>
+<p><strong>Movimento</strong>: 27 (9) / 72 (24) voando</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (6)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 725</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: H</p>
+<ul>
+<li><strong>Baforada</strong>: Cone de frio de 24 m de comprimento.</li>
+<li><strong>Idiomas e Magias</strong>: 10%; 3 × 1° nível.</li>
+<li><strong>Adormecido</strong>: 50%.</li>
+</ul>
+<hr>
+<h2 id="dríade"><a class="header" href="#dríade">Dríade</a></h2>
+<p><em>Espíritos das árvores tímidos, pacíficos e desconfiados, que podem se manifestar como lindas humanoides femininas. Vivem nas profundezas das florestas.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 2* (9 pv)</p>
+<p><strong>Ataques</strong>: 1 × magia (encantar)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 36 (12)</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (4)</p>
+<p><strong>Moral</strong>: 6</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 25</p>
+<p><strong>Número Encontrado</strong>: 0 (1d6)</p>
+<p><strong>Tesouro</strong>: D</p>
+<ul>
+<li><strong>Ligação com árvores</strong>: São espiritualmente conectadas a uma única árvore. A Dríade morre se a árvore morrer, ou se ficar a mais de 72 m de distância.</li>
+<li><strong>Fundir-se a árvores</strong>: Pode desaparecer juntando-se a sua árvore.</li>
+<li><strong>Defensiva</strong>: Desconfia de estranhos. Tentará encantar qualquer um que se aproxime ou a siga.</li>
+<li><strong>Encantar</strong>: Vítimas compelidas a aproximar-se da árvore, desaparecem dentro dela (resistência contra magia com -2 de penalidade). Se não for imediatamente resgatada, a vítima desaparece para sempre.</li>
+<li><strong>Tesouro</strong>: Escondido nas raízes da árvore.</li>
+</ul>
+<hr>
+<h2 id="efreeti-menor"><a class="header" href="#efreeti-menor">Efreeti (Menor)</a></h2>
+<p><em>Criaturas inteligentes, altamente mágicas e com livre arbítrio do plano elemental do fogo. Se manifestam como homens gigantes de face demoníaca em uma aura de calor e fumaça. Solidificam-se a partir de nuvens de fumaça crescentes.</em></p>
+<p><strong>Classe de Armadura</strong>: 3 [16]</p>
+<p><strong>Dados de Vida</strong>: 10* (45pv)</p>
+<p><strong>Ataques</strong>: 1 × punhos (2d8), magia</p>
+<p><strong>TAC0</strong>: 11 [+8]</p>
+<p><strong>Movimento</strong>: 27 (9) / 72 (24) voando</p>
+<p><strong>Testes de Resistência</strong>: M4 V5 P6 S5 F8 (15)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 1,600</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridos por ataques mágicos.</li>
+<li><strong>Poderes mágicos</strong>: Cada um deles pode ser usado três vezes por dia:
+<ul>
+<li><strong>Pila de fogo</strong>: Se transforma em uma coluna de fogo por até 3 rodadas. Itens inflamáveis dentro de até 1,5 m se incendeiam. Ataques causam 1d8 pontos de dano adicionais (total de 3d8).</li>
+<li><strong>Invisibilidade</strong></li>
+<li><strong>Ilusão</strong>: Visual e auditiva. Sem concentração requerida. Permanece até ser dissipada.</li>
+<li><strong>Criar muro de fogo</strong></li>
+<li><strong>Criar comida e bebida</strong>: Para até 12 humanos e montarias por um dia.</li>
+<li><strong>Conjurar objetos metálicos</strong>: Até 1.000 moedas em peso. Temporário: a dureza determina a duração (ouro: 1 dia; ferro: 1 rodada).</li>
+</ul>
+</li>
+<li><strong>Conjurar bens maleáveis/ objetos de madeira</strong>: Até 1.000 moedas em peso. Permanente.</li>
+<li><strong>Capacidade de carga</strong>: Até 10,000 moedas em peso (voando).</li>
+<li><strong>Odeiam djinn</strong>: Atacam imediatamente.</li>
+<li><strong>Invocar servo</strong>: Magias de invocação de Efreetis podem ser pesquisadas por usuários de magia de alto nível. Eles podem ser obrigados a servir por 101 dias. Efreeti são traiçoeiros e seguirão comandos à risca enquanto subvertem a intenção.</li>
+</ul>
+<hr>
+<h2 id="elefante"><a class="header" href="#elefante">Elefante</a></h2>
+<p><em>Imensos animais com presas, que vivem perto de florestas tropicais. É possível encontrar indivíduos errantes ou rebanhos inteiros.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 9 (40pv)</p>
+<p><strong>Ataques</strong>: 2 × presas (2d4) ou 1 × atroplear (4d8)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 36 (12</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (5)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 900</p>
+<p><strong>Número Encontrado</strong>: 0 (1d20)</p>
+<p><strong>Tesouro</strong>: Presas</p>
+<ul>
+<li><strong>Carga</strong>: Na primeira rodada de combate, ainda não em corpo a corpo,. Requer uma corrida livre de pelo menos 20 metros. As presas infligem o dobro do dano.</li>
+<li><strong>Atropelar</strong>: 3 em 4 chances de atropelar a cada rodada. +4 para acertar criaturas de tamanho humano ou menores.</li>
+<li><strong>Marfim</strong>: Cada presa vale 1d6 × 100 po</li>
+</ul>
+<hr>
+<h2 id="elemental"><a class="header" href="#elemental">Elemental</a></h2>
+<p><em>Criaturas formadas de pura matéria elemental (ar, terra, fogo ou água), que podem ser invocados de seus planos de origem para servir usuários de magia.</em></p>
+<ul>
+<li><strong>Menores</strong>: CA 2 [17], DV 8*, Atq 1 × pancada (1d8), SV D8 W9 P10 B10 S12 (8). (Invocado por cajado mágico.)</li>
+<li><strong>Intermediários</strong>: CA 0 [19], DV 12*, Atq 1 × pancada (2d8), SV D6 W7 P8 B8 S10 (12). (Invocado por mecanismo mágico.)</li>
+<li><strong>Maiores</strong>: CA –2 [21], DV 16*, Atq 1 × pancada (3d8), SV D2 W3 P4 B3 S6 (16). (Invocado por magia.)</li>
+</ul>
+<h3 id="elemental-do-ar"><a class="header" href="#elemental-do-ar">Elemental do Ar</a></h3>
+<p><em>Imensos vórtices de ar rodopiante.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17] / 0 [19] / –2 [21]</p>
+<p><strong>Dados de Vida</strong>: 8/12/16* (36/54/72pv)</p>
+<p><strong>Ataques</strong>: 1 × pancada (1d8/2d8/3d8)</p>
+<p><strong>TAC0</strong>: 12 [+7] / 10 [+9] / 8 [+11]</p>
+<p><strong>Movimento</strong>: 108 (36) voando</p>
+<p><strong>Testes de Resistência</strong>: Ver descrição principal (8/12/16)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 1,200/1,900/2,300</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Tamanho</strong>: 4,8 m de altura, 1,2 m de diâmetro / 7,2 m de altura, 1,8 m de diâmetro / 9,6 m de altura, 2,4 m de diâmetro.</li>
+<li><strong>Redemoinho</strong>: Criaturas com menos de 2 DV são arrastadas para o lado (resistência contra morte).</li>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridas por ataques mágicos.</li>
+<li><strong>Afetam criaturas no ar</strong>: Infligem 1d8 pontos de dano extra.</li>
+</ul>
+<h3 id="elemental-da-terra"><a class="header" href="#elemental-da-terra">Elemental da Terra</a></h3>
+<p><em>Enormes figuras humanoides de terra e pedra.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17] / 0 [19] / –2 [21]</p>
+<p><strong>Dados de Vida</strong>: 8/12/16* (36/54/72pv)</p>
+<p><strong>Ataques</strong>: 1 × pancada (1d8/2d8/3d8)</p>
+<p><strong>TAC0</strong>: 12 [+7] / 10 [+9] / 8 [+11]</p>
+<p><strong>Movimento</strong>: 18 (6)</p>
+<p><strong>Testes de Resistência</strong>: Ver descrição principal (8/12/16)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 1.200/1.900/2.300</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Size</strong>: 2,4 m de altura / 3,6 m de altura / 4,8 m de altura.</li>
+<li><strong>Bloqueado por água</strong>: Não podem cruzar um canal maior do que sua altura.</li>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridos por armas mágicas.</li>
+<li><strong>Afetam criaturas no solo</strong>: Infligem 1d8 pontos de dano extra.</li>
+</ul>
+<h3 id="elemental-do-fogo"><a class="header" href="#elemental-do-fogo">Elemental do Fogo</a></h3>
+<p><em>Colunas rodopiantes de fogo</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17] / 0 [19] / –2 [21]</p>
+<p><strong>Dados de Vida</strong>: 8/12/16* (36/54/72pv)</p>
+<p><strong>Ataques</strong>: 1 × pancada (1d8/2d8/3d8)</p>
+<p><strong>TAC0</strong>: 12 [+7] / 10 [+9] / 8 [+11]</p>
+<p><strong>Movimento</strong>: 36 (12)</p>
+<p><strong>Testes de Resistência</strong>: Ver descrição principal (8/12/16)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 1.200/1.900/2.300</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Size</strong>: 2,4 m de altura, 2,4 m de diâmetro / 3,6 m de altura e 3,6 m de diâmetro / 4,8 m de altura, 4,8 m de diâmetr.</li>
+<li><strong>Bloqueado pela água</strong>: Não pode cruzar um canal mais largo do que seu diâmetro.</li>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridos por armas mágicas.</li>
+<li><strong>Afetam criaturas baseadas em frio</strong>: Infligem 1d8 pontos de dano extras.</li>
+</ul>
+<h3 id="elemental-da-água"><a class="header" href="#elemental-da-água">Elemental da Água</a></h3>
+<p><em>Enormes ondas de água.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17] / 0 [19] / –2 [21]</p>
+<p><strong>Dados de Vida</strong>: 8/12/16* (36/54/72pv)</p>
+<p><strong>Ataques</strong>: 1 × pancada (1d8/2d8/3d8)</p>
+<p><strong>TAC0</strong>: 12 [+7] / 10 [+9] / 8 [+11]</p>
+<p><strong>Movimento</strong>: 18 (6) / 54 (18) nadando</p>
+<p><strong>Testes de Resistência</strong>: Ver descrição principal (8/12/16)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 1.200/1.900/2.300</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Tamanho</strong>: 1,2 m de altura, 4,8 m de diâmetro/ 1,8 m de altura, 7,2 m de diâmetro / 2,4 m de altura, 9,6 m de diâmetro.</li>
+<li><strong>Ligado à água</strong>: Deve permanecer a até 18 m da água.</li>
+<li><strong>Imunidade a dano mundano</strong>: Só pode ser ameaçado por ataques mágicos.</li>
+<li><strong>Afetam criaturas na água</strong>: Infligindo 1d8 de dano extra.</li>
+</ul>
+<hr>
+<h2 id="elfo"><a class="header" href="#elfo">Elfo</a></h2>
+<p><em>Humanoides feéricos e magros com orelhas pontiagudas. Vivem em harmonia com a natureza, em ambientes bonitos e naturais.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 1+1* (5pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d8 ou por arma)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 36 (12)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P13 S15 F15 (E1)</p>
+<p><strong>Moral</strong>: 8 (10 com líder)</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 19</p>
+<p><strong>Número Encontrado</strong>: 1d4 (2d12)</p>
+<p><strong>Tesouro</strong>: E</p>
+<ul>
+<li><strong>Magias</strong>: Cada indivíduo tem uma magia arcana aleatória de 1° nível.</li>
+<li><strong>Líder</strong>: Grupos com 15+ são liderados por um elfo de nível 1d6 + 1. O líder pode ter itens mágicos: 5% de chance por nível para cada item mágico na tabela (ver Itens Mágicos).</li>
+</ul>
+<hr>
+<h2 id="ente"><a class="header" href="#ente">Ente</a></h2>
+<p><em>Gigantes humanoides (5,4 m) que se assemelham a árvores. Vivem nas florestas. Se preocupam apenas em proteger as plantas de seus lares. Falam apenas seu idioma prolixo e sinuoso.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 8 (36pv)</p>
+<p><strong>Ataques</strong>: 2 × punhos (2d6)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 18 (6)</p>
+<p><strong>Testes de Resistência</strong>: M8 V9 P10 S10 F12 (8)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Leal</p>
+<p><strong>XP</strong>: 650</p>
+<p><strong>Número Encontrado</strong>: 0 (1d8)</p>
+<p><strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Desconfiam do fogo</strong>: e de todos que o portam.</li>
+<li><strong>Surpreender</strong>: Em 1–3, na floresta, devido a serem confundidos com árvores. Encontros acontecem a 30 metros ou menos.</li>
+<li><strong>Animar árvores</strong>: Cada indivíduo pode animar 2 árvores (até 18 m; podem trocar as árvores a vontade). Estas lutam como entes com taxa de movimento 9 (3).</li>
+</ul>
+<hr>
+<h2 id="enxame-de-insetos"><a class="header" href="#enxame-de-insetos">Enxame de Insetos</a></h2>
+<p><em>Enxame de muitos pequenos insetos que podem ser encontrados protegendo seu ninho. Podem ser atraídos pela luz ou odores incomuns.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 2 to 4 (9/13/18pv)</p>
+<p><strong>Ataques</strong>: 1 × enxame (2 ou 4pv)</p>
+<p><strong>TAC0</strong>: 18 [+1]/17 [+2]/16 [+3]</p>
+<p><strong>Movimento</strong>: 9 (3) / 18 (6) voando</p>
+<p><strong>Testes de Resistência</strong>: M14 V15 P16 S17 F18 (NH)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 20/35/75</p>
+<p><strong>Número Encontrado</strong>: 1 (1d3)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Tipo e locomoção</strong>: Um enxame pode ser composto por rastejadores (exemplo, aranhas, formigas, centopeias) ou voadores (exemplo abelas, vespas). Alguns enxames são capazes de ambos os tipos de movimento (exemplo escaravelhos, gafanhotos).</li>
+<li><strong>Tamanho</strong>: área de 3 × 9 metros, normalmente.</li>
+<li><strong>Imunidade</strong>: Só são ameaçados por fogo, frio extremo, magias de sono (afetam o enxame inteiro), fumaça (afasta), ou outros ataques que o árbitro deseje.</li>
+<li><strong>Ataque do enxame</strong>: Casa dano automático a personagens dentro da área do enxame; 2 pv se estiverem usando armaduras, 4 se não.</li>
+<li><strong>Protegendo-se</strong>: Personagens dentro do enxame que estejam se defendendo brandindo uma arma (ou similar) sofrem metade do dano do enxame. Brandir uma tocha causa dano ao enxame.</li>
+<li><strong>Escapando</strong>: Ao sair da área do enxame, os personagens continuam a sofrer metade do dano até que 3 rodadas sejam gastas esmagando os insetos presos ao personagem.</li>
+<li><strong>Mergulhar na água</strong>: Sofrem dano por uma rodada, então os insetos presos ao personagem se afogam.</li>
+<li><strong>Perseguir</strong>: Um enxame furioso (que tenha recebido dano) irá perseguir os personagens até que eles estejam fora de vista ou inacessíveis.</li>
+</ul>
+<hr>
+<h2 id="escorpião-gigante"><a class="header" href="#escorpião-gigante">Escorpião Gigante</a></h2>
+<p><em>Aracnídeos enormes, tão grandes quanto um cavalo, com pinças e ferrão mortal. Habitam em cavernas, ruínas e desertos.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 4* (18pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d10), 1 × ferrão (1d4 + veneno)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 45 (15)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 125</p>
+<p><strong>Número Encontrado</strong>: 1d6 (1d6)</p>
+<p><strong>Tesouro</strong>: V</p>
+<ul>
+<li><strong>Agressivo</strong>: Normalmente ataca imediatamente.</li>
+<li><strong>Veneno</strong>: Provoca morte (resistência contra veneno).</li>
+<li><strong>Segurar e ferroar</strong>: +2 bonus para ataque com ferrão se as garras acertarem.</li>
+</ul>
+<hr>
+<h2 id="espectro"><a class="header" href="#espectro">Espectro</a></h2>
+<p><em>Fantasmas incorpóreos; um dos mais poderosos monstros mortos-vivos.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 6** (27pv)</p>
+<p><strong>Ataques</strong>: 1 × toque (1d8 + dreno de energia)</p>
+<p><strong>TAC0</strong>: 14 [+5]</p>
+<p><strong>Movimento</strong>: 45 (15) / 90 (30) voando</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (6)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 725</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d8)</p>
+<p><strong>Tesouro</strong>: E</p>
+<ul>
+<li><strong>Morto-vivo</strong>: Não fazem barulho até que ataquem. Imunes a efeitos que afetam criaturas vivas (exemplo, veneno). Imunes a magias que afetam a mente ou que leem a mente (exemplo, encantar, prender, sono).</li>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridos por ataques mágicos.</li>
+<li><strong>Dreno de energia</strong>: Um alvo que sofra um ataque bem sucedido perderá permanentemente dois níveis de experiência (ou Dados de Vida). Isso causa a perda de dois Dados de Vida em pontos de vida, assim como de todos os benefícios devido ao dreno de níveis (exemplo, magias, resistências etc.). A experiência do personagem é reduzida a menor quantidade possível para atingir o próximo nível. Um personagem que tenha todos os seus níveis drenados se torna um Espectro na noite seguinte sob o controle do espectro que o matou.</li>
+</ul>
+<hr>
+<h2 id="esqueleto"><a class="header" href="#esqueleto">Esqueleto</a></h2>
+<p><em>Esqueletos remanescentes de humanoides, reanimados como guardiões por poderosos usuários de magia ou clérigos. Frequentemente encontrados em cemitérios, criptas e locais desolados.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 1 (4pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d6 ou por arma)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 18 (6)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 10</p>
+<p><strong>Número Encontrado</strong>: 3d4 (3d10)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Morto vivo</strong>: Não fazem barulho até que ataquem. Imunes a efeitos que afetam criaturas vivas (exemplo, veneno). Imunes a magias que afetam a mente ou que leem a mente (exemplo, encantar, prender, sono).</li>
+</ul>
+<hr>
+<h2 id="estátua-viva"><a class="header" href="#estátua-viva">Estátua Viva</a></h2>
+<p><em>Estátuas animadas de qualquer tamanho e material (três tipos são descritas a seguir; outras podem ser inventadas pelo árbitro).</em></p>
+<ul>
+<li><strong>Imunidades</strong>: Não afetadas por magias de sono.</li>
+<li><strong>Origens mágicas</strong>: Criadas por poderosos magos.</li>
+</ul>
+<h3 id="estátua-de-cristal-viva"><a class="header" href="#estátua-de-cristal-viva">Estátua de Cristal Viva</a></h3>
+<p><em>Formada por cristais. Normalmente possuem forma humanoide.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 3 (13pv)</p>
+<p><strong>Ataques</strong>: 2 × pancada (1d6)</p>
+<p><strong>TAC0</strong>: 17 [+2]</p>
+<p><strong>Movimento</strong>: 27 (9)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (3)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Leal</p>
+<p><strong>XP</strong>: 35</p>
+<p><strong>Número Encontrado</strong>: 1d6 (1d6)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Imunidade</strong>: Ver descrição principal.</li>
+<li><strong>Ataques</strong>: Depende da forma da estátua (estátuas humanoides podem usar armas, estátuas de animais, garras etc.).</li>
+</ul>
+<h3 id="estátua-de-ferro-viva"><a class="header" href="#estátua-de-ferro-viva">Estátua de Ferro Viva</a></h3>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 4 (18pv)</p>
+<p><strong>Ataques</strong>: 2 × blow (1d8)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 30’ (10’)</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (4)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 75</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Imunidade</strong>: Ver a descrição principal.</li>
+<li><strong>Absorver metais</strong>: Golpes com armas metálicas não mágicas causam dano, mas a arma pode ficar presa na estátua (resistência contra magia). Armas presas só podem ser removidas se a estátua for destruída.</li>
+<li><strong>Ataques</strong>: Depende da forma da estátua (estátuas humanoides podem usar armas, estátuas de animais, garras etc.).</li>
+</ul>
+<h3 id="estátua-de-rocha-viva"><a class="header" href="#estátua-de-rocha-viva">Estátua de Rocha Viva</a></h3>
+<p><em>Crosta pedregosa preenchida com magma que atiram das pontas de seus dedos.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 5** (22pv)</p>
+<p><strong>Ataques</strong>: 2 × magma jet (2d6)</p>
+<p><strong>TAC0</strong>: 15 [+4]</p>
+<p><strong>Movimento</strong>: 18 (6)</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (5)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 425</p>
+<p><strong>Número Encontrado</strong>: 1d3 (1d3)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Imunidade</strong>: Ver a descrição principal.</li>
+</ul>
+<hr>
+<h2 id="estegossauro"><a class="header" href="#estegossauro">Estegossauro</a></h2>
+<p><em>Dinossauros robustos e herbívoros com uma armadura de placas sobre suas costas e caldas cravejadas por espinhos (usado para impedir ataques). Vivem em ambientes subtropicais do Mundo Perdido.</em></p>
+<p><strong>Classe de Armadura</strong>: 3 [16]</p>
+<p><strong>Dados de Vida</strong>: 11 (49pv)</p>
+<p><strong>Ataques</strong>: 1 × cauda (2d8) ou 1 × atropelar (2d8)</p>
+<p><strong>TAC0</strong>: 11 [+8]</p>
+<p><strong>Movimento</strong>: 18 (6)</p>
+<p><strong>Testes de Resistência</strong>: M10 V11 P12 S13 F14 (6)</p>
+<p><strong>Moral</strong>: 7</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 1.100</p>
+<p><strong>Número Encontrado</strong>: 0 (1d4)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Atropelar</strong>: 3-em-4 chances de atropelar a cada rodada. +4 para acertar criaturas de tamanho humano ou menores.</li>
+</ul>
+<hr>
+<h2 id="estirge"><a class="header" href="#estirge">Estirge</a></h2>
+<p><em>Criaturas plumadas parecidas com pássaros com bicos longos e afiados.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 1* (4pv)</p>
+<p><strong>Ataques</strong>: 1 × bico(1d3 + sugar sangue)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 9 (3) / 54 (18) voando</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 13</p>
+<p><strong>Número Encontrado</strong>: 1d10 (3d12)</p>
+<p><strong>Tesouro</strong>: L</p>
+<ul>
+<li><strong>Mergulho</strong>: Primeiro ataque é feito com +2 para acertar.</li>
+<li><strong>Sugar sangue</strong>: Com um ataque bem sucedido, se fixa a vítima e começa a sugar seu sangue: 1d3 pontos de dano automático por rodada.</li>
+<li><strong>Separar</strong>: se a estirge ou a vítima morrer.</li>
+</ul>
+<hr>
+<h2 id="falcão"><a class="header" href="#falcão">Falcão</a></h2>
+<p><em>Pássaros de caça que planam nas correntes de ar das alturas e caçam presas no chão.</em></p>
+<ul>
+<li><strong>Treináveis</strong>: Podem ser treinadas como guardas ou animais de caça.</li>
+</ul>
+<h3 id="falcão-gigante"><a class="header" href="#falcão-gigante">Falcão Gigante</a></h3>
+<p><em>Tão grande quanto um cachorro grande. Se faminta, pode atacar humanos ou criaturas de tamanho similar.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 3+3 (16pv)</p>
+<p><strong>Ataques</strong>: 1 × garras ou bico (1d6)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 135 (45) voando</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 50</p>
+<p><strong>Número Encontrado</strong>: 0 (1d3)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Mergulhar</strong>: Podem mergulhar sobre suas vítimas. Se a vítima for surpreendida, o ataque inflige o dobro do dano. Em um resultado de 18 ou mais, a vítima pode ser levada (se tiver um tamanho apropriado).</li>
+<li><strong>Carregar presa</strong>: até o tamanho de uma halfling.</li>
+</ul>
+<h3 id="falcão-normal"><a class="header" href="#falcão-normal">Falcão Normal</a></h3>
+<p><em>Pequenos pássaros de caça. Só atacarão humanos se estes parecerem indefesos.</em></p>
+<p><strong>Classe de Armadura</strong>: 8 [11]</p>
+<p><strong>Dados de Vida</strong>: ½ (2pv)</p>
+<p><strong>Ataques</strong>: 1 × garras ou bico (1d2)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 144 (48) voando</p>
+<p><strong>Testes de Resistência</strong>: M14 V15 P16 S17 F18 (NH)</p>
+<p><strong>Moral</strong>: 7</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 5</p>
+<p><strong>Número Encontrado</strong>: 0 (1d6)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Mergulhar</strong>: Podem mergulhar sobre suas vítimas. Se a vítima for surpreendida, o ataque inflige o dobro do dano. Em um resultado de 18 ou mais, a vítima pode ser levada (se tiver um tamanho apropriado).</li>
+</ul>
+<hr>
+<h2 id="fanático"><a class="header" href="#fanático">Fanático</a></h2>
+<p><em>Fanáticos religiosos e povo nômade que vagam pelas estepes e regiões desérticas, vivendo em tendas.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13] ou 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 1 (4 pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d6 ou por arma)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 120’ (40’)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Leal</p>
+<p><strong>XP</strong>: 10</p>
+<p><strong>Número Encontrado</strong>: 0 (1d6+1 × 10)</p>
+<p><strong>Tesouro</strong>: A</p>
+<ul>
+<li><strong>Montado</strong>: Em cavalos de guerra.</li>
+<li><strong>Equipamentos</strong>: 50% do grupo tem: armadura de couro, escudo, lança; 25% tem: armadura de couro, escudo, arco curto, espada; 25% tem: cota de malha, escudo, lança.</li>
+<li><strong>Acampamentos</strong>: Os grupos normalmente se reúnem e vivem em acampamentos ou tribos de até 300 dervixes, mais mulheres, crianças e animais. 25% de chance de ser cercado por um muro de madeira ou tijolos.</li>
+<li><strong>Líderes do acampamento</strong>: Liderados por um Clérigo de 10° nível.</li>
+<li><strong>Intolerância</strong>: a outras crenças religiosas.</li>
+<li><strong>Guerra sagrada</strong>: Ocasionalmente travam guerras contra outras facções religiosas. Matarão pessoas de fés diferentes ou os levarão prisioneiros. Prisioneiros devem ser convertidos; de outra forma, serão mortos ou usados como escravos. Personagens de tendência Leal podem ser convidados a participar da guerra santa. Dervixes passam a desconfiar muito de todos aqueles que se recusam (sem uma boa razão).</li>
+</ul>
+<hr>
+<h2 id="formiga-gigante"><a class="header" href="#formiga-gigante">Formiga Gigante</a></h2>
+<p><em>Formigas negras onívoras gigantes (1,8 m de comprimento).</em></p>
+<p><strong>Classe de Armadura</strong>: 3 [16]</p>
+<p><strong>Dados de Vida</strong>: 4* (18pv)</p>
+<p><strong>Ataques</strong>: 1 × mordida (2d6)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 54 (18)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 7 (12 em combate)</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 125</p>
+<p><strong>Número Encontrado</strong>: 2d4 (4d6)</p>
+<p><strong>Tesouro</strong>: U (veja abaixo)</p>
+<ul>
+<li><strong>Gananciosas</strong>: Consumem tudo em seu caminho, quando famintas.</li>
+<li><strong>Moral</strong>: Atacam incansavelmente, quando engajadas em combate (moral 12). Perseguirão mesmo através das chamas.</li>
+<li><strong>Tesouro no covil</strong>: 30% de chance de 1d10 pepitas de ouro valendo 1,000 po cada, mineradas pelas formigas.</li>
+</ul>
+<hr>
+<h2 id="fungo-guardião"><a class="header" href="#fungo-guardião">Fungo Guardião</a></h2>
+<p><em>Cogumelos gigantes e subterrâneos que podem rastejar por eles lentamente.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 3 (13pv)</p>
+<p><strong>Ataques</strong>: Não</p>
+<p><strong>TAC0</strong>: 17 [+2]</p>
+<p><strong>Movimento</strong>: 2,7 (0,9)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 35</p>
+<p><strong>Número Encontrado</strong>: 1d8 (0)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Grito</strong>: Desencadeado por luz (até 18 m de distância) ou movimento (até 9 m de distância). O grito dura por 1d3 rodadas. Cada rodada do grito, existe 50% de chance de um monstro errante ser atraído (chegará em 2d6 rodadas).</li>
+</ul>
+<hr>
+<h2 id="furão-gigante"><a class="header" href="#furão-gigante">Furão Gigante</a></h2>
+<p><em>Furões de 90 cm de comprimento que caçam ratos gigantes em seus túneis. Algumas vezes são mantidos por humanos pelo seu comportamento.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 1+1 (5pv)</p>
+<p><strong>Ataques</strong>: 1 × mordida (1d8)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 45 (15)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 15</p>
+<p><strong>Número Encontrado</strong>: 1d8 (1d12)</p>
+<p><strong>Tesouro</strong>: Não</p>
+<ul>
+<li><strong>Voláteis</strong>: Temperamento imprevisível; podem se voltar contra seus treinadores ou outras pessoas.</li>
+</ul>
+<hr>
+<h2 id="furioso"><a class="header" href="#furioso">Furioso</a></h2>
+<p><em>Guerreiros que entram em fúria em batalha. Eles nunca fazem prisioneiros.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 1+1* (5pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d8 ou por arma)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 36 (12)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (1)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 19</p>
+<p><strong>Número Encontrado</strong>: 1d6 (3d10)</p>
+<p><strong>Tesouro</strong>: P (B)</p>
+<ul>
+<li><strong>Fúria em batalha</strong>: +2 para acertar humanos e humanoides similares (exemplo orcs e goblins). A fúria algumas vezes os levam a atacar seus aliados.</li>
+<li><strong>Tesouro</strong>: Só tem tesouros tipo B quando encontrados nos ermos.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../6-monstros/2-descricao-monstros/01-lista-A-C.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../6-monstros/2-descricao-monstros/03-lista-G-K.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../6-monstros/2-descricao-monstros/01-lista-A-C.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../6-monstros/2-descricao-monstros/03-lista-G-K.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../mark-09e88c2c.min.js"></script>
+        <script src="../../searcher-c2a407aa.js"></script>
+
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -58,7 +58,7 @@ convert_file() {
                             s/^#{3} /#### /
                             s/^#{2} /### /
                             s/^# /## /
-                       ' > "$tmpfile"
+                       ' | sed '/./,$!d' > "$tmpfile"
 
     { echo "# $title"; echo; cat "$tmpfile"; } > "$file"
     rm "$tmpfile"
@@ -73,6 +73,10 @@ find content -name "*.md" -exec bash -c 'convert_file "$0"' {} \;
 # Converte <Link to="...">texto</Link> para [texto](...)
 find content -name "*.md" -exec sed -i -E 's|<Link to="([^"]+)">([^<]+)</Link>|[\2](\1)|g' {} \;
 
+# Deleta: 'import { Link } from "gatsby"'
+find content -name "*.md" -exec sed -i '/import { *Link *} from "gatsby"/d' {} \;
+
+# Corrige links
 find content -name "*.md" -exec sed -i -E '
     s|\(/classes/1-anao\)|(/2-classes/1-anao.md)|g
     s|\(/classes/2-clerigo\)|(/2-classes/2-clerigo.md)|g
@@ -148,3 +152,8 @@ cat >> "$SUMMARY" << EOF
 - [$(get_title "$CONTENT/dicionariodetermos.md")](dicionariodetermos.md)
 - [$(get_title "$CONTENT/open-game-license.md")](open-game-license.md)
 EOF
+
+# MdBook
+echo
+mdbook clean
+mdbook build

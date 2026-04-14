@@ -1,0 +1,865 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Lista Monstros G-K - Old School Essentials SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../../css/general-2459343d.css">
+        <link rel="stylesheet" href="../../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../custom-efc8afdc.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../../searchindex-117446f6.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../../toc-950846f6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Old School Essentials SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="lista-monstros-g-k"><a class="header" href="#lista-monstros-g-k">Lista Monstros G-K</a></h1>
+<h2 id="gafanhoto-das-profundezas"><a class="header" href="#gafanhoto-das-profundezas">Gafanhoto das Profundezas</a></h2>
+<p><em>Gafanhotos gigantes herbívoros, de 60 a 90cm de comprimento, que vivem em cavernas</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 2 (9pv)</p>
+<p><strong>Ataques</strong>: 1 × mordida (1d2) or 1 × salto (1d4) or 1 × cuspida (cheiro fétido)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 18m (6m) / 54m (18m) vôo</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 5</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 20</p>
+<p><strong>Número Encontrado</strong>: 2d10 (1d10)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Misturar-se com as pedras</strong>: Pode passar desapercebido ou ser confundido com estátuas, devido à sua coloração semelhante a pedra.</li>
+<li><strong>Guincho</strong>: Se forem atacados ou assustados, guincham para avisar outros. Isso pode atrair monstros errantes (20% de chance por rodada).</li>
+<li><strong>Saltar</strong>: Muito assustadiço. Se atacado, normalmente fogem pulando para até 18m de distância e em seguida voam para longe. 50% de chance de saltar em um oponente aleatório, neste caso tratar o salto como um ataque.</li>
+<li><strong>Cuspida</strong>: Usado defensivamente. Alcance de 3 metros. Alvo é tratado como se tivesse CA 9 [10]. O personagem afetado é coberto em uma cuspida fétida: impossibilitado de agir por 1 turno (teste de resistência contra veneno). Até que a gosma seja limpa, outros que cheguem a 1,5m também devem passar em um teste de resistência contra veneno ou ficar violentamente enjoados.</li>
+<li><strong>Imunidade a veneno</strong>: Imune ao bolor amarelo e a maioria dos venenos, devido ao seu hábito de comer fungos.</li>
+</ul>
+<h2 id="gárgula"><a class="header" href="#gárgula">Gárgula</a></h2>
+<p><em>Monstros mágicos que se parecem com horrendas estátuas aladas e com chifres. Semi-inteligentes e possuidores de grande astúcia.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 4 (18pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d3), 1 × mordida (1d6), 1 × chifre (1d4)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 27m (9m) / 45m (15m) vôo</p>
+<p><strong>Testes de Resistência</strong>:  M8 V9 P10 S10 F12 (8)</p>
+<p><strong>Moral</strong>: 11</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 75</p>
+<p><strong>Número Encontrado</strong>: 1d6 (2d4)</p>
+<p><strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Misturar-se com as pedras</strong>: Pode passar desapercebido ou ser confundido com estátuas inanimadas.</li>
+<li><strong>Guardiões</strong>: Quase sempre atacam ao serem abordados.</li>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridos por ataques mágicos.</li>
+<li><strong>Imunidade à magia</strong>: Não são afetados por magias de sono ou de encantamento.</li>
+</ul>
+<h2 id="geleia-ocre"><a class="header" href="#geleia-ocre">Geleia Ocre</a></h2>
+<p><em>Ameboides gigantes ocres.</em></p>
+<p><strong>Classe de Armadura</strong>: 8 [11]</p>
+<p><strong>Dados de Vida</strong>: 5* (22pv)</p>
+<p><strong>Ataques</strong>: 1 × toque (2d6)</p>
+<p><strong>TAC0</strong>: 15 [+4]</p>
+<p><strong>Movimento</strong>: 9m (3m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (3)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 300</p>
+<p><strong>Número Encontrado</strong>: 1 (0)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Imunidade</strong>: Imune a todos os ataques exceto fogo ou gelo.</li>
+<li><strong>Divisão</strong>: Ataques de relâmpago ou com armas causam a divisão da geleia em 1d4+1 geleias de 2 DVs que causam metade do dano.</li>
+<li><strong>Ácido</strong>: Após um ataque bem sucedido, se gruda à vítima e exsuda ácido. O ácido inflige 2d6 de dano por rodada à carne e destrói tecido, couro ou madeira em uma rodada. (Pedra e metal não são afetados.)</li>
+<li><strong>Infiltrar-se</strong>: Pode se espremer através de pequenos buracos e rachaduras.</li>
+</ul>
+<h2 id="gênio-menor"><a class="header" href="#gênio-menor">Gênio (Menor)</a></h2>
+<p><em>Seres extremamente mágicos, de livre arbítrio e inteligentes do plano elementar do ar. Humanoides altos envolto em nuvens.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 7+1* (32pv)</p>
+<p><strong>Ataques</strong>: 1 × socos (2d8), magia</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 27m (9m) / 72m (24m) vôo</p>
+<p><strong>Testes de Resistência</strong>:  M4 V5 P6 S5 F8 (14)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 850</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Imunidade a dano mundano</strong>: Só podem ser feridos por ataques mágicos.</li>
+<li><strong>Podres mágicos</strong>: Cada um pode ser usado tres vezes por dia:
+<ul>
+<li><strong>Forma de redemoinho</strong>: 5 rodadas para se transformar (ou para voltar à forma). 21m de altura, 6m de largura no topo, 3m de largura na base. Se move a 36m (12m). 2d6 de dano em tudo que estiver em seu caminho. Criaturas com menos de 2DV são varridos para o lado (teste de resistência contra morte).</li>
+<li><strong>Forma gasosa</strong></li>
+<li><strong>Invisibilidade</strong></li>
+<li><strong>Ilusão</strong>: Visual e auditiva. Nenhuma concentração necessária. Permanece até ser tocado ou dissipada.</li>
+<li><strong>Criar comida e bebida</strong>: Para 12 humanos e montarias para um dia.</li>
+<li><strong>Conjurar objetos metálicos</strong>: Até o peso de 1.000 moedas. Temporário: dureza determina a duração (ouro: 1 dia; ferro: 1 rodada).</li>
+<li><strong>Conjurar objetos leves / objetos de madeira</strong>: Até o peso de 1.000 moedas. Permanente.</li>
+</ul>
+</li>
+<li><strong>Capacidade de carga</strong>: 6.000 moedas sem se cansar. Até 12.000 moedas por três turnos andando / 1 turno voando. Deve descansar por 1 turno depois.</li>
+<li><strong>Se for morto</strong>: Retorna ao plano elemental do ar.</li>
+</ul>
+<h2 id="gigante"><a class="header" href="#gigante">Gigante</a></h2>
+<h3 id="gigante-das-nuvens"><a class="header" href="#gigante-das-nuvens">Gigante das Nuvens</a></h3>
+<p><em>Humanoides agressivos de 6m de altura, com cabelo e pele que vão do cinza ao branco. Se veste em túnicas pálidas.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 12+3 (57pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (6d6) or 1 × arremesso de rocha (3d6)</p>
+<p><strong>TAC0</strong>: 10 [+9]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M6 V7 P8 S8 F10 (12)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 1.100</p>
+<p><strong>Número Encontrado</strong>: 1d2 (1d3)</p>
+<p><strong>Tesouro</strong>: E + 5.000gp</p>
+<ul>
+<li><strong>Olfato e visão apurados</strong>: Só são supreendidos com resultado 1.</li>
+<li><strong>Arremesso de rocha</strong>: Até 60m.</li>
+<li><strong>Castelo</strong>: Construídos em encostas montanhosas ou flutuando em ilhas de nuvens.</li>
+<li><strong>Guardiões</strong>: 3d6 falcões gigantes ou (apenas em montanhas) 6d6 lobos atrozes.</li>
+<li><strong>Odeiam intruosos</strong>: Podem bloquear passagens nas montanhas para assegurar seu isolamento.</li>
+</ul>
+<h3 id="gigante-do-fogo"><a class="header" href="#gigante-do-fogo">Gigante do Fogo</a></h3>
+<p><em>Humanoides de 4,8m de altura com cabelos escuros e pele vermelha. Se vestem com armaduras feitas de metais dourados (bronze, cobre, latão). Ficam em lugares de calor extremo (por exemplo perto de vulcões).</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 11+2 (51pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (5d6) or 1 × arremesso de rocha (3d6)</p>
+<p><strong>TAC0</strong>: 10 [+9]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M6 V7 P8 S8 F10 (11)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 1.100</p>
+<p><strong>Número Encontrado</strong>: 1d2 (1d3)</p>
+<p><strong>Tesouro</strong>: E + 5.000gp</p>
+<ul>
+<li><strong>Arremesso de rocha</strong>: Até 60m.</li>
+<li><strong>Imunidade a fogo</strong>: Não é ferido por fogo.</li>
+<li><strong>Castelo</strong>: Preto, de muros baixos. Feito de lama seca e ferro cru.</li>
+<li><strong>Guardiões</strong>: 20% chance de 1d3 hidras, caso contrário 3d6 cães infernais .</li>
+</ul>
+<h3 id="gigante-do-gelo"><a class="header" href="#gigante-do-gelo">Gigante do Gelo</a></h3>
+<p><em>Humanoides de 5,4m de altura com pele e cabelos pálidos (com tons amarelos ou azuis). Se vestem com gibões ou armadura de ferro. Os homens tem barba grande.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 10+1 (46pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (4d6) ou 1 × arremesso de rocha (3d6)</p>
+<p><strong>TAC0</strong>: 11 [+8]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M6 V7 P8 S8 F10 (10)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 900</p>
+<p><strong>Número Encontrado</strong>: 1d2 (1d4)</p>
+<p><strong>Tesouro</strong>: E + 5.000gp</p>
+<ul>
+<li><strong>Arremesso de rocha</strong>: Até 60m.</li>
+<li><strong>Imunidade a frio</strong>: Não é afetado por ataques baseados em gelo/frio.</li>
+<li><strong>Castelo</strong>: No alto de montanhas nevadas.</li>
+<li><strong>Guardiões</strong>: 20% chance de 3d6 ursos polares, caso contrário 6d6 lobos.</li>
+</ul>
+<h3 id="gigante-das-colinas"><a class="header" href="#gigante-das-colinas">Gigante das Colinas</a></h3>
+<p><em>Humanoides de 3,6m peludos e bestiais com baixa inteligência. Habitam sopés. Famosos por atacarem assentamentos humanos para roubar comida.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 8 (36pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (2d8)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M8 V9 P10 S10 F12 (8)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 650</p>
+<p><strong>Número Encontrado</strong>: 1d4 (2d4)</p>
+<p><strong>Tesouro</strong>: E + 5.000gp</p>
+<ul>
+<li><strong>Armas</strong>: Portam clavas gigantes e lanças.</li>
+</ul>
+<h3 id="gigante-das-rochas"><a class="header" href="#gigante-das-rochas">Gigante das Rochas</a></h3>
+<p><em>Humanoides de 4,2m com pele cinza rochosa. Habitam cavernas naturais ou cabanas primitivas construídas de pedra.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 9 (40pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (3d6) ou 1 × arremesso de rocha (3d6)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M8 V9 P10 S10 F12 (9)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 900</p>
+<p><strong>Número Encontrado</strong>: 1d2 (1d6)</p>
+<p><strong>Tesouro</strong>: E + 5.000gp</p>
+<ul>
+<li><strong>Armas</strong>: Clavas de pedra feitas de estalactites gigantes.</li>
+<li><strong>Arremesso de rocha</strong>: Até 60m.</li>
+<li><strong>Guardiões</strong>: 50% chance of 1d4 ursos da caverna.</li>
+</ul>
+<h3 id="gigante-das-tempestades"><a class="header" href="#gigante-das-tempestades">Gigante das Tempestades</a></h3>
+<p><em>Humanoides de 6,6m de altura com peles de tonalidade de bronze e cabelos vistosos (vermelhos ou amarelos).</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 15 (67pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (8d6), 1 × relâmpago</p>
+<p><strong>TAC0</strong>: 9 [+10]</p>
+<p><strong>Movimento</strong>: 45m (15m)</p>
+<p><strong>Testes de Resistência</strong>:  M4 V5 P6 S5 F8 (15)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Leal</p>
+<p><strong>XP</strong>: 1.350</p>
+<p><strong>Número Encontrado</strong>: 1 (1d3)</p>
+<p><strong>Tesouro</strong>: E + 5.000gp</p>
+<ul>
+<li><strong>Invocar tempestade</strong>: Leva 1 turno.</li>
+<li><strong>Relâmpago</strong>: Em uma tempestade, podem arremessar relâmpagos uma vez a cada 5 rodadas: 18m de comprimento, 1,5m de largura; infligem dano igual aos pontos de vida totais do gigante (teste de resistência contra magias para metade do dano); podem ser refletidos nas superfícies que estiverem no caminho.</li>
+<li><strong>Imunidade a raio</strong>: Não são feridos por raios. Apreciam se expor a tempestades.</li>
+<li><strong>Castelo</strong>: No alto de picos montanhosos, em cima de ilhas de nuvens, ou em águas profundas.</li>
+<li><strong>Guardiões</strong>: 2d4 grifos. Debaixo d’água: 3d6 caranguejos gigantes.</li>
+</ul>
+<h2 id="gnoll"><a class="header" href="#gnoll">Gnoll</a></h2>
+<p><em>Humanoides preguiçosos com forma de hiena e baixa inteligência que vivem de roubo e intimidação. Lendas dizem que os gnolls foram criados magicamente por um mago que cruzou gnomos e trolls.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 2 (9pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (2d4 ou por arma + 1)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 27m (9m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 20 (líder: 35)</p>
+<p><strong>Número Encontrado</strong>: 1d6 (3d6)</p>
+<p><strong>Tesouro</strong>: D</p>
+<ul>
+<li><strong>Líder</strong>: Grupos de 20+ são liderados por um gnoll com 3 DVs (16pv).</li>
+</ul>
+<h2 id="gnomo"><a class="header" href="#gnomo">Gnomo</a></h2>
+<p><em>Semi-humanos baixo com nariz e barbas grandes. Primos menores dos anões, os quais se dão bem. Preferem viver em tocas em terrenos não montanhosos.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 1 (4pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d6 ou por arma)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 18m (6m)</p>
+<p><strong>Testes de Resistência</strong>:  M8 V9 P10 S13 F12 (D1)</p>
+<p><strong>Moral</strong>: 8 (10 se estiver a vista de um líder ou capitão)</p>
+<p><strong>Tendência</strong>: Leal ou Neutro</p>
+<p><strong>XP</strong>: 10</p>
+<p><strong>Número Encontrado</strong>: 1d8 (5d8)</p>
+<p><strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Armas</strong>: Tipicamente usam martelos de guerra e bestas.</li>
+<li><strong>Infravisão</strong>: 27m.</li>
+<li><strong>Líder</strong>: Um líder de 2 DV (11pv) está presente para cada 20 gnomos.</li>
+<li><strong>Chefes do clã e guarda costas</strong>: Um chefe de 4 DV (18pv) e 1d6 3DV (1d4+9pv) guarda-costas vivem no lar dos gnomos. O chefe tem +1 de bônus no dano.</li>
+<li><strong>Odeiam kobolds</strong>: Normalmente atacam assim que são avistados.</li>
+<li><strong>Minas e maquinário</strong>: Amam maquinário, mineração, ouro e gemas. Podem tomar más decisões para obter itens preciosos. Guerreiam com goblins e kobolds para obter metais preciosos.</li>
+</ul>
+<h2 id="goblin"><a class="header" href="#goblin">Goblin</a></h2>
+<p><em>Pequenos e grotescos humanoides com pele cor de terra pálida e olhos vermelhos brilhantes. Vivem no subterrâneo.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 1–1 (3pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d6 ou por arma)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 18m (6m)</p>
+<p><strong>Testes de Resistência</strong>:  M14 V15 P16 S17 F18 (NH)</p>
+<p><strong>Moral</strong>: 7 (9 com o rei)</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 5 (guarda-costas: 20, rei: 35)</p>
+<p><strong>Número Encontrado</strong>: 2d4 (6d10)</p>
+<p><strong>Tesouro</strong>: R (C)</p>
+<ul>
+<li><strong>Infravisão</strong>: 27m.</li>
+<li><strong>Odeiam o sol</strong>: -1 para acertar se estiver sob a luz do sol.</li>
+<li><strong>Cavalgam lobos</strong>: 20% dos grupos de goblin encontrados tem cavaleiros de lobos: ¼ do grupo estão montados em lobos atrozes.</li>
+<li><strong>Odeiam anões</strong>: Atacam assim que são avistados.</li>
+<li><strong>Rei goblin e guarda-costas</strong>: Um rei de 3DV (15pv) e 2d6 guarda-costas com 2DV (2d6pv) vivem no lar dos goblins. Eles não sofrem penalidade sob a luz do sol. O rei tem um bônus de +1 no dano.</li>
+<li><strong>Tesouro</strong>: Só tem o tipo de tesouro C quando for encontrado em regiões selvagens ou no seu lar.</li>
+</ul>
+<h2 id="golem"><a class="header" href="#golem">Golem</a></h2>
+<p><em>Seres artificiais construídos de diferentes materiais por clérigos ou magos poderosos.</em></p>
+<ul>
+<li><strong>Imunidade</strong>: Não é afetado por gases; não é afetado por magias de encantar, sono e imobilizar pessoas.</li>
+<li><strong>Outros materiais</strong>: Golens formados de outros materiais também são possíveis.</li>
+<li><strong>Construção</strong>: Um processo extremamente complexo, caro e moroso.</li>
+</ul>
+<h3 id="golem-de-âmbar"><a class="header" href="#golem-de-âmbar">Golem de Âmbar</a></h3>
+<p><em>Construído no formato de felinos gigantes (e.g. leões ou tigres).</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 10** (45pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (2d6), 1 × mordida (2d10)</p>
+<p><strong>TAC0</strong>: 11 [+8]</p>
+<p><strong>Movimento</strong>: 54m (18m)</p>
+<p><strong>Testes de Resistência</strong>:  M10 V11 P12 S13 F14 (5)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 2.300</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Imunidade a dano mundano</strong>: Só pode ser ferido por ataques mágicos.</li>
+<li><strong>Rastreamento</strong>: Sem chance erro.</li>
+<li><strong>Detectar criaturas invisíveis</strong>: Em um raio de 18m.</li>
+</ul>
+<h3 id="golem-de-osso"><a class="header" href="#golem-de-osso">Golem de Osso</a></h3>
+<p><em>Autômato de 1,8m de altura feito de ossos humanos, moldado em uma forma humanoide. Tem quatro braços, ligados ao torso em diferentes lugares.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 8 (36pv)</p>
+<p><strong>Ataques</strong>: 2 ou 4 × arma (1d6 ou por arma)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M10 V11 P12 S13 F14 (4)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>:  Neutro</p>
+<p><strong>XP</strong>: 650</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Imunidade a dano mundano</strong>: Só pode ser ferido por ataques mágicos.</li>
+<li><strong>Armas</strong>: 4 armas de uma mão, ou 2 armas de duas mãos.</li>
+<li><strong>Atacar múltiplos oponentes</strong>: Até dois por rodada.</li>
+<li><strong>Imunidade a energia</strong>: Não é afetado por fogo, gelo e eletricidade.</li>
+</ul>
+<h3 id="golem-de-bronze"><a class="header" href="#golem-de-bronze">Golem de Bronze</a></h3>
+<p><em>Autômato de bronze que lembram gigantes do fogo, que possuem um grande calor interno.</em></p>
+<p><strong>Classe de Armadura</strong>: 0 [19]</p>
+<p><strong>Dados de Vida</strong>: 20** (90pv)</p>
+<p><strong>Ataques</strong>: 1 × punhos (3d10 + 1d10 calor)</p>
+<p><strong>TAC0</strong>: 6 [+13]</p>
+<p><strong>Movimento</strong>: 72m (24m)</p>
+<p><strong>Testes de Resistência</strong>:  M6 V7 P8 S8 F10 (10)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>:  Neutro</p>
+<p><strong>XP</strong>: 4.300</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Imunidade a dano mundano</strong>: Só pode ser ferido por ataques mágicos.</li>
+<li><strong>Sangue flamejante</strong>: Se for ferido por uma arma de corte, emite um jato de líquido flamejante: o atacante recebe 2d6 de dano (teste de resistência contra morte para evitar).</li>
+<li><strong>Imunidade a fogo</strong>: Não é ferido por fogo.</li>
+</ul>
+<h3 id="golem-de-madeira"><a class="header" href="#golem-de-madeira">Golem de Madeira</a></h3>
+<p><em>90cm de altura, rusticamente construídos de madeira em formatos humanoides.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 2+2 (11pv)</p>
+<p><strong>Ataques</strong>: 1 × punhos (1d8)</p>
+<p><strong>TAC0</strong>: 17 [+2]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (1)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 25</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Imunidade a dano mundano</strong>: Só pode ser ferido por ataques mágicos.</li>
+<li><strong>Iniciativa</strong>: -1 de iniciativa devido a dificuldade em se movimentar.</li>
+<li><strong>Inflamável</strong>: -2 em testes de resistência contra ataques de fogo; sofrem um ponto de dano extra por dado.</li>
+</ul>
+<h2 id="gorgon"><a class="header" href="#gorgon">Gorgon</a></h2>
+<p><em>Monstros mágicos que se parecem com touros com escamas de ferro. Vivem em planícies ou sopés de morros.</em></p>
+<p><strong>Classe de Armadura</strong>: 2 [17]</p>
+<p><strong>Dados de Vida</strong>: 8* (36pv)</p>
+<p><strong>Ataques</strong>: 1 × chifre (2d6) or 1 × sopro (petrificação)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  M8 V9 P10 S10 F12 (8)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 1.200</p>
+<p><strong>Número Encontrado</strong>: 1d2 (1d4)</p>
+<p><strong>Tesouro</strong>: E</p>
+<ul>
+<li><strong>Carga</strong>: Quando não estiver em corpo-a-corpo. Requer um espaço livre de pelo menos 20 metros. Chifres causam o dobro do dano.</li>
+<li><strong>Sopro de petrificação</strong>: Uma núvem de 18m de comprimento, 3m de largura. Todos na névoa são transformados em pedra (teste de resistência contra petrificação para evitar). Não é afetado pelo próprio sopro.</li>
+</ul>
+<h2 id="gorila-branco"><a class="header" href="#gorila-branco">Gorila Branco</a></h2>
+<p><em>Primatas similares a gorilas, albinos e herbívoros, que vivem em cavernas e emergem a noite para forragear.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 4 (18 pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d4) ou 1 × pedra arremessada (1d6)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 36 m (12 m)</p>
+<p><strong>Testes de Resistência</strong>: M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 7</p>
+<p><strong>Tendência</strong>: Neutra</p>
+<p><strong>XP</strong>: 75</p>
+<p><strong>Número Encontrado</strong>: 1d6 (2d4)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Territorial</strong>: Defendem seus lares com ameaças e, se ignorados, violência.</li>
+</ul>
+<h2 id="grandes-felinos"><a class="header" href="#grandes-felinos">Grandes Felinos</a></h2>
+<p><em>Caçadores cautelosos que normalmente evitam combate a menos que estejam famintos ou encurralados. Grandes felinos podem ser brincalhões, mas rapidamente se irritam. Eles ficam em áreas abertas, raramente entrando em lugares subterrâneos.</em></p>
+<ul>
+<li><strong>Perseguição</strong>: Sempre perseguem presas que fogem.</li>
+<li><strong>Presa favorita</strong>: Frequentemente desenvolvem um gosto por certo tipo de carne (podendo inclusive ser carne humana!), e preferencialmente caçam esta criatura.</li>
+<li><strong>Curioso</strong>: Pode seguir os PJs por curiosidade.</li>
+</ul>
+<h3 id="leão"><a class="header" href="#leão">Leão</a></h3>
+<p><em>Caça em grupos chamados de alcateias. Vivem em regiões quentes, tipicamente em savanas ou cerrados próximos a desertos.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 5 (22pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d4+1), 1 × mordida (1d10)</p>
+<p><strong>TAC0</strong>: 15 [+4]</p>
+<p><strong>Movimento</strong>: 45m (15m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (3)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 175</p>
+<p><strong>Número Encontrado</strong>: 1d4(1d8)</p>
+<p><strong>Tesouro</strong>: U</p>
+<ul>
+<li><strong>Perseguição</strong>: Sempre perseguem presas que fogem.</li>
+</ul>
+<h3 id="onça-parda"><a class="header" href="#onça-parda">Onça-parda</a></h3>
+<p><em>Tem pelagem amarelo-amarronzado e preferem montanhas, desertos e florestas. Ocasionalmente podem aventurar-se em masmorras.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 3+2 (15pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d3), 1 × mordida (1d6)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 45m (15m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 50</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: U</p>
+<ul>
+<li><strong>Perseguição</strong>: Sempre perseguem presas que fogem.</li>
+</ul>
+<h3 id="leopardo"><a class="header" href="#leopardo">Leopardo</a></h3>
+<p><em>Caçadores rápidos que vivem em planícies e florestas.</em></p>
+<p><strong>Classe de Armadura</strong>: 4 [15]</p>
+<p><strong>Dados de Vida</strong>: 4 (18pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d4), 1 × mordida (1d8)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 63m (21m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 75</p>
+<p><strong>Número Encontrado</strong>: 1d2 (1d6)</p>
+<p><strong>Tesouro</strong>: U</p>
+<ul>
+<li><strong>Perseguição</strong>: Sempre perseguem presas que fogem.</li>
+</ul>
+<h3 id="tigre-dentes-de-sabre"><a class="header" href="#tigre-dentes-de-sabre">Tigre dentes-de-sabre</a></h3>
+<p><em>Felinos enormes e agressivos com presas de 30cm. Normalmente só encontradas em regiões do Mundo Perdido.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 8 (36pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d8), 1 × mordida (2d8)</p>
+<p><strong>TAC0</strong>: 12 [+7]</p>
+<p><strong>Movimento</strong>: 45m (15m)</p>
+<p><strong>Testes de Resistência</strong>:  M10 V11 P12 S13 F14 (4)</p>
+<p><strong>Moral</strong>: 10</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 650</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d4)</p>
+<p><strong>Tesouro</strong>: V</p>
+<ul>
+<li><strong>Perseguição</strong>: Sempre perseguem presas que fogem.</li>
+</ul>
+<h3 id="tigre"><a class="header" href="#tigre">Tigre</a></h3>
+<p><em>Grandes caçadores solitários com padrões de camuflagem na pelagem. Preferem bosques e regiões mais frias.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 6 (27pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d6), 1 × mordida (2d6)</p>
+<p><strong>TAC0</strong>: 14 [+5]</p>
+<p><strong>Movimento</strong>: 45m (50’)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (3)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 275</p>
+<p><strong>Número Encontrado</strong>: 1 (1d3)</p>
+<p><strong>Tesouro</strong>: U</p>
+<ul>
+<li><strong>Perseguição</strong>: Sempre perseguem presas que fogem.</li>
+<li><strong>Supres</strong>: Em um resultado 1-4 em bosques e florestas, devido a sua camuflagem.</li>
+</ul>
+<h2 id="grifo"><a class="header" href="#grifo">Grifo</a></h2>
+<p><em>Grandes e vorazes predadores que combinam características de uma águia (cabeça, asas, garras frontais) e um leão. Caçam cavalos.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 7 (31pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d4), 1 × mordida (2d8)</p>
+<p><strong>TAC0</strong>: 13 [+6]</p>
+<p><strong>Movimento</strong>: 36m (12m) / 108m (36m) Vôo</p>
+<p><strong>Testes de Resistência</strong>:  M10 V11 P12 S13 F14 (4)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 450</p>
+<p><strong>Número Encontrado</strong>: 0 (2d8)</p>
+<p><strong>Tesouro</strong>: E</p>
+<ul>
+<li><strong>Atacam cavalos</strong>: Dentro de 36m, a menos que sejam bem-sucedidos em um teste de moral.</li>
+<li><strong>Defendem ninho</strong>: Atacam qualquer um que se aproximem.</li>
+<li><strong>Domesticação</strong>: Indivíduos jovens podem ser treinados em montarias leais. A sua natureza feroz não pode ser domada: eles ainda instintivamente atacam cavalos.</li>
+</ul>
+<h2 id="harpia"><a class="header" href="#harpia">Harpia</a></h2>
+<p><em>Criaturas horrendas com asas e metade inferior do corpo de águias gigantes. Utilizam suas canções para atrair vítimas para o seu fim.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 3* (13pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d4), 1 × arma (1d6 ou por arma), 1 × canto (encantamento)</p>
+<p><strong>TAC0</strong>: 17 [+2]</p>
+<p><strong>Movimento</strong>: 18m (6m) / 45m (15m) vôo</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (3)</p>
+<p><strong>Moral</strong>: 7</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 50</p>
+<p><strong>Número Encontrado</strong>: 1d6 (2d4)</p>
+<p><strong>Tesouro</strong>: C</p>
+<ul>
+<li><strong>Encantamento</strong>: Qualquer um que escute a canção de harpias devem passar em um teste de resistência contra magias ou serão encantados: se movem em direção das harpias (resistindo àqueles que tentarem preveni-lo); defendem as harpias, obedecem os comandos das harpias (se compreendê-las); incapaz de ferir as harpias. Um personagem que passar no teste de resistência não é afetado pelo canto pelo resto do encontro. Matar as harpias quebra o encantamento.</li>
+<li><strong>Resistência a magia</strong>: +2 em todos os testes de resistência.</li>
+</ul>
+<h2 id="hidra"><a class="header" href="#hidra">Hidra</a></h2>
+<p><em>Criaturas enormes parecidas com dragões e cabeças de serpentes. Hidras aquáticas (adaptadas a água, com guelras) também existem.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 5 a 12 (8hp por DV)</p>
+<p><strong>Ataques</strong>: 5 a 12 × mordida (1d10)</p>
+<p><strong>TAC0</strong>: 	Por DV (15 [+4] a 10 [+9])</p>
+<p><strong>Movimento</strong>: 36m (12m)</p>
+<p><strong>Testes de Resistência</strong>:  Por DV</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 175/275/450/50/900/900/1.100/1.100</p>
+<p><strong>Número Encontrado</strong>: 1 (1)</p>
+<p><strong>Tesouro</strong>: B</p>
+<ul>
+<li><strong>Cabeças</strong>: 1d8+4 cabeças. 1DV por cabeça.</li>
+<li><strong>Incapacitando cabeças</strong>: Para cada 8pv de dano recebido, uma cabeça é incapacidade (não é capaz de atacar).</li>
+<li><strong>Variantes</strong>: Hidras especiais às vezes são encontradas com veneno, sopro de fogo, etc.</li>
+</ul>
+<h2 id="hipogrifo"><a class="header" href="#hipogrifo">Hipogrifo</a></h2>
+<p><em>Criaturas fantásticas que combinam características de uma águia gigante (cabeça e parte superior do tronco) e um cavalo. Aninham-se entre rochas escarpadas.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 3+1 (14pv)</p>
+<p><strong>Ataques</strong>: 2 × garras (1d6), 1 × mordida (1d10)</p>
+<p><strong>TAC0</strong>: 16 [+3]</p>
+<p><strong>Movimento</strong>: 54m (18m) / 108m (36m) voando</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 8</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 50</p>
+<p><strong>Número Encontrado</strong>: 0 (2d8)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<ul>
+<li><strong>Odeiam pégasos</strong>: Normalmente irão atacá-los.</li>
+<li><strong>Montaria</strong>: Podem carregar um cavaleiro de tamanho humano.</li>
+<li><strong>Domesticação</strong>: Podem ser treinados como montaria.</li>
+</ul>
+<h2 id="hobgoblin"><a class="header" href="#hobgoblin">Hobgoblin</a></h2>
+<p><em>Variedade maior e mais perigosa de goblins. Vivem no subterrâneo, mas comumente procuram presa na superfície.</em></p>
+<p><strong>Classe de Armadura</strong>: 6 [13]</p>
+<p><strong>Dados de Vida</strong>: 1+1 (5pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d8 ou por arma)</p>
+<p><strong>TAC0</strong>: 18 [+1]</p>
+<p><strong>Movimento</strong>: 27m (9m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (1)</p>
+<p><strong>Moral</strong>: 8 (10 com rei)</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 15 (guarda-costas: 75)</p>
+<p><strong>Número Encontrado</strong>: 1d6 (4d6)</p>
+<p><strong>Tesouro</strong>: D</p>
+<ul>
+<li><strong>Rei hobgoblin e guarda-costas</strong>: Um rei de 5 DVs (22pvs) e 1d4 guarda-costas de 4 DV (3d6pvs) vivem no lar dos hobgoblins. Um rei tem +2 de bônus em rolagens de dano. Um thoul pode ser encontrado ocasionalmente entre os guarda-costas do rei.</li>
+</ul>
+<h2 id="homem-lagarto"><a class="header" href="#homem-lagarto">Homem-lagarto</a></h2>
+<p><em>Humanoides aquáticos, tribais, semi-inteligentes com cabeças reptilianas e caudas. Normalmente encontrados em pântanos e masmorras, ou ao longo de rios e regiões costeiras.</em></p>
+<p><strong>Classe de Armadura</strong>: 5 [14]</p>
+<p><strong>Dados de Vida</strong>: 2+1 (10pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d6+1 ou por arma + 1)</p>
+<p><strong>TAC0</strong>: 17 [+2]</p>
+<p><strong>Movimento</strong>: 18m (6m) / 36m (12m) in water</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 12</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 25</p>
+<p><strong>Número Encontrado</strong>: 2d4 (6d6)</p>
+<p><strong>Tesouro</strong>: D</p>
+<ul>
+<li><strong>Armas</strong>: Preferem lanças ou grandes clavas.</li>
+<li><strong>Comedores de homens</strong>: Sequestram humanos e semi-humanos, cuja carne eles consideram uma iguaria.</li>
+</ul>
+<h2 id="humano-comum"><a class="header" href="#humano-comum">Humano Comum</a></h2>
+<p><em>Humanos não aventureiros que não possuem classe de personagem. Artistas, mendigos, crianças, artesões, fazendeiros, pescadores, donas de casa, estudiosos, escravos.</em></p>
+<p><strong>Classe de Armadura</strong>: 9 [10]</p>
+<p><strong>Dados de Vida</strong>: ½ (2pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d6 ou por arma)</p>
+<p><strong>TAC0</strong>: 20 [–1]</p>
+<p><strong>Movimento</strong>: 36m (18m)</p>
+<p><strong>Testes de Resistência</strong>:  M14 V15 P16 S17 F18 (NH)</p>
+<p><strong>Moral</strong>: 6</p>
+<p><strong>Tendência</strong>: Qualquer</p>
+<p><strong>XP</strong>: 5</p>
+<p><strong>Número Encontrado</strong>: 1d4 (1d20)</p>
+<p><strong>Tesouro</strong>: U</p>
+<ul>
+<li><strong>Ganhando XP</strong>: Devem escolher uma classe de personagem depois de ganhar XP em uma aventura.</li>
+</ul>
+<h2 id="javali"><a class="header" href="#javali">Javali</a></h2>
+<p><em>Javalis selvagens onívoros que vivem primariamente em florestas. Podem ser irritáveis e perigosos, se forem perturbados.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: 3 (13pv)</p>
+<p><strong>Ataques</strong>: 1 × presa (2d4)</p>
+<p><strong>TAC0</strong>: 17 [+2]</p>
+<p><strong>Movimento</strong>: 45m (15m)</p>
+<p><strong>Testes de Resistência</strong>:  M12 V13 P14 S15 F16 (2)</p>
+<p><strong>Moral</strong>: 9</p>
+<p><strong>Tendência</strong>: Neutro</p>
+<p><strong>XP</strong>: 35</p>
+<p><strong>Número Encontrado</strong>: 1d6 (1d6)</p>
+<p><strong>Tesouro</strong>: Nenhum</p>
+<h2 id="kobold"><a class="header" href="#kobold">Kobold</a></h2>
+<p><em>Pequenos e malévolos humanoides caninos, com pele escamosa cor de ferrugem. Vivem no subterrâneo.</em></p>
+<p><strong>Classe de Armadura</strong>: 7 [12]</p>
+<p><strong>Dados de Vida</strong>: ½ (2pv)</p>
+<p><strong>Ataques</strong>: 1 × arma (1d4 ou por arma – 1)</p>
+<p><strong>TAC0</strong>: 19 [0]</p>
+<p><strong>Movimento</strong>: 18m (6m)</p>
+<p><strong>Testes de Resistência</strong>:  M14 V15 P16 S17 F18 (NH)</p>
+<p><strong>Moral</strong>: 6 (8 com chefe)</p>
+<p><strong>Tendência</strong>: Caótico</p>
+<p><strong>XP</strong>: 5 (guarda-costas: 15, chefe: 20)</p>
+<p><strong>Número Encontrado</strong>: 4d4 (6d10)</p>
+<p><strong>Tesouro</strong>: P (J)</p>
+<ul>
+<li><strong>Emboscada</strong>: Preparam ataques surpresas.</li>
+<li><strong>Infravisão</strong>: 27m.</li>
+<li><strong>Odeiam gnomos</strong>: Atacam assim que avistarem.</li>
+<li><strong>Chefe e guarda-costas</strong>: Um chefe de 2 DV (9 pv) e 1d6 guarda-costas com 1+1 DV (6 pvs) vivem em um lar de kobolds.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../6-monstros/2-descricao-monstros/02-lista-D-F.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../../6-monstros/2-descricao-monstros/04-lista-L-N.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../6-monstros/2-descricao-monstros/02-lista-D-F.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../../6-monstros/2-descricao-monstros/04-lista-L-N.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../../mark-09e88c2c.min.js"></script>
+        <script src="../../searcher-c2a407aa.js"></script>
+
+        <script src="../../clipboard-1626706a.min.js"></script>
+        <script src="../../highlight-abc7f01d.js"></script>
+        <script src="../../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR" class="rust sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Espadas Sencientes - Old School Essentials SRD</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="../favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="../favicon-8114d1fc.png">
+        <link rel="stylesheet" href="../css/variables-8adf115d.css">
+        <link rel="stylesheet" href="../css/general-2459343d.css">
+        <link rel="stylesheet" href="../css/chrome-ae938929.css">
+        <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../fonts/fonts-9644e21d.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="mdbook-highlight-css" href="../highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="../tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../custom-efc8afdc.css">
+
+        <!-- MathJax -->
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "rust";
+            const default_dark_theme = "rust";
+            window.path_to_searchindex_js = "../searchindex-117446f6.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc-950846f6.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="mdbook-body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="mdbook-page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        </label>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        </button>
+                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        </ul>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Old School Essentials SRD</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="mdbook-content" class="content">
+                    <main>
+                        <h1 id="espadas-sencientes"><a class="header" href="#espadas-sencientes">Espadas Sencientes</a></h1>
+<p>Se uma espada mágica possui senciência (consulte Espadas para ver a probabilidade), o procedimento nesta página pode ser usado para determinar seus poderes. (De forma alternativa, o árbitro pode selecionar suas qualidades conforme desejado.)</p>
+<h2 id="rolando-uma-espada-senciente"><a class="header" href="#rolando-uma-espada-senciente">Rolando uma Espada Senciente</a></h2>
+<ul>
+<li><strong>Propósito especial</strong>: Se a espada tiver um propósito especial, consulte Propósitos Especiais de Espadas Sencientes para determinar qual é.</li>
+<li><strong>Inteligência e personalidade</strong>: A INT da espada é 1d6+6. (As espadas imbuídas com um propósito especial sempre têm INT 12.) A espada tem sua própria personalidade e deve ser interpretada como um PNJ.</li>
+<li><strong>Comunicação</strong>: A INT da espada determina os meios pelos quais ela pode se comunicar. Veja a tabela à direita.
+<ul>
+<li><strong>Empatia</strong>: A espada não pode se comunicar diretamente, mas empaticamente informa o portador sobre quais são seus poderes e como usá-los.</li>
+<li><strong>Discurso</strong>: A espada fala em voz alta. O número de idiomas que ela conhece é indicado rolando na tabela de idiomas, à direita. Os idiomas devem ser selecionados pelo árbitro.</li>
+<li><strong>Leitura</strong>: A espada pode ler todos os idiomas que pode falar, bem como inscrições mágicas.</li>
+</ul>
+</li>
+<li><strong>Alinhamento</strong>: Veja a tabela à direita.</li>
+<li><strong>Poderes</strong>: A INT da espada determina o número de poderes que ela possui. Veja a tabela à direita. Os poderes estão descritos nas páginas seguintes.</li>
+<li><strong>Ego</strong>: Espadas sencientes têm uma classificação de Ego - uma medida da sua força de personalidade. Essa classificação é decidida na rolagem de 1d12. As espadas imbuídas com um propósito especial sempre têm um Ego de 12.</li>
+</ul>
+<h2 id="usando-uma-espada-senciente"><a class="header" href="#usando-uma-espada-senciente">Usando uma Espada Senciente</a></h2>
+<p>Espadas sencientes concedem ao portador poderes especiais além dos de uma espada mágica normal, mas o uso de uma também traz riscos.</p>
+<h3 id="ativando-os-poderes"><a class="header" href="#ativando-os-poderes">Ativando os Poderes</a></h3>
+<ul>
+<li><strong>Na mão</strong>: Para usar o poder, a espada deve estar na mão do portador.</li>
+<li><strong>Concentração</strong>: O usuário deve se concentrar para ativar um poder.</li>
+</ul>
+<h3 id="alinhamento"><a class="header" href="#alinhamento">Alinhamento</a></h3>
+<p>O alinhamento da espada só pode ser determinado ao tocá-la. Fazer isso pode acarretar em danos se o personagem tiver um alinhamento diferente da espada:</p>
+<ul>
+<li><strong>Espadas Ordeiras</strong>: Inflige 1d6 de dano por rodada a personagens neutros e 2d6 por rodada a personagens caóticos.</li>
+<li><strong>Espadas Neutras</strong>: Inflige 1d6 de dano por rodada a personagens não neutros.</li>
+<li><strong>Espadas Caóticas</strong>: Inflige 1d6 de dano por rodada a personagens neutros e 2d6 por rodada a personagens neutros.</li>
+</ul>
+<h2 id="controle"><a class="header" href="#controle">Controle</a></h2>
+<p>Uma espada senciente tem sua própria personalidade e pode, às vezes, tentar exercer controle sobre a pessoa que a empunha. Um teste de controle (veja abaixo) é acionado em qualquer uma das seguintes circunstâncias:</p>
+<ul>
+<li><strong>Primeiro contato</strong>: Após o personagem tocar a espada pela primeira vez.</li>
+<li><strong>Ferido</strong>: Quando o personagem é reduzido para metade dos pontos de vida ou menos.</li>
+<li><strong>Ciúmes</strong>: Quando outra arma mágica entra na posse do personagem.</li>
+<li><strong>Diferença de alinhamento</strong>: A cada uso, se a espada e o personagem tiverem alinhamentos diferentes.</li>
+<li><strong>Finalidade especial</strong>: Se a espada tiver um propósito especial: toda vez que o propósito especial for aplicável. (por exemplo, ao encontrar um personagem ou criatura do tipo que a espada foi projetada para matar.)</li>
+</ul>
+<h3 id="testes-de-controle"><a class="header" href="#testes-de-controle">Testes de Controle</a></h3>
+<p>Quando uma das circunstâncias mencionadas acima ocorre, é necessário um teste de controle:</p>
+<ul>
+<li>Determine a pontuação de Vontade da espada:
+<ul>
+<li>A soma da sua INT e Ego.</li>
+<li>Adicione um para cada poder extraordinário que a espada tiver.</li>
+<li>Adicione 1d10 se a espada e o portador forem de alinhamentos diferentes.</li>
+</ul>
+</li>
+<li>Determine a pontuação de Vontade do portador:
+<ul>
+<li>A soma das pontuações FOR e SÁB.</li>
+<li>Se o personagem não estiver com os pontos de vida completos, a Vontade será reduzida em 1d4 (ou 2d4 se o personagem tiver menos da metade dos pontos de vida).</li>
+</ul>
+</li>
+<li>Compare as pontuações de Vontade. Se a pontuação de Vontade da espada for maior, ela assume o controle das ações do personagem.</li>
+</ul>
+<h3 id="quando-a-espada-assume-o-controle"><a class="header" href="#quando-a-espada-assume-o-controle">Quando a Espada Assume o Controle</a></h3>
+<p>O árbitro determina o comportamento do personagem, através da espada, por exemplo:</p>
+<ul>
+<li><strong>Ciúmes</strong>: Descartando outras armas ou ignorando as armas mágicas recém-descobertas.</li>
+<li><strong>Glória</strong>: Entrando em batalha, a fim de obter glória através da espada.</li>
+<li><strong>Rendição</strong>: Para um inimigo que a espada considere mais digno de possuí-la ou mais suscetível de ser controlado.</li>
+<li><strong>Indulgência</strong>: Ter altos gatos com a espada e com coisas para ela. Compra de bainhas caras, joias, encantando com magias e confeccionando guardas, etc. A espada pode forçar o personagem a gastar a maior parte de seu dinheiro em tais coisas!</li>
+</ul>
+<h3 id="encerrando-o-controle"><a class="header" href="#encerrando-o-controle">Encerrando o Controle</a></h3>
+<p>Uma vez no controle, a espada só liberará o personagem quando a circunstância que desencadeou o teste de controle terminar ou quando a espada estiver satisfeita.</p>
+<h2 id="poderes-extraordinários"><a class="header" href="#poderes-extraordinários">Poderes Extraordinários</a></h2>
+<h3 id="tabela-de-poderes-extraordinários"><a class="header" href="#tabela-de-poderes-extraordinários">Tabela de Poderes Extraordinários</a></h3>
+<p>Cada poder deve ser rolado na tabela abaixo. As duplicatas devem ser reroladas, a menos que seja indicado.</p>
+<p><strong>Frequência de uso</strong>: A menos que a descrição de um poder diga o contrário, ele pode ser usado no máximo três vezes por dia.</p>
+<p>+–––––+————————————————+
+| Poderes Extraordinários de Espadas Sencientes             |
++==========+================================================+
+| <strong>d100</strong> | <strong>Poder</strong>                                      |
++–––––+————————————————+
+| 01–10    | Clariaudiência                                 |
++–––––+————————————————+
+| 11–20    | Clarividência                                  |
++–––––+————————————————+
+| 21–30    | Percepção Extrassensorial                      |
++–––––+————————————————+
+| 31–35    | Dano Extra (duplicatas permitidas)             |
++–––––+————————————————+
+| 36–40    | Voar                                           |
++–––––+————————————————+
+| 41–45    | Cura (duplicatas permitidas)                   |
++–––––+————————————————+
+| 46–54    | Ilusão                                         |
++–––––+————————————————+
+| 55–59    | Levitação                                      |
++–––––+————————————————+
+| 60–69    | Telecinesia                                    |
++–––––+————————————————+
+| 70–79    | Telepatia                                      |
++–––––+————————————————+
+| 80–88    | Teleporte                                      |
++–––––+————————————————+
+| 89–97    | Visão de Raio-X                                |
++–––––+————————————————+
+| 98–99    | Role novamente 2 vezes nessa tabela            |
++–––––+————————————————+
+| 0        | Role novamente 3 vezes nessa tabela            |
++–––––+————————————————+</p>
+<h2 id="clariaudiência"><a class="header" href="#clariaudiência">Clariaudiência</a></h2>
+<p>Permite que o portador ouça através dos ouvidos de outra criatura.</p>
+<ul>
+<li><strong>Ativação</strong>: O usuário deve se concentrar por um turno para ativar esse poder.</li>
+<li><strong>Alcance</strong>: A outra criatura deve estar dentro de 18m.</li>
+<li><strong>Obstrução</strong>: O chumbo bloqueia esse poder.</li>
+</ul>
+<h2 id="clarividência"><a class="header" href="#clarividência">Clarividência</a></h2>
+<p>Permite que o personagem veja através dos olhos de outra criatura.</p>
+<ul>
+<li><strong>Ativação</strong>: O usuário deve se concentrar por um turno para ativar esse poder.</li>
+<li><strong>Alcance</strong>: A outra criatura deve estar dentro de 18m.</li>
+<li><strong>Obstrução</strong>: O chumbo bloqueia esse poder.</li>
+</ul>
+<h2 id="percepção-extrassensorial"><a class="header" href="#percepção-extrassensorial">Percepção Extrassensorial</a></h2>
+<p>Permite ao usuário ler os pensamentos de outra criatura viva.</p>
+<ul>
+<li><strong>Ativação</strong>: O usuário deve se concentrar em uma direção específica para ativar esse poder.</li>
+<li><strong>Alcance</strong>: A outra criatura deve estar dentro de 18m.</li>
+<li><strong>Compreensão</strong>: O usuário ganha uma compreensão empática dos pensamentos da criatura.</li>
+<li><strong>Obstrução</strong>: O chumbo bloqueia esse poder.</li>
+</ul>
+<h2 id="dano-extra"><a class="header" href="#dano-extra">Dano Extra</a></h2>
+<p>Aumenta a força do usuário por 1d10 rodadas. Enquanto o poder estiver ativo, o dano infligido pelo portador é multiplicado por 4.</p>
+<h3 id="duplicatas"><a class="header" href="#duplicatas">Duplicatas</a></h3>
+<p>Se esse poder for rolado mais de uma vez, o multiplicador de dano será aumentado em um para cada rolagem duplicada.</p>
+<h2 id="voar"><a class="header" href="#voar">Voar</a></h2>
+<p>O usuário pode voar por até 3 turnos.</p>
+<ul>
+<li><strong>Taxa de movimento</strong>: É possível ter um deslocamento de até 109m (36m).</li>
+<li><strong>Movimentação Livre</strong>: É possível se mover em qualquer direção, incluindo a capacidade de levitar e pairar no ar.</li>
+</ul>
+<h2 id="cura"><a class="header" href="#cura">Cura</a></h2>
+<p>A espada cura danos.</p>
+<ul>
+<li><strong>Efeito</strong>: Um ponto de dano é curado por rodada, durante seis rodadas.</li>
+<li><strong>Frequência de uso</strong>: Esta energia pode ser ativada apenas uma vez por dia.</li>
+</ul>
+<h3 id="duplicatas-1"><a class="header" href="#duplicatas-1">Duplicatas</a></h3>
+<p>Se esse poder for rolado mais de uma vez, o multiplicador de dano será aumentado em 6 rodadas para cada rolagem duplicada.</p>
+<h2 id="ilusão"><a class="header" href="#ilusão">Ilusão</a></h2>
+<p>Uma ilusão à escolha do usuário se manifesta. Isso funciona da mesma maneira que a magia Força Fantasmagórica do Usuário de Magia:</p>
+<h2 id="levitação"><a class="header" href="#levitação">Levitação</a></h2>
+<p>Concede a capacidade de se mover para cima e para baixo pelo ar à vontade.</p>
+<ul>
+<li><strong>Vertical</strong>: O usuário direciona mentalmente o movimento vertical em até 6m por rodada.</li>
+<li><strong>Horizontal</strong>: O personagem pode se empurrar apoiando-se em objetos sólidos para se mover lateralmente.</li>
+<li><strong>Peso</strong>: Uma quantidade normal de peso pode ser transportada enquanto se está levitando.</li>
+</ul>
+<h2 id="telecinesia"><a class="header" href="#telecinesia">Telecinesia</a></h2>
+<p>Ao se concentrar, o usuário é capaz de mover objetos ou criaturas dentro de 36m com o poder do pensamento.</p>
+<ul>
+<li><strong>Peso</strong>: Até 2,000 moedas de peso podem ser afetadas como alvo.</li>
+<li><strong>Movimento</strong>: O alvo pode ser movido em até 6m por rodada, em qualquer direção que o portador desejar (incluindo verticalmente).</li>
+<li><strong>Resistindo</strong>: Uma criatura afetada pode fazer um Teste de resistência contra magias para tentar resistir.</li>
+<li><strong>Duração</strong>: Até 6 rodadas.</li>
+<li><strong>Concentração</strong>: Se a concentração for quebrada, o alvo cai.</li>
+</ul>
+<h2 id="telepatia"><a class="header" href="#telepatia">Telepatia</a></h2>
+<p>Permite ao usuário ler os pensamentos de outra criatura viva.</p>
+<ul>
+<li>Concentração: O usuário deve se concentrar em uma direção específica para ativar esse poder.</li>
+<li>Alcance: A outra criatura deve estar dentro de 18m.</li>
+<li>Compreensão: O usuário ganha uma compreensão empática dos pensamentos da criatura.</li>
+<li>Comunicação bidirecional: O usuário também pode iniciar uma comunicação telepática bidirecional com a criatura, embora ela não seja obrigada a responder.</li>
+<li>Obstrução: O chumbo bloqueia esse poder.</li>
+</ul>
+<h2 id="teleporte"><a class="header" href="#teleporte">Teleporte</a></h2>
+<p>O portador é capaz de se teleportar, de acordo com a magia do Usuário de Magia (consulte Teleporte).</p>
+<h2 id="visão-de-raio-x"><a class="header" href="#visão-de-raio-x">Visão de Raio-X</a></h2>
+<p>Permite que o usuário veja através de objetos sólidos.</p>
+<ul>
+<li>Através de pedra: É possível ver até 9m através de pedra.</li>
+<li>Através de materiais densos: É possível ver até 18m através de materiais menos densos (pano, água, madeira).</li>
+<li>Obstruções: Visão através de ouro ou chumbo é bloqueada.</li>
+<li>Procurando: Quando usado para o propósito de procurar algo (consulte Aventuras em Masmorras, p108), o usuário recebe a capacidade de perceber portas ou armadilhas secretas na área quadrada de 3m que está sendo examinada.</li>
+<li>Concentração: O uso requer concentração (o usuário não pode se mover).</li>
+<li>Frequência de uso: Esse poder não pode ser ativado mais do que uma vez por turno.</li>
+</ul>
+<h2 id="poderes-sensoriais-das-espadas-sencientes"><a class="header" href="#poderes-sensoriais-das-espadas-sencientes">Poderes Sensoriais das Espadas Sencientes</a></h2>
+<p>Cada poder sensorial deve ser rolado na tabela abaixo, com re-rolando as duplicatas.</p>
+<p><strong>Frequência de uso</strong>: A menos que a descrição de uma energia diga o contrário, ela pode ser usada sem limites.</p>
+<p>+–––––+––––––––––––––––––––––––––––+
+| Poderes Sensoriais de Espadas Sencientes                          |
++==========+========================================================+
+| <strong>d100</strong> | <strong>Poder</strong>                                              |
++–––––+––––––––––––––––––––––––––––+
+| 01–10    | Detectar o Mal e o Bem                                 |
++–––––+––––––––––––––––––––––––––––+
+| 11–15    | Detectar gemas                                         |
++–––––+––––––––––––––––––––––––––––+
+| 16–25    | Detectar mágica                                        |
++–––––+––––––––––––––––––––––––––––+
+| 26–35    | Detectar metais                                        |
++–––––+––––––––––––––––––––––––––––+
+| 36–50    | Detectar arquitetura móvel                             |
++–––––+––––––––––––––––––––––––––––+
+| 51–65    | Detectar ladeiras                                      |
++–––––+––––––––––––––––––––––––––––+
+| 66–75    | Detectar armadilhas                                    |
++–––––+––––––––––––––––––––––––––––+
+| 76–85    | Localizar portas secretas                              |
++–––––+––––––––––––––––––––––––––––+
+| 86–95    | Ver objetos invisíveis                                 |
++–––––+––––––––––––––––––––––––––––+
+| 96–99    | Role um poder extraordinário                           |
++–––––+––––––––––––––––––––––––––––+
+| 0        | Role novamente duas vezes nessa tabela                 |
++–––––+––––––––––––––––––––––––––––+</p>
+<h2 id="detectar-o-mal-e-o-bem"><a class="header" href="#detectar-o-mal-e-o-bem">Detectar o Mal e o Bem</a></h2>
+<p>O usuário pode sentir a intenção de fazer o mal ou o bem dentro de 6m. (Nota: algumas coisas potencialmente perigosas - por exemplo, animais, armadilhas - não são más.)</p>
+<h2 id="detectar-gemas"><a class="header" href="#detectar-gemas">Detectar Gemas</a></h2>
+<p>A espada apontará na direção de qualquer gema dentro de 18m.</p>
+<ul>
+<li><strong>Contagem</strong>: O usuário também é informado do número de gemas presentes.</li>
+<li><strong>Obstrução</strong>: O chumbo bloqueia esse poder.</li>
+</ul>
+<h2 id="detectar-magia"><a class="header" href="#detectar-magia">Detectar Magia</a></h2>
+<p>Até três vezes por dia, a espada pode detectar mágica dentro de 6m. Sob comando, a magia dentro do alcance pode ser comandada a emitir um brilho.</p>
+<h2 id="detectar-metais"><a class="header" href="#detectar-metais">Detectar Metais</a></h2>
+<p>A espada apontará na direção do metal de um tipo nomeado pelo portador dentro de 18m.</p>
+<ul>
+<li><strong>Obstrução</strong>: O chumbo bloqueia esse poder.</li>
+</ul>
+<h2 id="detectar-arquitetura-móvel"><a class="header" href="#detectar-arquitetura-móvel">Detectar Arquitetura Móvel</a></h2>
+<p>O portador pode localizar paredes ou salas móveis até 3m de distância.</p>
+<h2 id="detectar-ladeiras"><a class="header" href="#detectar-ladeiras">Detectar Ladeiras</a></h2>
+<p>O usuário pode detectar ladeiras e pisos inclinados dentro de 3m.</p>
+<h2 id="detectar-armadilhas"><a class="header" href="#detectar-armadilhas">Detectar Armadilhas</a></h2>
+<p>Até três vezes ao dia, o usuário pode detectar armadilhas dentro de 3m.</p>
+<h2 id="localizar-portas-secretas"><a class="header" href="#localizar-portas-secretas">Localizar Portas Secretas</a></h2>
+<p>Até três vezes por dia, o usuário pode encontrar todas as portas secretas dentro de 3m.</p>
+<h2 id="ver-objetos-invisíveis"><a class="header" href="#ver-objetos-invisíveis">Ver Objetos Invisíveis</a></h2>
+<p>O usuário pode ver objetos invisíveis ou ocultos até 6m de distância. (Este poder não revela portas secretas.)</p>
+<h2 id="propósito-especial-de-espadas-sencientes"><a class="header" href="#propósito-especial-de-espadas-sencientes">Propósito Especial de Espadas Sencientes</a></h2>
+<p>Algumas espadas sencientes também são imbuídas de um propósito especial. O propósito dessas espadas é geralmente matar um certo tipo de personagem ou criatura. O propósito pode ser rolado na tabela abaixo, ou o árbitro pode inventar outros.</p>
+<p>+––––+———————————————————————–+
+| <strong>Tabela de Propósitos Especiais</strong>                                             |
++========+=======================================================================+
+| <strong>d6</strong> | Tipo de Alvo a ser Morto                                              |
++––––+———————————————————————–+
+| 1      | Conjuradores de Magia Arcana                                          |
++––––+———————————————————————–+
+| 2      | Conjuradores de Magia Divina                                          |
++––––+———————————————————————–+
+| 3      | Combatentes (por exemplo, guerreiros ou outras classes orientados     |
+|        | primariamente ao combate, incluindo semi-humanos não conjuradores)    |
+|        | e que não sejam conjuradores, incluindo semi-humanos não conjuradores)|
++––––+———————————————————————–+
+| 4      | Tipos específicos de monstros (determinados aleatoriamente)           |
++––––+———————————————————————–+
+| 5      | Criaturas ordeiras (ou criaturas caóticas se a espada for ordeira)    |
++––––+———————————————————————–+
+| 6      | Criaturas caóticas (ou criaturas ordeiras se a espada for caótica)    |
++––––+———————————————————————–+</p>
+<h2 id="poder-de-alinhamento"><a class="header" href="#poder-de-alinhamento">Poder de Alinhamento</a></h2>
+<p>Além de seus poderes sensoriais e extraordinários, as espadas com propósito especial têm um poder extra quando usadas para atingir o propósito designado (por exemplo, ao atacar o inimigo que a espada foi projetada para matar). Esse poder depende do alinhamento da espada:</p>
+<ul>
+<li><strong>Ordeira</strong>: Os inimigos caóticos atingidos pela espada devem fazer um teste de resistência contra magia ou ficam paralisados.</li>
+<li><strong>Neutra</strong>: O portador ganha um bônus de +1 a todos os testes de resistência.</li>
+<li><strong>Caótico</strong>: Inimigos ordeiros atingidos pela espada devem fazer um teste de resistência contra magias ou serão transformados em pedra.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../8-tesouros/12-espadas.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                            </a>
+
+                            <a rel="next prefetch" href="../dicionariodetermos.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../8-tesouros/12-espadas.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                    </a>
+
+                    <a rel="next prefetch" href="../dicionariodetermos.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
+            </nav>
+
+        </div>
+
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr-ef4e11c1.min.js"></script>
+        <script src="../mark-09e88c2c.min.js"></script>
+        <script src="../searcher-c2a407aa.js"></script>
+
+        <script src="../clipboard-1626706a.min.js"></script>
+        <script src="../highlight-abc7f01d.js"></script>
+        <script src="../book-a0b12cfe.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
