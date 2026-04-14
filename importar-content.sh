@@ -153,6 +153,10 @@ cat >> "$SUMMARY" << EOF
 - [$(get_title "$CONTENT/open-game-license.md")](open-game-license.md)
 EOF
 
+########################################################################
+# Copia logo pra content
+cp ose_logo.webp content/
+
 # MdBook
 echo
 mdbook clean

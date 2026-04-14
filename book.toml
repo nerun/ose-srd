@@ -5,7 +5,7 @@ language = "pt-BR"
 src = "content"
 
 [output.html]
-default-theme = "rust"
+default-theme = "light"
 preferred-dark-theme = "rust"
 mathjax-support = true
 fold = { enable = true, level = 0 }
