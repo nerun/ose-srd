@@ -42,21 +42,34 @@ Uma vez que uma oferta for feita, o árbitro determinará a reação do potencia
 * **Generosidade**: o árbitro pode aplicar bônus ou penalidades, dependendo da atratividade do negócio (+1 ou +2 para ofertas generosas, -1 ou -2 para ofertas insatisfatórias).
 * **Reputação**: uma penalidade de -1 ou -2 podem ser aplicadas, se o PJ contratante tiver uma má reputação.
 
-+------------------+----------------------------------+
-| Reações do Seguidor em Contratação                  |
-+==================+==================================+
-| 2d6              | Resultado                        |
-+------------------+----------------------------------+
-| 2 ou menos       | Má vontade                       |
-+------------------+----------------------------------+
-| 3–5              | Oferta Recusada                  | 
-+------------------+----------------------------------+
-| 6–8              | Jogue novamente                  |
-+------------------+----------------------------------+
-| 9–11             | Oferta Aceita                    |
-+------------------+----------------------------------+
-| 12 or more       | Oferta Aceita, +1 de Lealdade    |
-+------------------+----------------------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2">Reações do Seguidor em Contratação</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>2d6</td>
+<td>Resultado</td>
+</tr>
+<tr><td>2 ou menos</td>
+<td>Má vontade</td>
+</tr>
+<tr><td>3–5</td>
+<td>Oferta Recusada</td>
+</tr>
+<tr><td>6–8</td>
+<td>Jogue novamente</td>
+</tr>
+<tr><td>9–11</td>
+<td>Oferta Aceita</td>
+</tr>
+<tr><td>12 or more</td>
+<td>Oferta Aceita, +1 de Lealdade</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 **Má Vontade**: uma penalidade de -1 será aplicada a futuras jogadas de reação de contratação na mesma cidade ou área.
 

@@ -1,7 +1,9 @@
+/* REDUZ UM POUCO O ESPAÇAMENTO VERTICAL DOS TÍTULOS */
 h1, h2, h3, h4, h5, h6 {
     margin-top: 3rem;
 }
 
+/* Insere LOGO "OSE" na sidebar antes de tudo */
 .sidebar-scrollbox::before {
     content: "";
     display: block;
@@ -11,6 +13,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
+/* Insere LOGO "Dados Místicos" na sidebar antes de tudo */
 .sidebar-scrollbox::after {
     content: "";
     display: block;
@@ -18,4 +21,21 @@ h1, h2, h3, h4, h5, h6 {
     background-size: contain;
     height: 150px;
     margin-top: 1rem;
+}
+
+/* ARRUMA TABELAS */
+table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+table th,
+table td {
+    padding: 2px 6px;
+    white-space: normal;
+}
+
+table td:not(:first-child) {
+    text-align: center;
 }

@@ -27,7 +27,7 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../../custom-532d0cb2.css">
+        <link rel="stylesheet" href="../../custom-01657aac.css">
 
         <!-- MathJax -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -37,7 +37,7 @@
             const path_to_root = "../../";
             const default_light_theme = "light";
             const default_dark_theme = "rust";
-            window.path_to_searchindex_js = "../../searchindex-117446f6.js";
+            window.path_to_searchindex_js = "../../searchindex-97bb6e9d.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc-950846f6.js"></script>
@@ -254,31 +254,97 @@
 <li><strong>Limite de uso</strong>: Ela pode ser conjurada uma vez por semana. (O árbitro pode limitar o uso da magia, de forma a torná-la menos frequente, se desejar.)</li>
 <li><strong>Insanidade</strong>: a comunhão com criaturas de grande poder pode despedaçar a sanidade do conjurador. A chance básica é mostrada na tabela abaixo. Para cada nível de conjurador acima do 11º, a chance é reduzida em 5%. Se o conjurador ficar insano como resultado da comunhão, o tempo de recuperação é igual ao número do plano conectado.</li>
 </ul>
-<p>+–––––+––––––––+–––––––+––––––––+–––––––+
-|<strong>Perguntas aos contatos extraplanares</strong>                                  |
-+==========+================+==============+================+==============+
-|<strong>Plano</strong> |<strong>Nº Perguntas</strong>|<strong>Não sabe</strong>  |<strong>Verdade</strong>     |<strong>Insanidade</strong>|
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|3º        |3               |75%           |50%             |5%            |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|4º        |4               |70%           |55%             |10%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|5º        |5               |65%           |60%             |15%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|6º        |6               |60%           |65%             |20%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|7º        |7               |50%           |70%             |25%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|8º        |8               |40%           |75%             |30%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|9º        |9               |30%           |80%             |35%           |
-+–––––+––––––––+–––––––––––––––––––––––+
-|10º       |10              |20%           |85%             |40%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|11º       |11              |10%           |90%             |45%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+
-|12º       |12              |5%            |95%             |50%           |
-+–––––+––––––––+–––––––+––––––––+–––––––+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="5"><strong>Perguntas aos contatos extraplanares</strong></th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>Plano</strong></td>
+<td><strong>Nº Perguntas</strong></td>
+<td><strong>Não sabe</strong></td>
+<td><strong>Verdade</strong></td>
+<td><strong>Insanidade</strong></td>
+</tr>
+
+<tr><td>3º</td>
+<td>3</td>
+<td>75%</td>
+<td>50%</td>
+<td>5%</td>
+</tr>
+
+<tr><td>4º</td>
+<td>4</td>
+<td>70%</td>
+<td>55%</td>
+<td>10%</td>
+</tr>
+
+<tr><td>5º</td>
+<td>5</td>
+<td>65%</td>
+<td>60%</td>
+<td>15%</td>
+</tr>
+
+<tr><td>6º</td>
+<td>6</td>
+<td>60%</td>
+<td>65%</td>
+<td>20%</td>
+</tr>
+
+<tr><td>7º</td>
+<td>7</td>
+<td>50%</td>
+<td>70%</td>
+<td>25%</td>
+</tr>
+
+<tr><td>8º</td>
+<td>8</td>
+<td>40%</td>
+<td>75%</td>
+<td>30%</td>
+</tr>
+
+<tr><td>9º</td>
+<td>9</td>
+<td>30%</td>
+<td>80%</td>
+<td>35%</td>
+</tr>
+
+<tr><td>10º</td>
+<td>10</td>
+<td>20%</td>
+<td>85%</td>
+<td>40%</td>
+</tr>
+
+<tr><td>11º</td>
+<td>11</td>
+<td>10%</td>
+<td>90%</td>
+<td>45%</td>
+</tr>
+
+<tr><td>12º</td>
+<td>12</td>
+<td>5%</td>
+<td>95%</td>
+<td>50%</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="enfraquecer-o-intelecto"><a class="header" href="#enfraquecer-o-intelecto">Enfraquecer o Intelecto</a></h2>
 <p><strong>Duração</strong>: Permanente</p>
 <p><strong>Alcance</strong>: 72 m
@@ -366,17 +432,44 @@ Esta magia provoca paralisia em uma ou mais criaturas, se elas falharem em um te
 <li><strong>Destino</strong>: pode ser qualquer distância, mas tem que ser conhecida pelo conjurador. O destino deve ser um espaço aberto no nível do solo (não é possível, teleportar intencionalmente teleportar o alvo nas alturas ou dentro de matéria sólida)</li>
 <li><strong>Risco</strong>: existe um risco, quando teleportando, de acidentalmente aparecer acima ou abaixo do nível do solo. A chance de um teleporte depende do conhecimento do conjurador da localização (veja abaixo). Jogue 1d100 e consultem a tabela a seguir.</li>
 </ul>
-<p>+——————————+———————––+—————––+——————+
-|<strong>Resultado do Teleporte</strong>                                                                     |
-+==============================+=========================+===================+==================+
-|Conhecimento do Destino       |Nível do solo            |Muito Alto         |Muito Baixo       |
-+——————————+———————––+—————––+——————+
-|Escasso                       |01 – 50                  |51 – 75            |76 – 00           |
-+——————————+———————––+—————––+——————+
-|Moderado                      |01 – 80                  |81 – 90            |91 – 00           |
-+——————————+———————––+—————––+——————+
-|Exato                         |01 – 95                  |96 – 99            |00                |
-+——————————+———————––+—————––+——————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="4"><strong>Resultado do Teleporte</strong></th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td>Conhecimento do Destino</td>
+<td>Nível do solo</td>
+<td>Muito Alto</td>
+<td>Muito Baixo</td>
+</tr>
+
+<tr><td>Escasso</td>
+<td>01 – 50</td>
+<td>51 – 75</td>
+<td>76 – 00</td>
+</tr>
+
+<tr><td>Moderado</td>
+<td>01 – 80</td>
+<td>81 – 90</td>
+<td>91 – 00</td>
+</tr>
+
+<tr><td>Exato</td>
+<td>01 – 95</td>
+<td>96 – 99</td>
+<td>00</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <p><strong>Nível do solo</strong>: o alvo aparece no local desejado.</p>
 <p><strong>Muito alto</strong>: o alvo aparece a 1d10 x 3 m acima do destino desejado. Caso o local já esteja ocupado por matéria sólida, o alvo é morto instantaneamente. De outra forma, o alvo cai daquela altura.</p>
 <p><strong>Muito baixo</strong>: o alvo aparece no solo e é morto instantaneamente.</p>
@@ -422,6 +515,22 @@ Esta magia provoca paralisia em uma ou mais criaturas, se elas falharem em um te
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

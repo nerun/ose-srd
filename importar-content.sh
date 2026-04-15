@@ -10,6 +10,9 @@ rm -rf content
 mv "$EXTRACTED/content" .
 rm -rf "$EXTRACTED" "$ZIP"
 
+#testing
+#rm -rf content
+#cp -r /mnt/data1/GIT/contributor/ose-srd/content .
 
 ########################################################################
 # Numeração de pastas na ordem que aparecem no Sumário
@@ -91,6 +94,20 @@ find content -name "*.md" -exec sed -i -E '
     s|\(/equipamentos/06-veiculos-arquaticos\)|(/3-equipamentos/06-veiculos-aquaticos.md)|g
     s|\(/equipamentos/09-especialistas\)|(/3-equipamentos/09-especialistas.md)|g
 ' {} \;
+
+
+########################################################################
+# Converte grid tables RST para HTML
+echo
+python3 convert_tables.py
+
+find content -type f -name "*.md" -exec sed -i 's|\&amp;|\&|g' {} \;
+
+# Remove parágrafos de dentro de tabelas
+find . -name "*.md" -type f -exec perl -0777 -pi -e '
+s/<td([^>]*)>\s*<p>(.*?)<\/p>\s*<\/td>/<td$1>$2<\/td>/gs;
+s/<th([^>]*)>\s*<p>(.*?)<\/p>\s*<\/th>/<th$1>$2<\/th>/gs;
+' {} +
 
 
 ########################################################################

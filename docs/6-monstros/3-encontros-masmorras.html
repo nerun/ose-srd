@@ -27,7 +27,7 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../custom-532d0cb2.css">
+        <link rel="stylesheet" href="../custom-01657aac.css">
 
         <!-- MathJax -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -37,7 +37,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "rust";
-            window.path_to_searchindex_js = "../searchindex-117446f6.js";
+            window.path_to_searchindex_js = "../searchindex-97bb6e9d.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-950846f6.js"></script>
@@ -184,93 +184,281 @@
 <p><strong>Aventureiros PNJs</strong>: encontros com grupos de aventureiros de PNJs são listadas nas tabelas “Aventureiros Comuns” ou “Aventureiros Experientes”. Orientações para a criação de aventureiros PNJs podem ser encontradas na seção Grupos de Aventureiros.</p>
 <p><strong>Número encontrado</strong>: o valor listado na tabela para alguns monstros não coincidem com os valores listados na descrição dos monstros. Se desejar, o árbitro pode usar o número de aparição listado na descrição do monstro, para ter mais consistência.</p>
 <h2 id="encontro-por-nível-da-masmorra-níveis-1-a-3"><a class="header" href="#encontro-por-nível-da-masmorra-níveis-1-a-3">ENCONTRO POR NÍVEL DA MASMORRA (NÍVEIS 1 A 3)</a></h2>
-<p>+—––+——————————+——————————+——————————+
-|<strong>d20</strong>|<strong>Nível 1</strong>                   |<strong>Nível 2</strong>                   |<strong>Nível 3</strong>                   |
-+=======+==============================+==============================+==============================+
-|1      |Acólito (1d2)                 |Besouro, óleo (1d8)           |Macaco, branco (1d6)          |
-+—––+——————————+——————————+——————————+
-|2      |Bandido (1d8)                 |Furioso (1d6)                 |Aventureiro comum (1d4+4)     |
-+—––+——————————+——————————+——————————+
-|3      |Besouro, fogo(1d8)            |Felino, Leão da Montanha (1d4)|Besouro Tigre (1d6)           |
-+—––+——————————+——————————+——————————+
-|4      |Anão (1d6)                    |Elfo (1d4)                    |Bugbear (2d4)                 |
-+—––+——————————+——————————+——————————+
-|5      |Gnomo (1d6)                   |Carniçal (1d6)                |Verme de carniça (1d3)        |
-+—––+——————————+——————————+——————————+
-|6      |Goblin (2d4)                  |Gnoll (1d6)                   |Doppelgänger (1d6)            |
-+—––+——————————+——————————+——————————+
-|7      |Limo verde (1d4)              |Pudim Pardo (1)               |Formiga excruciante (2d4)     |
-+—––+——————————+——————————+——————————+
-|8      |Halfling (3d6)                |Hobglobin (1d6)               |Gárgula (1d6)                 |
-+—––+——————————+——————————+——————————+
-|9      |Abelha assassina (1d10)       |Lagarto, Draco (1d4)          |Cubo gelatinoso (1)           |
-+—––+——————————+——————————+——————————+
-|10     |Kobold (4d4)                  |Homem-lagarto (2d4)           |Harpia (1d6)                  |
-+—––+——————————+——————————+——————————+
-|11     |Lagarto, osga (1d3)           |Neandertal (1d10)             |Estátua viva, cristal (1d6)   |
-+—––+——————————+——————————+——————————+
-|12     |Orc (2d4)                     |Nobre (2d6)                   |Licantropo, Homem-rato (1d8)  |
-+—––+——————————+——————————+——————————+
-|13     |Musaranho, gigante (1d10)     |Pixie (2d4)                   |Médium (1d4)                  |
-+—––+——————————+——————————+——————————+
-|14     |Esqueleto (3d4)               |Mosca Assassina (1d6)         |Medusa (1d3)                  |
-+—––+——————————+——————————+——————————+
-|15     |Serpente (1d6)                |Babuíno das pedras (2d6)      |Geléia ocre (1)               |
-+—––+——————————+——————————+——————————+
-|16     |Caranguejo-aranha (1d4)       |Cobra covinha (1d8)           |Ogro (1d6)                    |
-+—––+——————————+——————————+——————————+
-|17     |Sprite (3d6)                  |Aranha Viúva Negra (1d3)      |Sombra (1d8)                  |
-+—––+——————————+——————————+——————————+
-|18     |Stirge (1d10)                 |Troglodita (1d8)              |Aranha Tarântula (1d3)        |
-+—––+——————————+——————————+——————————+
-|19     |Comerciante (1d8)             |Veterano (2d4)                |Thoul (1d6)                   |
-+—––+——————————+——————————+——————————+
-|20     |Lobo (2d6)                    |Zumbi (2d4)                   |Wight (1d6)                   |
-+—––+——————————+——————————+——————————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>d20</strong></th>
+<th class="head"><strong>Nível 1</strong></th>
+<th class="head"><strong>Nível 2</strong></th>
+<th class="head"><strong>Nível 3</strong></th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td>1</td>
+<td>Acólito (1d2)</td>
+<td>Besouro, óleo (1d8)</td>
+<td>Macaco, branco (1d6)</td>
+</tr>
+
+<tr><td>2</td>
+<td>Bandido (1d8)</td>
+<td>Furioso (1d6)</td>
+<td>Aventureiro comum (1d4+4)</td>
+</tr>
+
+<tr><td>3</td>
+<td>Besouro, fogo(1d8)</td>
+<td>Felino, Leão da Montanha (1d4)</td>
+<td>Besouro Tigre (1d6)</td>
+</tr>
+
+<tr><td>4</td>
+<td>Anão (1d6)</td>
+<td>Elfo (1d4)</td>
+<td>Bugbear (2d4)</td>
+</tr>
+
+<tr><td>5</td>
+<td>Gnomo (1d6)</td>
+<td>Carniçal (1d6)</td>
+<td>Verme de carniça (1d3)</td>
+</tr>
+
+<tr><td>6</td>
+<td>Goblin (2d4)</td>
+<td>Gnoll (1d6)</td>
+<td>Doppelgänger (1d6)</td>
+</tr>
+
+<tr><td>7</td>
+<td>Limo verde (1d4)</td>
+<td>Pudim Pardo (1)</td>
+<td>Formiga excruciante (2d4)</td>
+</tr>
+
+<tr><td>8</td>
+<td>Halfling (3d6)</td>
+<td>Hobglobin (1d6)</td>
+<td>Gárgula (1d6)</td>
+</tr>
+
+<tr><td>9</td>
+<td>Abelha assassina (1d10)</td>
+<td>Lagarto, Draco (1d4)</td>
+<td>Cubo gelatinoso (1)</td>
+</tr>
+
+<tr><td>10</td>
+<td>Kobold (4d4)</td>
+<td>Homem-lagarto (2d4)</td>
+<td>Harpia (1d6)</td>
+</tr>
+
+<tr><td>11</td>
+<td>Lagarto, osga (1d3)</td>
+<td>Neandertal (1d10)</td>
+<td>Estátua viva, cristal (1d6)</td>
+</tr>
+
+<tr><td>12</td>
+<td>Orc (2d4)</td>
+<td>Nobre (2d6)</td>
+<td>Licantropo, Homem-rato (1d8)</td>
+</tr>
+
+<tr><td>13</td>
+<td>Musaranho, gigante (1d10)</td>
+<td>Pixie (2d4)</td>
+<td>Médium (1d4)</td>
+</tr>
+
+<tr><td>14</td>
+<td>Esqueleto (3d4)</td>
+<td>Mosca Assassina (1d6)</td>
+<td>Medusa (1d3)</td>
+</tr>
+
+<tr><td>15</td>
+<td>Serpente (1d6)</td>
+<td>Babuíno das pedras (2d6)</td>
+<td>Geléia ocre (1)</td>
+</tr>
+
+<tr><td>16</td>
+<td>Caranguejo-aranha (1d4)</td>
+<td>Cobra covinha (1d8)</td>
+<td>Ogro (1d6)</td>
+</tr>
+
+<tr><td>17</td>
+<td>Sprite (3d6)</td>
+<td>Aranha Viúva Negra (1d3)</td>
+<td>Sombra (1d8)</td>
+</tr>
+
+<tr><td>18</td>
+<td>Stirge (1d10)</td>
+<td>Troglodita (1d8)</td>
+<td>Aranha Tarântula (1d3)</td>
+</tr>
+
+<tr><td>19</td>
+<td>Comerciante (1d8)</td>
+<td>Veterano (2d4)</td>
+<td>Thoul (1d6)</td>
+</tr>
+
+<tr><td>20</td>
+<td>Lobo (2d6)</td>
+<td>Zumbi (2d4)</td>
+<td>Wight (1d6)</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="encontro-por-nível-da-masmorra-níveis-4"><a class="header" href="#encontro-por-nível-da-masmorra-níveis-4">ENCONTRO POR NÍVEL DA MASMORRA (NÍVEIS 4+)</a></h2>
-<p>+—––+——————————+——————————+——————————+
-|<strong>d20</strong>|<strong>Nível 4 - 5</strong>               |<strong>Nível 6 - 7</strong>               |**Nível 8+                    |
-+=======+==============================+==============================+==============================+
-|1      |Urso, Caverna (1d2)           |Basilisco (1d6)               |Pudim Negro (1)               |
-+—––+——————————+——————————+——————————+
-|2      |Cão teleportador (1d6)        |Urso, caverna (1d2)           |Quimera (1d2)                 |
-+—––+——————————+——————————+——————————+
-|3      |Cobra cega (1d3)              |Pudim Negro (1)               |Dragão Negro (1d4)            |
-+—––+——————————+——————————+——————————+
-|4      |Cocatrice (1d4)               |Cobra cega (1d3)              |Dragão Azul (1d4)             |
-+—––+——————————+——————————+——————————+
-|5      |Doppelgänger (1d6)            |Dragão branco (1d4)           |Dragão dourado (1d4)          |
-+—––+——————————+——————————+——————————+
-|6      |Aventureiro Experiente (1d6+3)|Aventureiro Experiente (1d6+3)|Dragão verde (1d4)            |
-+—––+——————————+——————————+——————————+
-|7      |Grey Ooze (1)                 |Górgona (1d2)                 |Dragão vermelho (1d4)         |
-+—––+——————————+——————————+——————————+
-|8      |Cão infernal (2d4)            |Cão infernal (2d4)            |Aventureiro Experiente (1d6+3)|
-+—––+——————————+——————————+——————————+
-|9      |Lagarto, Tuatara (1d2)        |Hidra 1d4+4 HD (1)            |Gigante das colinas (1d4)     |
-+—––+——————————+——————————+——————————+
-|10     |Licantropo, Homem-Javali (1d4)|Licantropo, Homem-tigre (1d4) |Gigante das rochas (1d2)      |
-+—––+——————————+——————————+——————————+
-|11     |Licantropo, Lobisomem (1d6)   |Minotauro (1d6)               |Gólem de Ambar (1)            |
-+—––+——————————+——————————+——————————+
-|12     |Minotauro (1d6)               |Múmia (1d4)                   |Gólem de Ossos (1)            |
-+—––+——————————+——————————+——————————+
-|13     |Gosma Ocre (1)                |Gosma Ocre (1)                |Hidra 1d4+8 HD (1)            |
-+—––+——————————+——————————+——————————+
-|14     |Urso Coruja (1d4)             |Urso Coruja (1d4)             |Licantropo, Homem-porco (1d3) |
-+—––+——————————+——————————+——————————+
-|15     |Rhagodessa (1d4)              |Monstro Ferrugem (1d4)        |Licantropo, Homem-urso (1d4)  |
-+—––+——————————+——————————+——————————+
-|16     |Monstro Ferrugem (1d4)        |Salamandra, fogo (1d4+1)      |Mantícore (1d2)               |
-+—––+——————————+——————————+——————————+
-|17     |Espectro (1d4)                |Escorpião Gigante (1d6)       |Verme Púrpura (1d2)           |
-+—––+——————————+——————————+——————————+
-|18     |Troll (1d8)                   |Espectro (1d4)                |Salamandra, fogo (1d4+1)      |
-+—––+——————————+——————————+——————————+
-|19     |Doninha gigante (1d4)         |Troll (1d8)                   |Salamandra, gelo (1d3)        |
-+—––+——————————+——————————+——————————+
-|20     |Aparição (1d4)                |Fera deslocadora (1d4)        |Vampiro (1d4)                 |
-+—––+——————————+——————————+——————————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>d20</strong></th>
+<th class="head"><strong>Nível 4 - 5</strong></th>
+<th class="head"><strong>Nível 6 - 7</strong></th>
+<th class="head"><strong>Nível 8+</strong></th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td>1</td>
+<td>Urso, Caverna (1d2)</td>
+<td>Basilisco (1d6)</td>
+<td>Pudim Negro (1)</td>
+</tr>
+
+<tr><td>2</td>
+<td>Cão teleportador (1d6)</td>
+<td>Urso, caverna (1d2)</td>
+<td>Quimera (1d2)</td>
+</tr>
+
+<tr><td>3</td>
+<td>Cobra cega (1d3)</td>
+<td>Pudim Negro (1)</td>
+<td>Dragão Negro (1d4)</td>
+</tr>
+
+<tr><td>4</td>
+<td>Cocatrice (1d4)</td>
+<td>Cobra cega (1d3)</td>
+<td>Dragão Azul (1d4)</td>
+</tr>
+
+<tr><td>5</td>
+<td>Doppelgänger (1d6)</td>
+<td>Dragão branco (1d4)</td>
+<td>Dragão dourado (1d4)</td>
+</tr>
+
+<tr><td>6</td>
+<td>Aventureiro Experiente (1d6+3)</td>
+<td>Aventureiro Experiente (1d6+3)</td>
+<td>Dragão verde (1d4)</td>
+</tr>
+
+<tr><td>7</td>
+<td>Grey Ooze (1)</td>
+<td>Górgona (1d2)</td>
+<td>Dragão vermelho (1d4)</td>
+</tr>
+
+<tr><td>8</td>
+<td>Cão infernal (2d4)</td>
+<td>Cão infernal (2d4)</td>
+<td>Aventureiro Experiente (1d6+3)</td>
+</tr>
+
+<tr><td>9</td>
+<td>Lagarto, Tuatara (1d2)</td>
+<td>Hidra 1d4+4 HD (1)</td>
+<td>Gigante das colinas (1d4)</td>
+</tr>
+
+<tr><td>10</td>
+<td>Licantropo, Homem-Javali (1d4)</td>
+<td>Licantropo, Homem-tigre (1d4)</td>
+<td>Gigante das rochas (1d2)</td>
+</tr>
+
+<tr><td>11</td>
+<td>Licantropo, Lobisomem (1d6)</td>
+<td>Minotauro (1d6)</td>
+<td>Gólem de Ambar (1)</td>
+</tr>
+
+<tr><td>12</td>
+<td>Minotauro (1d6)</td>
+<td>Múmia (1d4)</td>
+<td>Gólem de Ossos (1)</td>
+</tr>
+
+<tr><td>13</td>
+<td>Gosma Ocre (1)</td>
+<td>Gosma Ocre (1)</td>
+<td>Hidra 1d4+8 HD (1)</td>
+</tr>
+
+<tr><td>14</td>
+<td>Urso Coruja (1d4)</td>
+<td>Urso Coruja (1d4)</td>
+<td>Licantropo, Homem-porco (1d3)</td>
+</tr>
+
+<tr><td>15</td>
+<td>Rhagodessa (1d4)</td>
+<td>Monstro Ferrugem (1d4)</td>
+<td>Licantropo, Homem-urso (1d4)</td>
+</tr>
+
+<tr><td>16</td>
+<td>Monstro Ferrugem (1d4)</td>
+<td>Salamandra, fogo (1d4+1)</td>
+<td>Mantícore (1d2)</td>
+</tr>
+
+<tr><td>17</td>
+<td>Espectro (1d4)</td>
+<td>Escorpião Gigante (1d6)</td>
+<td>Verme Púrpura (1d2)</td>
+</tr>
+
+<tr><td>18</td>
+<td>Troll (1d8)</td>
+<td>Espectro (1d4)</td>
+<td>Salamandra, fogo (1d4+1)</td>
+</tr>
+
+<tr><td>19</td>
+<td>Doninha gigante (1d4)</td>
+<td>Troll (1d8)</td>
+<td>Salamandra, gelo (1d3)</td>
+</tr>
+
+<tr><td>20</td>
+<td>Aparição (1d4)</td>
+<td>Fera deslocadora (1d4)</td>
+<td>Vampiro (1d4)</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 
                     </main>
 
@@ -307,6 +495,22 @@
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

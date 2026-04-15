@@ -58,27 +58,43 @@ Carga é uma medida tanto do peso quanto do volume que um personagem carrega.
 
 **Carga máxima**: a carga máxima que um personagem pode carregar é igual a 1.600 moedas. Personagens que carreguem mais do que isso, não conseguem se movimentar.
 
-+-----------------------+-------------------+
-|**Carga de tesouro em moedas**             |
-+=======================+===================+
-|**Tesouro**            |**Peso em moedas** |
-+-----------------------+-------------------+
-|Moeda (qualquer tipo)  |1                  |
-+-----------------------+-------------------+
-|Gema                   |1                  |
-+-----------------------+-------------------+
-| Joia (1 peça)         |10                 |
-+-----------------------+-------------------+
-|Poção                  |10                 |
-+-----------------------+-------------------+
-|Bastão                 |20                 |
-+-----------------------+-------------------+
-|Pergaminho             |1                  |
-+-----------------------+-------------------+
-|Cajado                 |40                 |
-+-----------------------+-------------------+
-|Varinha                |10                 |
-+-----------------------+-------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2"><strong>Carga de tesouro em moedas</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>Tesouro</strong></td>
+<td><strong>Peso em moedas</strong></td>
+</tr>
+<tr><td>Moeda (qualquer tipo)</td>
+<td>1</td>
+</tr>
+<tr><td>Gema</td>
+<td>1</td>
+</tr>
+<tr><td>Joia (1 peça)</td>
+<td>10</td>
+</tr>
+<tr><td>Poção</td>
+<td>10</td>
+</tr>
+<tr><td>Bastão</td>
+<td>20</td>
+</tr>
+<tr><td>Pergaminho</td>
+<td>1</td>
+</tr>
+<tr><td>Cajado</td>
+<td>40</td>
+</tr>
+<tr><td>Varinha</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 
 ## Opção 1: Carga Básica
@@ -88,17 +104,32 @@ Carga é uma medida tanto do peso quanto do volume que um personagem carrega.
 
 **Taxa de movimento**: é determinada pelo tipo de armadura que o personagem está vestindo e se está carregando uma quantidade significante de tesouros (analisado pelo árbitro). O peso real do tesouro carregado não afeta da taxa de movimento. 
 
-+-----------------------+-------------------+----------------------+
-|**Carga de tesouro em moedas**                                    |
-+=======================+===================+======================+
-|**Armadura Vestida**   |**Sem Tesouro**    |**Carregando Tesouro**|
-+-----------------------+-------------------+----------------------+
-|Sem armadura           |36 (12)            |27 (9)                |
-+-----------------------+-------------------+----------------------+
-|Armadura Leve          |27 (9)             |18 (6)                |
-+-----------------------+-------------------+----------------------+
-|Armadura Pesada        |18 (6)             |9 (3)                 |
-+-----------------------+-------------------+----------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="3"><strong>Carga de tesouro em moedas</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>Armadura Vestida</strong></td>
+<td><strong>Sem Tesouro</strong></td>
+<td><strong>Carregando Tesouro</strong></td>
+</tr>
+<tr><td>Sem armadura</td>
+<td>36 (12)</td>
+<td>27 (9)</td>
+</tr>
+<tr><td>Armadura Leve</td>
+<td>27 (9)</td>
+<td>18 (6)</td>
+</tr>
+<tr><td>Armadura Pesada</td>
+<td>18 (6)</td>
+<td>9 (3)</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 ## Opção 2: Carga Detalhada
 **Tesouro**: o peso das moedas e outros tesouros carregados são controlados.
@@ -107,14 +138,26 @@ Carga é uma medida tanto do peso quanto do volume que um personagem carrega.
 
 **Taxa de movimento**: a taxa de movimento do personagem é baseado no peso total de todos os itens significantes carregados, incluindo tesouro, armas e armaduras.
 
-+-----------------------+----------------------+
-|**Carga**              |**Taxa de Movimento** |
-+=======================+======================+
-|Até 400 moedas         |36 (12)               |
-+-----------------------+----------------------+
-|Até 600 moedas         |27 (9)                |
-+-----------------------+----------------------+
-|Até 800 moedas         |18 (6)                |
-+-----------------------+----------------------+
-|Até 1.600 moedas       |9 (3)                 |
-+-----------------------+----------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>Carga</strong></th>
+<th class="head"><strong>Taxa de Movimento</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Até 400 moedas</td>
+<td>36 (12)</td>
+</tr>
+<tr><td>Até 600 moedas</td>
+<td>27 (9)</td>
+</tr>
+<tr><td>Até 800 moedas</td>
+<td>18 (6)</td>
+</tr>
+<tr><td>Até 1.600 moedas</td>
+<td>9 (3)</td>
+</tr>
+</tbody>
+</table>
+</main>

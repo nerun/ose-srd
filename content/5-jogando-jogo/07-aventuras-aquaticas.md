@@ -44,27 +44,54 @@ As condições do vento no mar afetam a taxa na qual as embarcações à vela po
 * **3 a 11**: Ventos normais. É possível velejar.
 * **12**: Vendaval ou tempestade (ver Vendaval e tempestade)
 
-+---------+----------------------------+----------------------------------------------------------------------------+
-|**+2d6** |**Ventos**                  |**Efeitos**                                                                 |
-+=========+============================+============================================================================+
-|2        |Sem ventos                  |Impossível velejar. Movimento por remos a 1/3 do movimento (devido a fadiga)|
-+---------+----------------------------+----------------------------------------------------------------------------+
-|3        |Brisa fraca                 |Movimento à velas reduzido a 1/3 do normal.                                 |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|4        |Brisa suave                 |Movimento à velas reduzido a 1/2 do normal.                                 |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|5        |Brisa moderada              |Movimento à velas reduzido à 2/3 do normal.                                 |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|6-8      |Lufada de vento             |Movimento à velas normal.                                                   |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|9        |Brisa forte                 |Movimento à velas aumentado em 1/3.                                         |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|10       |Vento forte                 |Movimento à velas aumentado em 1/2.                                         |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|11       |Quase vendaval              |Movimento à velas dobrado. Ver **Quase Vendaval**.                          |
-+---------+----------------------------+----------------------------------------------------------------------------+
-|12       |Vendaval ou tempestade      |Movimento à velas triplicado. Ver **Vendavais e Tempestades**.              |
-+---------+----------------------------+----------------------------------------------------------------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>+2d6</strong></th>
+<th class="head"><strong>Ventos</strong></th>
+<th class="head"><strong>Efeitos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>2</td>
+<td>Sem ventos</td>
+<td>Impossível velejar. Movimento por remos a 1/3 do movimento (devido a fadiga)</td>
+</tr>
+<tr><td>3</td>
+<td>Brisa fraca</td>
+<td>Movimento à velas reduzido a 1/3 do normal.</td>
+</tr>
+<tr><td>4</td>
+<td>Brisa suave</td>
+<td>Movimento à velas reduzido a 1/2 do normal.</td>
+</tr>
+<tr><td>5</td>
+<td>Brisa moderada</td>
+<td>Movimento à velas reduzido à 2/3 do normal.</td>
+</tr>
+<tr><td>6-8</td>
+<td>Lufada de vento</td>
+<td>Movimento à velas normal.</td>
+</tr>
+<tr><td>9</td>
+<td>Brisa forte</td>
+<td>Movimento à velas aumentado em 1/3.</td>
+</tr>
+<tr><td>10</td>
+<td>Vento forte</td>
+<td>Movimento à velas aumentado em 1/2.</td>
+</tr>
+<tr><td>11</td>
+<td>Quase vendaval</td>
+<td>Movimento à velas dobrado. Ver <strong>Quase Vendaval</strong>.</td>
+</tr>
+<tr><td>12</td>
+<td>Vendaval ou tempestade</td>
+<td>Movimento à velas triplicado. Ver <strong>Vendavais e Tempestades</strong>.</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 Grupos que prefiram um sistema um pouco mais detalhado de viagem aquática, podem usar a tabela acima, o que adicionará detalhes extras a jogada diária de 2d6. 
 

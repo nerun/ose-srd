@@ -3,21 +3,34 @@
 ## Gemas
 O valor de cada gema em um montante de tesouro é determinado pela seguinte tabela:
 
-+----------+-------------------+
-| Valores das Gemas            |
-+==========+===================+
-| **d20**  | **Valor da Gema** |
-+----------+-------------------+
-| 1–4      | 10po              |
-+----------+-------------------+
-| 5–9      | 50po              |
-+----------+-------------------+
-| 10–15    | 100po             |
-+----------+-------------------+
-| 16–19    | 500po             |
-+----------+-------------------+
-| 20       | 1.000po           |
-+----------+-------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2">Valores das Gemas</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>d20</strong></td>
+<td><strong>Valor da Gema</strong></td>
+</tr>
+<tr><td>1–4</td>
+<td>10po</td>
+</tr>
+<tr><td>5–9</td>
+<td>50po</td>
+</tr>
+<tr><td>10–15</td>
+<td>100po</td>
+</tr>
+<tr><td>16–19</td>
+<td>500po</td>
+</tr>
+<tr><td>20</td>
+<td>1.000po</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 ## Joias
 Cada peça de joalheria indicada por um tipo de tesouro vale 3d6 × 100po (ou mais, se o árbitro desejar, para personagens acima do 3º nível).

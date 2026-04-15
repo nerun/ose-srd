@@ -27,7 +27,7 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="../custom-532d0cb2.css">
+        <link rel="stylesheet" href="../custom-01657aac.css">
 
         <!-- MathJax -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -37,7 +37,7 @@
             const path_to_root = "../";
             const default_light_theme = "light";
             const default_dark_theme = "rust";
-            window.path_to_searchindex_js = "../searchindex-117446f6.js";
+            window.path_to_searchindex_js = "../searchindex-97bb6e9d.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../toc-950846f6.js"></script>
@@ -184,74 +184,171 @@
 <li><strong>Corpo-a-corpo</strong>: É aplicado a jogadas de ataque e de rolagens de dano com armas corpo-a-corpo.</li>
 <li><strong>Abrir Portas</strong>: Chance de sucesso ao tentar forçar a abertura de uma porta pesada ou emperrada.</li>
 </ul>
-<p>+———+—————––+——————+
-| Modificadores de Força                         |
-+=========+===================+==================+
-| <strong>FOR</strong> | <strong>Corpo-a-corpo</strong> | <strong>Abrir Portas</strong> |
-+———+—————––+——————+
-|  3      | -3                | 1 em 6           |
-+———+—————––+——————+
-|  4-5    | -2                | 1 em 6           |
-+———+—————––+——————+
-|  6-8    | -1                | 1 em 6           |
-+———+—————––+——————+
-|  9-12   | Nenhum            | 2 em 6           |
-+———+—————––+——————+
-|  13-15  | +1                | 3 em 6           |
-+———+—————––+——————+
-|  16-17  | +2                | 4 em 6           |
-+———+—————––+——————+
-|  18     | +3                | 5 em 6           |
-+———+—————––+——————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="3">Modificadores de Força</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>FOR</strong></td>
+<td><strong>Corpo-a-corpo</strong></td>
+<td><strong>Abrir Portas</strong></td>
+</tr>
+
+<tr><td>3</td>
+<td>-3</td>
+<td>1 em 6</td>
+</tr>
+
+<tr><td>4-5</td>
+<td>-2</td>
+<td>1 em 6</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>-1</td>
+<td>1 em 6</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nenhum</td>
+<td>2 em 6</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>+1</td>
+<td>3 em 6</td>
+</tr>
+
+<tr><td>16-17</td>
+<td>+2</td>
+<td>4 em 6</td>
+</tr>
+
+<tr><td>18</td>
+<td>+3</td>
+<td>5 em 6</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="inteligência-int"><a class="header" href="#inteligência-int">Inteligência (INT)</a></h2>
 <p>Aprendizado, memória e raciocínio.</p>
 <ul>
 <li><strong>Línguas conhecidas</strong>: Determina o número de línguas que o personagem sabe falar.</li>
 <li><strong>Alfabetização</strong>: Indica a capacidade do personagem ler e escrever em suas línguas nativas.</li>
 </ul>
-<p>+———+———————————+–––––––––––+
-| Modificadores de Inteligência                                    |
-+=========+=================================+======================+
-| <strong>INT</strong> | <strong>Línguas Conhecidas</strong>          | <strong>Alfabetização</strong>    |
-+———+———————————+–––––––––––+
-|  3      | Nativa (falada com dificuldade) | Analfabeto           |
-+———+———————————+–––––––––––+
-|  4-5    | Nativa                          | Analfabeto           |
-+———+———————————+–––––––––––+
-|  6-8    | Nativa                          | Semi-analfabeto      |
-+———+———————————+–––––––––––+
-|  9-12   | Nativa                          | Alfabetizado         |
-+———+———————————+–––––––––––+
-|  13-15  | Nativa + 1 adicional            | Alfabetizado         |
-+———+———————————+–––––––––––+
-|  16-17  | Nativa + 2 adicionais           | Alfabetizado         |
-+———+———————————+–––––––––––+
-|  18     | Nativa + 3 adicionais           | Alfabetizado         |
-+———+———————————+–––––––––––+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="3">Modificadores de Inteligência</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>INT</strong></td>
+<td><strong>Línguas Conhecidas</strong></td>
+<td><strong>Alfabetização</strong></td>
+</tr>
+
+<tr><td>3</td>
+<td>Nativa (falada com dificuldade)</td>
+<td>Analfabeto</td>
+</tr>
+
+<tr><td>4-5</td>
+<td>Nativa</td>
+<td>Analfabeto</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>Nativa</td>
+<td>Semi-analfabeto</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nativa</td>
+<td>Alfabetizado</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>Nativa + 1 adicional</td>
+<td>Alfabetizado</td>
+</tr>
+
+<tr><td>16-17</td>
+<td>Nativa + 2 adicionais</td>
+<td>Alfabetizado</td>
+</tr>
+
+<tr><td>18</td>
+<td>Nativa + 3 adicionais</td>
+<td>Alfabetizado</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="sabedoria-sab"><a class="header" href="#sabedoria-sab">Sabedoria (SAB)</a></h2>
 <p>Força de vontade, bom senso, percepção e intuição.</p>
 <ul>
 <li><strong>Resistência à Magia</strong>: É aplicado em jogadas de resistência contra efeitos mágicos. Isto normalmente não se aplica contra ataques de sopro, mas pode ser aplicado a qualquer outro tipo de teste de resistência.</li>
 </ul>
-<p>+———+———————————+
-| Modificadores de Sabedoria                |
-+=========+=================================+
-| <strong>SAB</strong> | <strong>Resistência à Magia</strong>         |
-+———+———————————+
-|  3      | -3                              |
-+———+———————————+
-|  4-5    | -2                              |
-+———+———————————+
-|  6-8    | -1                              |
-+———+———————————+
-|  9-12   | Nenhum                          |
-+———+———————————+
-|  13-15  | +1                              |
-+———+———————————+
-|  16-17  | +2                              |
-+———+———————————+
-|  18     | +3                              |
-+———+———————————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2">Modificadores de Sabedoria</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>SAB</strong></td>
+<td><strong>Resistência à Magia</strong></td>
+</tr>
+
+<tr><td>3</td>
+<td>-3</td>
+</tr>
+
+<tr><td>4-5</td>
+<td>-2</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>-1</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nenhum</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>+1</td>
+</tr>
+
+<tr><td>16-17</td>
+<td>+2</td>
+</tr>
+
+<tr><td>18</td>
+<td>+3</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="destreza-des"><a class="header" href="#destreza-des">Destreza (DES)</a></h2>
 <p>Agilidade, reflexos, velocidade e equilíbrio.</p>
 <ul>
@@ -259,49 +356,119 @@
 <li><strong>Mísseis</strong>: Aplicado a jogadas de ataque (mas não jogadas de dano) com armas à distância.</li>
 <li><strong>Iniciativa</strong>: Modifica o valor da iniciativa do personagem, se a regra opcional de iniciativa individual está sendo usada (veja capítulo de Combate)</li>
 </ul>
-<p>+———+––––+———––+—————–+
-| Modificadores de Destreza                        |
-+=========+========+=============+=================+
-| <strong>DES</strong> | <strong>CA</strong> | <strong>Mísseis</strong> |  <strong>Iniciativa</strong> |
-+———+––––+———––+—————–+
-|  3      | -3     | -3          | -2              |
-+———+––––+———––+—————–+
-|  4-5    | -2     | -2          | -1              |
-+———+––––+———––+—————–+
-|  6-8    | -1     | -1          | -1              |
-+———+––––+———––+—————–+
-|  9-12   | Nenhum | Nenhum      | Nenhum          |
-+———+––––+———––+—————–+
-|  13-15  | +1     | +1          | +1              |
-+———+––––+———––+—————–+
-|  16-17  | +2     | +2          | +1              |
-+———+––––+———––+—————–+
-|  18     | +3     | +3          | +2              |
-+———+––––+———––+—————–+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="4">Modificadores de Destreza</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>DES</strong></td>
+<td><strong>CA</strong></td>
+<td><strong>Mísseis</strong></td>
+<td><strong>Iniciativa</strong></td>
+</tr>
+
+<tr><td>3</td>
+<td>-3</td>
+<td>-3</td>
+<td>-2</td>
+</tr>
+
+<tr><td>4-5</td>
+<td>-2</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>-1</td>
+<td>-1</td>
+<td>-1</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nenhum</td>
+<td>Nenhum</td>
+<td>Nenhum</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>+1</td>
+<td>+1</td>
+<td>+1</td>
+</tr>
+
+<tr><td>16-17</td>
+<td>+2</td>
+<td>+2</td>
+<td>+1</td>
+</tr>
+
+<tr><td>18</td>
+<td>+3</td>
+<td>+3</td>
+<td>+2</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="constituição-con"><a class="header" href="#constituição-con">Constituição (CON)</a></h2>
 <p>Saúde, resistência física e vigor.</p>
 <ul>
 <li><strong>Pontos de vida</strong>: É aplicado quando for rolar os pontos de vida de seu personagem (no 1º nível e posteriormente a cada nível ganho). Um personagem sempre ganha pelo menos 1 ponto de vida por Dado de Vida, independente do modificador de CON.</li>
 </ul>
-<p>+–––––+———————————+
-| Modificadores de Constituição              |
-+==========+=================================+
-| <strong>CONS</strong> | <strong>Pontos de vida</strong>              |
-+–––––+———————————+
-|  3       | -3                              |
-+–––––+———————————+
-|  4-5     | -2                              |
-+–––––+———————————+
-|  6-8     | -1                              |
-+–––––+———————————+
-|  9-12    | Nenhum                          |
-+–––––+———————————+
-|  13-15   | +1                              |
-+–––––+———————————+
-|  16-17   | +2                              |
-+–––––+———————————+
-|  18      | +3                              |
-+–––––+———————————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2">Modificadores de Constituição</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>CONS</strong></td>
+<td><strong>Pontos de vida</strong></td>
+</tr>
+
+<tr><td>3</td>
+<td>-3</td>
+</tr>
+
+<tr><td>4-5</td>
+<td>-2</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>-1</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nenhum</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>+1</td>
+</tr>
+
+<tr><td>16-17</td>
+<td>+2</td>
+</tr>
+
+<tr><td>18</td>
+<td>+3</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="carisma-car"><a class="header" href="#carisma-car">Carisma (CAR)</a></h2>
 <p>Força da personalidade, capacidade de persuasão, magnetismo pessoal, atratividade física e capacidade de liderar.</p>
 <ul>
@@ -309,47 +476,114 @@
 <li><strong>Nº Máximo de seguidores</strong>: Determina o número máximo de seguidores que o seu personagem pode possuir ao mesmo tempo.</li>
 <li><strong>Lealdade dos Seguidores</strong>: Determina a lealdade dos seguidores deste personagem.</li>
 </ul>
-<p>+———+–––––––––––+——————+——————+
-| Modificadores de Carisma                                             |
-+=========+======================+==================+==================+
-| <strong>CAR</strong> | <strong>Ajuste de Reação</strong> | <strong>Nº Máximo de</strong> | <strong>Lealdade dos</strong> |
-|         |                      | <strong>seguidores</strong>   | <strong>Seguidores</strong>   |
-+———+–––––––––––+——————+——————+
-|  3      | -2                   | 1                | 4                |
-+———+–––––––––––+——————+——————+
-|  4-5    | -1                   | 2                | 5                |
-+———+–––––––––––+——————+——————+
-|  6-8    | -1                   | 3                | 6                |
-+———+–––––––––––+——————+——————+
-|  9-12   | Nenhum               | 4                | 7                |
-+———+–––––––––––+——————+——————+
-|  13-15  | +1                   | 5                | 8                |
-+———+–––––––––––+——————+——————+
-|  16-17  | +1                   | 6                | 9                |
-+———+–––––––––––+——————+——————+
-|  18     | +2                   | 7                | 10               |
-+———+–––––––––––+——————+——————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="4">Modificadores de Carisma</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>CAR</strong></td>
+<td><strong>Ajuste de Reação</strong></td>
+<td><strong>Nº Máximo de</strong>
+<strong>seguidores</strong></td>
+<td><strong>Lealdade dos</strong>
+<strong>Seguidores</strong></td>
+</tr>
+
+<tr><td>3</td>
+<td>-2</td>
+<td>1</td>
+<td>4</td>
+</tr>
+
+<tr><td>4-5</td>
+<td>-1</td>
+<td>2</td>
+<td>5</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>-1</td>
+<td>3</td>
+<td>6</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nenhum</td>
+<td>4</td>
+<td>7</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>+1</td>
+<td>5</td>
+<td>8</td>
+</tr>
+
+<tr><td>16-17</td>
+<td>+1</td>
+<td>6</td>
+<td>9</td>
+</tr>
+
+<tr><td>18</td>
+<td>+2</td>
+<td>7</td>
+<td>10</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 <h2 id="requisito-primário"><a class="header" href="#requisito-primário">Requisito Primário</a></h2>
 <p>Cada classe de personagem possui um ou mais requisitos primários - atributos que possuem uma importância especial ao funcionamento da classe. O valor de atributo que o personagem possui em seu requisito primário afeta quão rapidamente ele ganha pontos de experiência.</p>
 <p>Personagens com apenas um requisito primário utilizam a tabela a seguir. Os modificadores para classes com mais de um atributo como requisito primário estão listados na descrição da classe.</p>
 <ul>
 <li><strong>Modificador de XP</strong>: É aplicado a todos os pontos de experiência ganhos pelo personagem, a menos que seja dito o contrário na descrição da classe.</li>
 </ul>
-<p>+————————+————————+
-| Modificadores de Requisito Primário             |
-+========================+========================+
-| <strong>Requisito Primário</strong> | <strong>Modificador de XP</strong>  |
-+————————+————————+
-|  3-5                   | -20%                   |
-+————————+————————+
-|  6-8                   | -10%                   |
-+————————+————————+
-|  9-12                  | Nenhum                 |
-+————————+————————+
-|  13-15                 | +5%                    |
-+————————+————————+
-|  16-18                 | +10%                   |
-+————————+————————+</p>
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2">Modificadores de Requisito Primário</th>
+</tr>
+
+</thead>
+
+<tbody>
+<tr><td><strong>Requisito Primário</strong></td>
+<td><strong>Modificador de XP</strong></td>
+</tr>
+
+<tr><td>3-5</td>
+<td>-20%</td>
+</tr>
+
+<tr><td>6-8</td>
+<td>-10%</td>
+</tr>
+
+<tr><td>9-12</td>
+<td>Nenhum</td>
+</tr>
+
+<tr><td>13-15</td>
+<td>+5%</td>
+</tr>
+
+<tr><td>16-18</td>
+<td>+10%</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</main>
 
                     </main>
 
@@ -386,6 +620,22 @@
         <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
         <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
         <script>

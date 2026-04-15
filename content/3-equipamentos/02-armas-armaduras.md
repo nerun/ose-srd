@@ -2,53 +2,152 @@
 
 ## Armas
 
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|**Arma**                  |**Custo (po)**|**Peso (moedas)**|**Dano**|**Características**                                             |
-+==========================+==============+=================+========+================================================================+
-|Machado de Batalha        |7             |50               |1d8     |Corpo a Corpo, Lenta, Duas Mãos                                 |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Porrete                   |3             |50               |1d4     |Concussão, Corpo a Corpo                                        |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Besta                     |30            |50               |1d6     |Distância (24 m / 48 m / 96 m), Recarga, Lenta, Duas Mãos       |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Adaga                     |3             |10               |1d4     |Corpo a Corpo, Distância (3 m / 6 m / 9 m)                      |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Machadinha                |4             |30               |1d6     |Corpo a Corpo, Distância (3 m / até 6 m / até 9 m)              |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Frasco de Água Benta      |25            |&ndash;          |1d8     |Distância (3 m / 9 m / 15 m), Projétil de Área                  |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Azagaia                   |1             |20               |1d4     |Distância (9 m / 18 m / 27 m)                                   |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Lança de Cavalaria        |5             |120              |1d6     |Carga, Corpo a Corpo                                            |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Arco Longo                |40            |30               |1d6     |Distância (21 m / 42 m / 64 m), Duas Mãos                       |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Maça                      |5             |30               |1d6     |Corpo a Corpo, Concussão                                        |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Ânfora de Óleo, queimando |4             |30               |1d6     |Corpo a Corpo, Distância (3 m / 6 m / )9 m|                     |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Arma de Haste             |7             |150              |1d10    |Preparar, Corpo a Corpo, Lenta, Duas Mãos                       |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Arco Curto                |25            |30               |1d6     |Distância (15 m / 30 m / 45 m)                                  |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Espada Curta              |7             |30               |1d6     |Corpo a Corpo                                                   |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Adaga de Prata            |30            |10               |1d4     |Corpo a Corpo, Distância (3 m / 6 m / 9 m)                      |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Funda                     |2             |20               |1d4     |Concussão, Distância (12 m / 24 m / 48 m)                       |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Lança                     |3             |30               |1d6     |Preparar, Corpo a Corpo, Distância (6 m / 12 m / 18 m)          |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Cajado                    |2             |40               |1d4     |Concussão, Corpo a Corpo, Lenta, Duas Mãos                      |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Espada                    |10            |60               |1d8     |Corpo a Corpo                                                   |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Tocha                     |1 (por 6)     |&ndash;          |1d4     |Corpo a Corpo                                                   |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Espada de Duas Mãos       |15            |150              |1d10    |Corpo a Corpo, Lenta, Duas Mãos                                 |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
-|Martelo de Guerra         |5             |30               |1d6     |Concussão, Corpo a Corpo                                        |
-+--------------------------+--------------+-----------------+--------+----------------------------------------------------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>Arma</strong></th>
+<th class="head"><strong>Custo (po)</strong></th>
+<th class="head"><strong>Peso (moedas)</strong></th>
+<th class="head"><strong>Dano</strong></th>
+<th class="head"><strong>Características</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Machado de Batalha</td>
+<td>7</td>
+<td>50</td>
+<td>1d8</td>
+<td>Corpo a Corpo, Lenta, Duas Mãos</td>
+</tr>
+<tr><td>Porrete</td>
+<td>3</td>
+<td>50</td>
+<td>1d4</td>
+<td>Concussão, Corpo a Corpo</td>
+</tr>
+<tr><td>Besta</td>
+<td>30</td>
+<td>50</td>
+<td>1d6</td>
+<td>Distância (24 m / 48 m / 96 m), Recarga, Lenta, Duas Mãos</td>
+</tr>
+<tr><td>Adaga</td>
+<td>3</td>
+<td>10</td>
+<td>1d4</td>
+<td>Corpo a Corpo, Distância (3 m / 6 m / 9 m)</td>
+</tr>
+<tr><td>Machadinha</td>
+<td>4</td>
+<td>30</td>
+<td>1d6</td>
+<td>Corpo a Corpo, Distância (3 m / até 6 m / até 9 m)</td>
+</tr>
+<tr><td>Frasco de Água Benta</td>
+<td>25</td>
+<td>&ndash;</td>
+<td>1d8</td>
+<td>Distância (3 m / 9 m / 15 m), Projétil de Área</td>
+</tr>
+<tr><td>Azagaia</td>
+<td>1</td>
+<td>20</td>
+<td>1d4</td>
+<td>Distância (9 m / 18 m / 27 m)</td>
+</tr>
+<tr><td>Lança de Cavalaria</td>
+<td>5</td>
+<td>120</td>
+<td>1d6</td>
+<td>Carga, Corpo a Corpo</td>
+</tr>
+<tr><td>Arco Longo</td>
+<td>40</td>
+<td>30</td>
+<td>1d6</td>
+<td>Distância (21 m / 42 m / 64 m), Duas Mãos</td>
+</tr>
+<tr><td>Maça</td>
+<td>5</td>
+<td>30</td>
+<td>1d6</td>
+<td>Corpo a Corpo, Concussão</td>
+</tr>
+<tr><td>Ânfora de Óleo, queimando</td>
+<td>4</td>
+<td>30</td>
+<td>1d6</td>
+<td>Corpo a Corpo, Distância (3 m / 6 m / )9 m|</td>
+</tr>
+<tr><td>Arma de Haste</td>
+<td>7</td>
+<td>150</td>
+<td>1d10</td>
+<td>Preparar, Corpo a Corpo, Lenta, Duas Mãos</td>
+</tr>
+<tr><td>Arco Curto</td>
+<td>25</td>
+<td>30</td>
+<td>1d6</td>
+<td>Distância (15 m / 30 m / 45 m)</td>
+</tr>
+<tr><td>Espada Curta</td>
+<td>7</td>
+<td>30</td>
+<td>1d6</td>
+<td>Corpo a Corpo</td>
+</tr>
+<tr><td>Adaga de Prata</td>
+<td>30</td>
+<td>10</td>
+<td>1d4</td>
+<td>Corpo a Corpo, Distância (3 m / 6 m / 9 m)</td>
+</tr>
+<tr><td>Funda</td>
+<td>2</td>
+<td>20</td>
+<td>1d4</td>
+<td>Concussão, Distância (12 m / 24 m / 48 m)</td>
+</tr>
+<tr><td>Lança</td>
+<td>3</td>
+<td>30</td>
+<td>1d6</td>
+<td>Preparar, Corpo a Corpo, Distância (6 m / 12 m / 18 m)</td>
+</tr>
+<tr><td>Cajado</td>
+<td>2</td>
+<td>40</td>
+<td>1d4</td>
+<td>Concussão, Corpo a Corpo, Lenta, Duas Mãos</td>
+</tr>
+<tr><td>Espada</td>
+<td>10</td>
+<td>60</td>
+<td>1d8</td>
+<td>Corpo a Corpo</td>
+</tr>
+<tr><td>Tocha</td>
+<td>1 (por 6)</td>
+<td>&ndash;</td>
+<td>1d4</td>
+<td>Corpo a Corpo</td>
+</tr>
+<tr><td>Espada de Duas Mãos</td>
+<td>15</td>
+<td>150</td>
+<td>1d10</td>
+<td>Corpo a Corpo, Lenta, Duas Mãos</td>
+</tr>
+<tr><td>Martelo de Guerra</td>
+<td>5</td>
+<td>30</td>
+<td>1d6</td>
+<td>Concussão, Corpo a Corpo</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 **Dano**: dado jogado quando usar a regra opcional de dano de armas variado (ver Combate).
 
@@ -73,30 +172,64 @@
 **Duas Mãos**: requer duas mãos; o personagem não pode usar escudo.
 
 ## Munição
-+---------------------------------+--------------+
-|**Munição**                      |**Custo (po)**|
-+=================================+==============+
-|Flechas (aljava com 20)          |5             |
-+---------------------------------+--------------+
-|Virotes de besta (estojo com 30) |10            |
-+---------------------------------+--------------+
-|Flecha com ponta de prata (1)    |5             |
-+---------------------------------+--------------+
-|Pedras para funda                |Grátis        |
-+---------------------------------+--------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>Munição</strong></th>
+<th class="head"><strong>Custo (po)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Flechas (aljava com 20)</td>
+<td>5</td>
+</tr>
+<tr><td>Virotes de besta (estojo com 30)</td>
+<td>10</td>
+</tr>
+<tr><td>Flecha com ponta de prata (1)</td>
+<td>5</td>
+</tr>
+<tr><td>Pedras para funda</td>
+<td>Grátis</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 ## Armadura
-+---------------------------------+--------------+--------------+-----------------+
-|**Armadura**                     |**CA**        |**Custo (po)**|**Peso (moedas)**|
-+=================================+==============+==============+=================+
-|Couro                            |7 [12]        |20            |200              |
-+---------------------------------+--------------+--------------+-----------------+
-|Cota de Malha                    |5 [14]        |40            |400              |
-+---------------------------------+--------------+--------------+-----------------+
-|Armadura de Placas               |3 [16]        |60            |500              |
-+---------------------------------+--------------+--------------+-----------------+
-|Escudo                           |+1 de bônus   |10            |100              |
-+---------------------------------+--------------+--------------+-----------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>Armadura</strong></th>
+<th class="head"><strong>CA</strong></th>
+<th class="head"><strong>Custo (po)</strong></th>
+<th class="head"><strong>Peso (moedas)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Couro</td>
+<td>7 [12]</td>
+<td>20</td>
+<td>200</td>
+</tr>
+<tr><td>Cota de Malha</td>
+<td>5 [14]</td>
+<td>40</td>
+<td>400</td>
+</tr>
+<tr><td>Armadura de Placas</td>
+<td>3 [16]</td>
+<td>60</td>
+<td>500</td>
+</tr>
+<tr><td>Escudo</td>
+<td>+1 de bônus</td>
+<td>10</td>
+<td>100</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 ## Carga (Regra Opcional)
 Se a regra opcional para carga for usada (ver Carga), armadura vestidas e armas carregadas são tratadas como a seguir.

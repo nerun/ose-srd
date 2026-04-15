@@ -123,89 +123,177 @@ Um personagem morto retorna a vida em uma nova forma física que se manifesta na
 
 **Reencarnação: Classe**
 
-+----------+--------------------------------------+
-|**d10**   |**Reencarnação**                      |
-+==========+======================================+
-|1         |Anão                                  |
-+----------+--------------------------------------+
-|2         |Clérigo                               |
-+----------+--------------------------------------+
-|3         |Elfo                                  |
-+----------+--------------------------------------+
-|4         |Guerreiro                             |
-+----------+--------------------------------------+
-|5         |Halfling                              |
-+----------+--------------------------------------+
-|6         |Ladrão                                |
-+----------+--------------------------------------+
-|7         |Mago                                  |
-+----------+--------------------------------------+
-|8         |Monstro (jogue na tabela de tendência)|
-+----------+--------------------------------------+
-|9 - 10    |Mesma Classe                          |
-+----------+--------------------------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>d10</strong></th>
+<th class="head"><strong>Reencarnação</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>Anão</td>
+</tr>
+<tr><td>2</td>
+<td>Clérigo</td>
+</tr>
+<tr><td>3</td>
+<td>Elfo</td>
+</tr>
+<tr><td>4</td>
+<td>Guerreiro</td>
+</tr>
+<tr><td>5</td>
+<td>Halfling</td>
+</tr>
+<tr><td>6</td>
+<td>Ladrão</td>
+</tr>
+<tr><td>7</td>
+<td>Mago</td>
+</tr>
+<tr><td>8</td>
+<td>Monstro (jogue na tabela de tendência)</td>
+</tr>
+<tr><td>9 - 10</td>
+<td>Mesma Classe</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 **Reencarnação: Monstros Ordeiros**
 
-+-------+-----------------------+--------+
-|**d6** |**Reencarnação**       |**DV**  |
-+=======+=======================+========+
-|1      |Gnomo                  |1       |
-+-------+-----------------------+--------+
-|2      |Neanderthal            |2       |
-+-------+-----------------------+--------+
-|3      |Pégasos                |2       |
-+-------+-----------------------+--------+
-|4      |Cão teleportador       |4       |
-+-------+-----------------------+--------+
-|5      |Unicórnio              |4       |
-+-------+-----------------------+--------+
-|6      |Pássaro roca, pequeno  |6       |
-+-------+-----------------------+--------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>d6</strong></th>
+<th class="head"><strong>Reencarnação</strong></th>
+<th class="head"><strong>DV</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>Gnomo</td>
+<td>1</td>
+</tr>
+<tr><td>2</td>
+<td>Neanderthal</td>
+<td>2</td>
+</tr>
+<tr><td>3</td>
+<td>Pégasos</td>
+<td>2</td>
+</tr>
+<tr><td>4</td>
+<td>Cão teleportador</td>
+<td>4</td>
+</tr>
+<tr><td>5</td>
+<td>Unicórnio</td>
+<td>4</td>
+</tr>
+<tr><td>6</td>
+<td>Pássaro roca, pequeno</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 **Reencarnação: Monstros Neutros** 
 
-+-------+-----------------------+--------+
-|**d6** |**Reencarnação**       |**DV**  |
-+=======+=======================+========+
-|1      |Pixie ou Sprite        |1       |
-+-------+-----------------------+--------+
-|2      |Homem-lagarto          |2       |
-+-------+-----------------------+--------+
-|3      |Babuíno                |2       |
-+-------+-----------------------+--------+
-|4      |Macaco, branco         |4       |
-+-------+-----------------------+--------+
-|5      |Centauro               |4       |
-+-------+-----------------------+--------+
-|6      |Homem Urso             |6       |
-+-------+-----------------------+--------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>d6</strong></th>
+<th class="head"><strong>Reencarnação</strong></th>
+<th class="head"><strong>DV</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>Pixie ou Sprite</td>
+<td>1</td>
+</tr>
+<tr><td>2</td>
+<td>Homem-lagarto</td>
+<td>2</td>
+</tr>
+<tr><td>3</td>
+<td>Babuíno</td>
+<td>2</td>
+</tr>
+<tr><td>4</td>
+<td>Macaco, branco</td>
+<td>4</td>
+</tr>
+<tr><td>5</td>
+<td>Centauro</td>
+<td>4</td>
+</tr>
+<tr><td>6</td>
+<td>Homem Urso</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 **Reencarnação: Monstros Caóticos**  
 
-+-------+-----------------------+--------+
-|**d10**|**Reencarnação**       |**DV**  |
-+=======+=======================+========+
-|1      |Goblin                 |1       |
-+-------+-----------------------+--------+
-|2      |Hobglobin              |1       |
-+-------+-----------------------+--------+
-|3      |Kobold                 |1       |
-+-------+-----------------------+--------+
-|4      |Orc                    |1       |
-+-------+-----------------------+--------+
-|5      |Gnoll                  |2       |
-+-------+-----------------------+--------+
-|6      |Bugbear                |3       |
-+-------+-----------------------+--------+
-|7      |Homem-rato             |3       |
-+-------+-----------------------+--------+
-|8      |Ogro                   |4       |
-+-------+-----------------------+--------+
-|9      |Lobisomem              |4       |
-+-------+-----------------------+--------+
-|10     |Minotauro              |6       |
-+-------+-----------------------+--------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>d10</strong></th>
+<th class="head"><strong>Reencarnação</strong></th>
+<th class="head"><strong>DV</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>Goblin</td>
+<td>1</td>
+</tr>
+<tr><td>2</td>
+<td>Hobglobin</td>
+<td>1</td>
+</tr>
+<tr><td>3</td>
+<td>Kobold</td>
+<td>1</td>
+</tr>
+<tr><td>4</td>
+<td>Orc</td>
+<td>1</td>
+</tr>
+<tr><td>5</td>
+<td>Gnoll</td>
+<td>2</td>
+</tr>
+<tr><td>6</td>
+<td>Bugbear</td>
+<td>3</td>
+</tr>
+<tr><td>7</td>
+<td>Homem-rato</td>
+<td>3</td>
+</tr>
+<tr><td>8</td>
+<td>Ogro</td>
+<td>4</td>
+</tr>
+<tr><td>9</td>
+<td>Lobisomem</td>
+<td>4</td>
+</tr>
+<tr><td>10</td>
+<td>Minotauro</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 ## Tarefa
 **Duração**: Permanente / Instantâneo (Remover Tarefa)

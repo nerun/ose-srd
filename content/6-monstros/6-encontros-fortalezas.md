@@ -28,23 +28,51 @@ Patrulhas como as descritas são apenas uma pequena parte da guarnição do gove
 
 A reação do governante aos viajantes transitando em seu domínio depende da classe do governante e pode ser determinada rolando 1d6 e consultando esta tabela:
 
-+--------+-------------+---------------+-----------+
-| Reação conforme a Classe do Governante           |
-+========+=============+===============+===========+
-| **d6** | **Clérigo** | **Guerreiro** | **Mago**  |
-+--------+-------------+---------------+-----------+
-| **1**  | Perseguir   | Perseguir     | Perseguir |
-+--------+-------------+---------------+-----------+
-| **2**  | Perseguir   | Perseguir     | Ignorar   |
-+--------+-------------+---------------+-----------+
-| **3**  | Ignorar     | Perseguir     | Ignorar   |
-+--------+-------------+---------------+-----------+
-| **4**  | Ignorar     | Ignorar       | Ignorar   |
-+--------+-------------+---------------+-----------+
-| **5**  | Convidar    | Ignorar       | Ignorar   |
-+--------+-------------+---------------+-----------+
-| **6**  | Convidar    | Convidar      | Convidar  |
-+--------+-------------+---------------+-----------+
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="4">Reação conforme a Classe do Governante</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><strong>d6</strong></td>
+<td><strong>Clérigo</strong></td>
+<td><strong>Guerreiro</strong></td>
+<td><strong>Mago</strong></td>
+</tr>
+<tr><td><strong>1</strong></td>
+<td>Perseguir</td>
+<td>Perseguir</td>
+<td>Perseguir</td>
+</tr>
+<tr><td><strong>2</strong></td>
+<td>Perseguir</td>
+<td>Perseguir</td>
+<td>Ignorar</td>
+</tr>
+<tr><td><strong>3</strong></td>
+<td>Ignorar</td>
+<td>Perseguir</td>
+<td>Ignorar</td>
+</tr>
+<tr><td><strong>4</strong></td>
+<td>Ignorar</td>
+<td>Ignorar</td>
+<td>Ignorar</td>
+</tr>
+<tr><td><strong>5</strong></td>
+<td>Convidar</td>
+<td>Ignorar</td>
+<td>Ignorar</td>
+</tr>
+<tr><td><strong>6</strong></td>
+<td>Convidar</td>
+<td>Convidar</td>
+<td>Convidar</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 * **Perseguir**: A patrulha é instruída a perseguir os intrusos até que deixem o domínio. Alternativamente, eles podem cobrar um pedágio dos viajantes de passagem. O preço exato exigido depende do caráter do governante, da riqueza aparente dos PJs etc. Se os PJs se recusarem a pagar o pedágio, a patrulha pode atacá-los, afugentá-los ou tentar prendê-los.
 * **Ignorar**: A patrulha deixa os PJs em paz, e vai cuidar de seus próprios negócios.

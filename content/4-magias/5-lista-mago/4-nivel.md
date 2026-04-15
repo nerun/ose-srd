@@ -31,17 +31,28 @@ Esta magia faz com que 3d6 alvos dentro de 18 m um do outro fiquem confusos, imp
 * **Alvos com menos de 2 DV**: não podem fazer o teste de resistência.
 * **Comportamento**: jogue na tabela abaixo, separadamente para cada alvo afetado, a cada rodada, para saber o que os alvos farão naquela rodada:
 
-+---------------+---------------------------------+
-|Comportamento do Alvo Confuso                    |
-+===============+=================================+
-|2d6            |Comportamento                    |
-+---------------+---------------------------------+
-|2 - 5          |Ataca o grupo do conjurador      |
-+---------------+---------------------------------+
-|6 - 8          |Não age                          |
-+---------------+---------------------------------+
-|9 - 12         |Ataca o grupo do alvo            |
-+---------------+---------------------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head" colspan="2">Comportamento do Alvo Confuso</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>2d6</td>
+<td>Comportamento</td>
+</tr>
+<tr><td>2 - 5</td>
+<td>Ataca o grupo do conjurador</td>
+</tr>
+<tr><td>6 - 8</td>
+<td>Não age</td>
+</tr>
+<tr><td>9 - 12</td>
+<td>Ataca o grupo do alvo</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 
 ## Porta Dimensional

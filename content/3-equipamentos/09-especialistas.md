@@ -2,33 +2,53 @@
 
 ## Salários
 
-+--------------------------------+-----------------------------+
-| **Especialista**               | **Salário por mês**         | 
-+================================+=============================+
-| Alquimista                     | 1.000 po                    |      
-+--------------------------------+-----------------------------+
-| Adestrador                     | 500 po                      |    
-+--------------------------------+-----------------------------+
-| Armeiro                        | 100 po                      |    
-+--------------------------------+-----------------------------+
-| Assistente de armeiro          | 15 po                       |   
-+--------------------------------+-----------------------------+
-| Ferreiro                       | 25 po                       |   
-+--------------------------------+-----------------------------+
-| Engenheiro                     | 750 po                      |    
-+--------------------------------+-----------------------------+
-| Navegador                      | 150 po                      |    
-+--------------------------------+-----------------------------+
-| Remador                        | 2 po                        |  
-+--------------------------------+-----------------------------+
-| Erudito                        | 2.000 po                    |      
-+--------------------------------+-----------------------------+
-| Marinheiro                     | 10 po                       |   
-+--------------------------------+-----------------------------+
-| Capitão de Navio               | 250 po                      |    
-+--------------------------------+-----------------------------+
-| Espião                         | 500 po (ou mais)            |              
-+--------------------------------+-----------------------------+
+<main>
+<table>
+<thead>
+<tr><th class="head"><strong>Especialista</strong></th>
+<th class="head"><strong>Salário por mês</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Alquimista</td>
+<td>1.000 po</td>
+</tr>
+<tr><td>Adestrador</td>
+<td>500 po</td>
+</tr>
+<tr><td>Armeiro</td>
+<td>100 po</td>
+</tr>
+<tr><td>Assistente de armeiro</td>
+<td>15 po</td>
+</tr>
+<tr><td>Ferreiro</td>
+<td>25 po</td>
+</tr>
+<tr><td>Engenheiro</td>
+<td>750 po</td>
+</tr>
+<tr><td>Navegador</td>
+<td>150 po</td>
+</tr>
+<tr><td>Remador</td>
+<td>2 po</td>
+</tr>
+<tr><td>Erudito</td>
+<td>2.000 po</td>
+</tr>
+<tr><td>Marinheiro</td>
+<td>10 po</td>
+</tr>
+<tr><td>Capitão de Navio</td>
+<td>250 po</td>
+</tr>
+<tr><td>Espião</td>
+<td>500 po (ou mais)</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 ## Alquimista
 

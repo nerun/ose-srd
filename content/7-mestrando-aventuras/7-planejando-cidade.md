@@ -4,17 +4,27 @@
 
 Decida quão grande a cidade base é, e aproximadamente quantos habitantes ela possui. O tamanho do assentamento normalmente depende do nível de tecnologia disponível no cenário. Para cenários medievais ou similares, os seguintes valores podem ser usados como base:
 
-+------------------------+--------------------+
-| **Tamanho da Cidade**  | **Habitantes**     |
-+------------------------+--------------------+
-| Aldeia                 | 50–999             |
-+------------------------+--------------------+
-| Vila Pequena           | 1.000 – 4.999      |
-+------------------------+--------------------+
-| Vila Grande            | 5.000 – 14.999     |
-+------------------------+--------------------+
-| Cidade                 | 15.000+            |
-+------------------------+--------------------+        
+<main>
+<table>
+<tbody>
+<tr><td><strong>Tamanho da Cidade</strong></td>
+<td><strong>Habitantes</strong></td>
+</tr>
+<tr><td>Aldeia</td>
+<td>50–999</td>
+</tr>
+<tr><td>Vila Pequena</td>
+<td>1.000 – 4.999</td>
+</tr>
+<tr><td>Vila Grande</td>
+<td>5.000 – 14.999</td>
+</tr>
+<tr><td>Cidade</td>
+<td>15.000+</td>
+</tr>
+</tbody>
+</table>
+</main>
 
 
 ## 2. Anote os serviços
