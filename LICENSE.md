@@ -114,6 +114,90 @@ necessary to make it enforceable.
 
 _**Open Game License v1.0a**_ Copyright 2000, Wizards of the Coast, Inc.
 
+_**System Reference Document**_ © 2000, Wizards of the Coast, Inc.;
+Authors Jonathan Tweet, Monte Cook, Skip Williams, based on original
+material by E. Gary Gygax and Dave Arneson.
+
+_**System Reference Document**_ © 2000-2003, Wizards of the Coast, Inc.;
+Authors Jonathan Tweet, Monte Cook, Skip Williams, Rich Baker, Andy
+Collins, David Noonan, Rich Redman, Bruce R. Cordell, John D. Rateliff,
+Thomas Reid, James Wyatt, based on original material by E. Gary Gygax
+and Dave Arneson.
+
+_**Modern System Reference Document**_ © 2002-2004, Wizards of the
+Coast, Inc.; Authors Bill Slavicsek, Jeff Grubb, Rich Redman, Charles
+Ryan, Eric Cagle, David Noonan, Stan!, Christopher Perkins, Rodney
+Thompson, and JD Wiker, based on material by Jonathan Tweet, Monte Cook,
+Skip Williams, Richard Baker, Peter Adkison, Bruce R. Cordell, John
+Tynes, Andy Collins, and JD Wiker.
+
+_**Castles & Crusades: Players Handbook**_, © 2004, Troll Lord Games;
+Authors Davis Chenault and Mac Golden.
+
+_**Cave Cricket from the Tome of Horrors**_, © 2002, Necromancer Games,
+Inc.; Authors Scott Greene and Clark Peterson, based on original
+material by Gary Gygax.
+
+_**Crab, Monstrous from the Tome of Horrors**_, © 2002, Necromancer
+Games, Inc.; Author Scott Greene, based on original material by Gary
+Gygax.
+
+_**Fly, Giant from the Tome of Horrors**_, © 2002, Necromancer Games,
+Inc.; Author Scott Greene, based on original material by Gary Gygax.
+
+_**Golem, Wood from the Tome of Horrors**_, © 2002, Necromancer Games,
+Inc.; Authors Scott Greene and Patrick Lawinger.
+
+_**Kamadan from the Tome of Horrors**_, © 2002, Necromancer Games, Inc.;
+Author Scott Greene, based on original material by Nick Louth.
+
+_**Rot Grub from the Tome of Horrors**_, © 2002, Necromancer Games,
+Inc.; Authors Scott Greene and Clark Peterson, based on original
+material by Gary Gygax.
+
+_**Labyrinth Lord™**_ © 2007-2009, Daniel Proctor. Author Daniel
+Proctor.
+
+_**B/X Essentials: Core Rules**_ © 2017 Gavin Norman. Author Gavin
+Norman.
+
+_**B/X Essentials: Classes and Equipment**_ © 2017 Gavin Norman. Author
+Gavin Norman.
+
+_**B/X Essentials: Cleric and Magic-User Spells**_ © 2017 Gavin Norman.
+Author Gavin Norman.
+
+_**B/X Essentials: Monsters**_ © 2017 Gavin Norman. Author Gavin Norman.
+
+_**B/X Essentials: Adventures and Treasures**_ © 2018 Gavin Norman.
+Author Gavin Norman.
+
+_**Old-School Essentials Core Rules**_ © 2018 Gavin Norman.
+
+_**Old-School Essentials Classic Fantasy: Genre Rules**_ © 2018 Gavin
+Norman.
+
+_**Old-School Essentials Classic Fantasy: Cleric and Magic-User
+Spells**_ © 2018 Gavin Norman.
+
+_**Old-School Essentials Classic Fantasy: Monsters**_ © 2018 Gavin
+Norman.
+
+_**Old-School Essentials Classic Fantasy: Treasures**_ © 2018 Gavin
+Norman.
+
+_**Old-School Essentials Classic Fantasy: Rules Tome**_ © 2019 Gavin
+Norman.
+
+_**Old-School Essentials System Reference Document**_ © 2019 Gavin
+Norman. Author Gavin Norman.
+
+_**Old-School Essentials Documento de Referência do Sistema**_ ©
+2020-2022 Dados Místicos. Tradutores: Franciolli Araújo, Pedro Leone,
+Daniel "Nerun" Rodrigues, Igor Teuri, Paulo E. R. Weber, Bruno Assis,
+Luan Morelatto, Lucio Muller de Siqueira e Walenc. Tradução do original
+de Gavin Norman.
+
 ---
 
 > [!note]

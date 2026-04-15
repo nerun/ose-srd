@@ -99,7 +99,7 @@ find content -name "*.md" -exec sed -i -E '
 ########################################################################
 # Converte grid tables RST para HTML
 echo
-python3 convert_tables.py
+python3 build_tables.py
 
 find content -type f -name "*.md" -exec sed -i 's|\&amp;|\&|g' {} \;
 
