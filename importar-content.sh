@@ -172,7 +172,8 @@ EOF
 
 ########################################################################
 # Copia logo pra content
-cp ose_logo.webp content/
+cp img/ose_logo.webp content/
+cp img/DadosMisticos.webp content/
 
 # MdBook
 echo
