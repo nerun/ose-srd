@@ -375,7 +375,7 @@ As embarcações descritas nesta seção abrangem vários períodos históricos,
 <td>135</td>
 <td>135 m (45 m)</td>
 </tr>
-<tr><td colspan="8">&ast; A tripulação age como remadores, marinheiros e guerreiros. &lt;br /&gt;
+<tr><td colspan="8">&ast; A tripulação age como remadores, marinheiros e guerreiros. <br/>
 &ast;&ast; Pode ser pilotado por personagens sem especialização.</td>
 </tr>
 </tbody>

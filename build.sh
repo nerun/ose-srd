@@ -101,13 +101,19 @@ find content -name "*.md" -exec sed -i -E '
 echo
 python3 build_tables.py
 
-find content -type f -name "*.md" -exec sed -i 's|\&amp;|\&|g' {} \;
-
 # Remove parágrafos de dentro de tabelas
 find . -name "*.md" -type f -exec perl -0777 -pi -e '
 s/<td([^>]*)>\s*<p>(.*?)<\/p>\s*<\/td>/<td$1>$2<\/td>/gs;
 s/<th([^>]*)>\s*<p>(.*?)<\/p>\s*<\/th>/<th$1>$2<\/th>/gs;
 ' {} +
+
+
+########################################################################
+# Corrige HTML
+find content -type f -name "*.md" -exec sed -i -E '
+    s|\&amp;|\&|g
+    s|\&lt;br ?/\&gt;|<br/>|g
+' {} \;
 
 
 ########################################################################
@@ -166,7 +172,7 @@ done
 cat >> "$SUMMARY" << EOF
 ---
 
-- [$(get_title "$CONTENT/dicionariodetermos.md")](dicionariodetermos.md)
+- [$(get_title "$CONTENT/equivalencias-traducao.md")](equivalencias-traducao.md)
 - [$(get_title "$CONTENT/open-game-license.md")](open-game-license.md)
 EOF
 
@@ -175,6 +181,8 @@ EOF
 cp img/ose_logo.webp content/
 cp img/DadosMisticos.webp content/
 
+
+########################################################################
 # MdBook
 echo
 mdbook clean

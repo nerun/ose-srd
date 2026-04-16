@@ -21,10 +21,10 @@
 <td>12</td>
 <td>18m (6m)</td>
 <td>1 cavalo de tração
-&lt;br/&gt;ou 2 mulas</td>
+<br/>ou 2 mulas</td>
 <td>4.000</td>
 <td>2 cavalos de tração
-&lt;br/&gt;ou 4 mulas</td>
+<br/>ou 4 mulas</td>
 <td>8.000</td>
 </tr>
 <tr><td>Carroção</td>
@@ -32,10 +32,10 @@
 <td>12</td>
 <td>18m (6m)</td>
 <td>2 cavalos de tração
-&lt;br/&gt;ou 4 mulas</td>
+<br/>ou 4 mulas</td>
 <td>15.000</td>
 <td>4 cavalos de tração
-&lt;br/&gt;ou 8 mulas</td>
+<br/>ou 8 mulas</td>
 <td>25.000</td>
 </tr>
 </tbody>

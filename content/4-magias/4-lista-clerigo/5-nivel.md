@@ -29,6 +29,7 @@ Conjura comida que aparece do nada.
 
 ## Dissipar o Mal
 **Duração**: Concentração (até 1 turno) ou instantâneo (veja abaixo)
+
 **Alcance**: 9 m
 
 Esta magia possui três usos:

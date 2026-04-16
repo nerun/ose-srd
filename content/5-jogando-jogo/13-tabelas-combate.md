@@ -22,16 +22,16 @@ Todos os humanos que não sejam membros de uma classe de aventureiro são classi
 <td><strong>-3</strong></td>
 <td><strong>-2</strong></td>
 <td><strong>-1</strong></td>
-<td>** 0**</td>
-<td>** 1**</td>
-<td>** 2**</td>
-<td>** 3**</td>
-<td>** 4**</td>
-<td>** 5**</td>
-<td>** 6**</td>
-<td>** 7**</td>
-<td>** 8**</td>
-<td>** 9**</td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td><strong>2</strong></td>
+<td><strong>3</strong></td>
+<td><strong>4</strong></td>
+<td><strong>5</strong></td>
+<td><strong>6</strong></td>
+<td><strong>7</strong></td>
+<td><strong>8</strong></td>
+<td><strong>9</strong></td>
 </tr>
 <tr><td>20 [-1]</td>
 <td>20</td>
