@@ -5,8 +5,8 @@
 ---
 
 - [Personagens](1-personagens.md)
-  - [Estatísticas de Jogo ✔️](1-personagens/1-estatisticas.md)
-  - [Criando um Personagem](1-personagens/2-criando-personagem.md)
+  - [Estatísticas de Jogo ✅](1-personagens/1-estatisticas.md)
+  - [Criando um Personagem ✅](1-personagens/2-criando-personagem.md)
   - [Atributos](1-personagens/3-atributos.md)
   - [Alinhamento](1-personagens/4-alinhamento.md)
   - [Idiomas](1-personagens/5-idiomas.md)
@@ -14,7 +14,7 @@
   - [Riquezas](1-personagens/7-riquezas.md)
   - [Empregados](1-personagens/8-empregados.md)
 
-- [Classes](2-classes.md)
+- [Classes ✅](2-classes.md)
   - [Anão](2-classes/1-anao.md)
   - [Clérigo](2-classes/2-clerigo.md)
   - [Elfo](2-classes/3-elfo.md)
@@ -23,7 +23,7 @@
   - [Ladrão](2-classes/6-ladrao.md)
   - [Mago](2-classes/7-mago.md)
 
-- [Equipamentos](3-equipamentos.md)
+- [Equipamentos e Serviços](3-equipamentos.md)
   - [Equipamentos de Aventureiro](3-equipamentos/01-equipamento-aventureiros.md)
   - [Armas e Armaduras](3-equipamentos/02-armas-armaduras.md)
   - [Montarias](3-equipamentos/03-montarias.md)

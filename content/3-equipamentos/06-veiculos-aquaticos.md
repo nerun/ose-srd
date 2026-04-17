@@ -513,7 +513,7 @@ As embarcações descritas nesta seção abrangem vários períodos históricos,
 </main>
 
 ## Tripulação
-As embarcações são propelidas por remos ou velas, sendo algumas delas capazes de usar os dois meios de propulsão. A tripulação necessária e a velocidade resultante são dadas na tabela acima. A taxa de pagamento para a tripulação é listada em [Especialistas](/3-equipamentos/09-especialistas.md).
+As embarcações são propelidas por remos ou velas, sendo algumas delas capazes de usar os dois meios de propulsão. A tripulação necessária e a velocidade resultante são dadas na tabela acima. A taxa de pagamento para a tripulação é listada em [Especialistas](/ose-srd/3-equipamentos/09-especialistas.md).
 
 ## Modificações em navios
 As seguintes modificações podem ser feitas em um navio:

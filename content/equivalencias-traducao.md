@@ -38,7 +38,7 @@
 
 - **Thief**: Ladrão
 
-**Demihuman**: Semi-humano
+**Demi-human**: Semi-humano
 
 **Dungeon Adventuring**: Aventuras em Masmorras
 
@@ -51,6 +51,8 @@
 **Level**: Nível
 
 **Movement Rate**: Taxa de Movimentação
+
+**Native Language**: Idioma Nativo (não língua)
 
 **PC / NPC**: PJ / PNJ
 

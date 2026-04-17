@@ -1,2 +1,2 @@
-# Equipamentos
+# Equipamentos e Serviços
 

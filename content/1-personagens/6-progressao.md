@@ -1,5 +1,6 @@
 # Progressão
 
+
 ## Experiência
 Todos os personagens que sobrevivem a uma aventura ganham pontos de experiência (XP), concedidos pelo árbitro (Ver Concedendo XP). A experiência é adquirida de duas fontes: tesouro recuperado e monstro derrotado.
 
@@ -278,9 +279,9 @@ Consulte Fortalezas para regras detalhadas sobre construção de forta
 Empregados são PNJ contratados por um personagem para realizar determinados serviços.
 
 ### Empregados e Aventuras
-Empregados não acompanham os personagens em aventuras. (Os personagens podem contratar PNJs para juntar-se a eles em aventuras, mas estes são tratados diferentemente. Ver  [Seguidores](/equipamentos/07-seguidores).)
+Empregados não acompanham os personagens em aventuras. (Os personagens podem contratar PNJs para juntar-se a eles em aventuras, mas estes são tratados diferentemente. Ver  [Seguidores](/ose-srd/3-equipamentos/07-seguidores.md).)
 
 ### Tipos de Empregados
 Empregados são divididos em dois tipos:
-* **Mercenários**: soldados contratados para proteger, patrulhar, e até servir em ambientes selvagens, mas apenas como parte de uma força maior, nunca em um grupo de aventureiros. Para mais detalhes, consulte [Mercenários](equipamentos/08-mercenarios).
-* **Especialistas**: indivíduos contratados que possuem uma profissão específica ou conhecimentos especiais. Esses indivíduos normalmente são contratados para uma tarefa específica. Para mais detalhes, consulte [Especialistas](equipamentos/09-especialistas).
+* **Mercenários**: soldados contratados para proteger, patrulhar, e até servir em ambientes selvagens, mas apenas como parte de uma força maior, nunca em um grupo de aventureiros. Para mais detalhes, consulte [Mercenários](/ose-srd/3-equipamentos/08-mercenarios.md).
+* **Especialistas**: indivíduos contratados que possuem uma profissão específica ou conhecimentos especiais. Esses indivíduos normalmente são contratados para uma tarefa específica. Para mais detalhes, consulte [Especialistas](/ose-srd/3-equipamentos/09-especialistas.md).

@@ -2,6 +2,8 @@
 
 ########################################################################
 # Baixa e extrai o repositório
+echo -e "> Baixando 'content' de 'github.com/pedroleone/ose-srd'\n"
+
 ZIP="master.zip"
 curl -L -o "$ZIP" "https://github.com/pedroleone/ose-srd/archive/refs/heads/master.zip"
 unzip -q "$ZIP"
@@ -16,6 +18,8 @@ rm -rf "$EXTRACTED" "$ZIP"
 
 ########################################################################
 # Numeração de pastas na ordem que aparecem no Sumário
+echo -e "\n> Numerando pastas na ordem que aparecem no Sumário"
+
 cd content
 mv personagens 1-personagens
 mv classes 2-classes
@@ -69,11 +73,15 @@ convert_file() {
 
 export -f convert_file
 
+echo -e "\n> Convertendo YAML frontmatter em headings markdown"
+
 find content -name "*.md" -exec bash -c 'convert_file "$0"' {} \;
 
 
 ########################################################################
-# Converte <Link to="...">texto</Link> para [texto](...)
+echo -e "\n> Convertendo Links Gatsby para Markdown"
+
+# Converte <Link to="url">texto</Link> para [texto](url)
 find content -name "*.md" -exec sed -i -E 's|<Link to="([^"]+)">([^<]+)</Link>|[\2](\1)|g' {} \;
 
 # Deleta: 'import { Link } from "gatsby"'
@@ -81,24 +89,27 @@ find content -name "*.md" -exec sed -i '/import { *Link *} from "gatsby"/d' {} \
 
 # Corrige links
 find content -name "*.md" -exec sed -i -E '
-    s|\(/classes/1-anao\)|(/2-classes/1-anao.md)|g
-    s|\(/classes/2-clerigo\)|(/2-classes/2-clerigo.md)|g
-    s|\(/classes/3-elfo\)|(/2-classes/3-elfo.md)|g
-    s|\(/classes/4-guerreiro\)|(/2-classes/4-guerreiro.md)|g
-    s|\(/classes/5-halfling\)|(/2-classes/5-halfling.md)|g
-    s|\(/classes/6-ladrao\)|(/2-classes/6-ladrao.md)|g
-    s|\(/classes/7-mago\)|(/2-classes/7-mago.md)|g
-    s|\(/equipamentos/07-seguidores.md\)|(/3-equipamentos/07-seguidores.md)|g
-    s|\(/jogando-jogo/02-tempo-peso-movimento\)|(/5-jogando-jogo/02-tempo-peso-movimento.md)|g
-    s|\(/jogando-jogo/07-aventuras-aquaticas\)|(/5-jogando-jogo/07-aventuras-aquaticas.md)|g
-    s|\(/equipamentos/06-veiculos-arquaticos\)|(/3-equipamentos/06-veiculos-aquaticos.md)|g
-    s|\(/equipamentos/09-especialistas\)|(/3-equipamentos/09-especialistas.md)|g
+    s|\(/personagens|(/ose-srd/1-personagens|g
+    s|\(/classes|(/ose-srd/2-classes|g
+    s|\(/equipamentos|(/ose-srd/3-equipamentos|g
+    s|\(/magias|(/ose-srd/4-magias|g
+    s|\(/jogando-jogo|(/ose-srd/5-jogando-jogo|g
+    s|\(/monstros|(/ose-srd/6-monstros|g
+    s|\(/mestrando-aventuras|(/ose-srd/7-mestrando-aventuras|g
+    s|\(/tesouros|(/ose-srd/8-tesouros|g
 ' {} \;
 
+# Adiciona extensão '.md' à URLs que comecem com '/'
+find content -name "*.md" -type f -exec sed -i -E '
+    s/\]\((\/[^)]+)\)/](\1.md)/g
+    s/\]\((\/[^)]+)\.htm\.md\)/](\1.htm)/g
+    s/\]\((\/[^)]+)\.html\.md\)/](\1.html)/g
+    s/\]\((\/[^)]+)\.md\.md\)/](\1.md)/g
+' {} \;
 
 ########################################################################
 # Converte grid tables RST para HTML
-echo
+echo -e "\n> Convertendo grid tables RST para HTML"
 python3 build_tables.py
 
 # Remove parágrafos de dentro de tabelas
@@ -110,6 +121,8 @@ s/<th([^>]*)>\s*<p>(.*?)<\/p>\s*<\/th>/<th$1>$2<\/th>/gs;
 
 ########################################################################
 # Corrige HTML
+echo -e "\n> Corrigindo entidades HTML literais"
+
 find content -type f -name "*.md" -exec sed -i -E '
     s|\&amp;|\&|g
     s|\&lt;br ?/\&gt;|<br/>|g
@@ -118,6 +131,8 @@ find content -type f -name "*.md" -exec sed -i -E '
 
 ########################################################################
 # Constrói Sumário
+echo -e "\n> Construindo 'Sumário' mdbook"
+
 CONTENT="content"
 SUMMARY="$CONTENT/SUMMARY.md"
 
@@ -178,12 +193,15 @@ EOF
 
 ########################################################################
 # Copia logo pra content
+echo -e "\n> Copiando imagens personalizadas para 'content'"
+
 cp img/ose_logo.webp content/
 cp img/DadosMisticos.webp content/
 
 
 ########################################################################
 # MdBook
-echo
+echo -e "\n> mdbook clean"
 mdbook clean
+echo -e "\n> mdbook build"
 mdbook build
