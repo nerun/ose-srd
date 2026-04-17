@@ -198,10 +198,15 @@ Daniel "Nerun" Rodrigues, Igor Teuri, Paulo E. R. Weber, Bruno Assis,
 Luan Morelatto, Lucio Muller de Siqueira e Walenc. Tradução do original
 de Gavin Norman.
 
----
+# DESIGNAÇÕES
 
-> [!note]
->
-> **Available at**: [wizards.com/d20/files/OGLv1.0a.rtf](https://web.archive.org/web/20160321040701/http://www.wizards.com/d20/files/OGLv1.0a.rtf) (archived in the Wayback Machine)
-> 
-> **SHA256**: a649a88c53be638e3200a03d8df954948d5c3915b5ab6401567af26755406531
+## Identidade do Produto ("Product Identity")
+
+Todas as artes, logotipos e apresentação são identidade do produto. Os
+nomes "Necrotic Gnome", "Old-School Essentials" e "Dados Místicos" são
+identidade do produto.
+
+## Conteúdo de Jogo Aberto ("Open Game Content")
+
+Todos os textos e tabelas não declarados como identidade do produto são
+Conteúdo de Jogo Aberto.

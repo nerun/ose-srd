@@ -110,4 +110,4 @@
 ---
 
 - [Equivalências de Tradução](equivalencias-traducao.md)
-- [Open Game License](open-game-license.md)
+- [Licença](open-game-license.md)
